@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#ultra-nx-wiki" class="md-skip">
           Skip to content
         </a>
       
@@ -384,6 +384,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -393,6 +404,88 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#custom-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что такое Custom Firmware?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что такое homebrew?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что такое пользовательские операционные системы?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что устанавливает это руководство?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что я могу делать с кастомной прошивкой?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Что мне нужно знать перед началом?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Нажмите кнопку ниже, чтобы начать следовать руководству!
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1614,166 +1707,110 @@
   
 
 
-<h1 id="_1">Содержание<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<ol>
-<li><a href="#Подготовка">Подготовка</a></li>
-<li><a href="#Сиснанд-sysnand">Сиснанд (sysnand)</a></li>
-<li><a href="#Бэкап-Сиснанда">Бэкап Сиснанда</a></li>
-<li><a href="#Бэкап-ключей">Бэкап ключей</a></li>
-<li><a href="#Восстановление-Сиснанда">Восстановление Сиснанда</a></li>
-<li><a href="#Эмунанд-emunand">Эмунанд (emunand)</a></li>
-<li><a href="#Создание-Эмунанда">Создание Эмунанда</a><ul>
-<li><a href="#Эмунанд-на-разделе">Эмунанд на разделе</a></li>
-<li><a href="#Файловый-Эмунанд">Файловый Эмунанд</a></li>
+<p><a href="https://discord.gg/dTk9XbVRtP" target="_blank"><img style="float: right;" src="img/discord.png"></a></p>
+<h1 id="ultra-nx-wiki"><strong>Ultra-NX Wiki</strong><a class="headerlink" href="#ultra-nx-wiki" title="Permanent link">&para;</a></h1>
+<p>Ultra-NX Wiki является проектом Ultra-NX, помогающим вам перейти с обычного Switch на Atmosphère.</p>
+<p>Для получения оперативной поддержки по этому руководству посетите нас в <a href="https://t.me/UltraNX">Telegram</a> или <a href="https://discord.gg/dTk9XbVRtP">Discord</a> </p>
+<p>Приготовьтесь выделить минимум час на следование этому руководству. Это необходимо для того, чтобы внимательно прочитать и понять каждую страницу для безопасного выполнения и обеспечения долговечности вашей консоли Switch. Некоторые необходимые резервные копии устройства также могут занять от десяти до тридцати минут в зависимости от модели вашего Switch и характеристик вашей microSD карты.</p>
+<hr />
+<h3 id="custom-firmware"><strong>Что такое Custom Firmware?</strong><a class="headerlink" href="#custom-firmware" title="Permanent link">&para;</a></h3>
+<p>Custom Firmware (“CFW”) — это сложное программное обеспечение, которое изменяет функции операционной системы устройства, также известной как системное ПО.<br />
+Atmosphère, например, патчит ОС Switch (названную Horizon) в реальном времени.</p>
+<p>Custom firmware можно считать священным граалем в моддинге устройств, так как он предоставляет почти неограниченный контроль и свободу по сравнению с более примитивным доступом "пользовательского уровня".
+&nbsp;</p>
+<hr />
+<h3 id="homebrew"><strong>Что такое homebrew?</strong><a class="headerlink" href="#homebrew" title="Permanent link">&para;</a></h3>
+<p>Homebrew относится к неофициальному программному обеспечению, написанному любителями для закрытых систем, таких как Nintendo Switch. Homebrew может включать оригинальные игры, эмуляторы, инструменты для редактирования сохранений и многое другое!</p>
+<p>Для запуска почти всего доступного homebrew на Switch в частности требуется CFW. Некоторые консоли первого поколения ("V1") могут запускать homebrew бесплатно, в то время как все остальные ("исправленные") консоли требуют предварительной покупки и установки специализированного оборудования.
+&nbsp;</p>
+<hr />
+<h3 id="_1"><strong>Что такое пользовательские операционные системы?</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>Пользовательские операционные системы (OS) — это альтернативные установки системного ПО, такие как Android или Linux, которые устанавливаются наряду с основной ОС Switch. Эти системы идеально подходят для продвинутых пользователей, которые хотят расширить функциональность своей консоли за пределы игровой приставки, превращая Nintendo Switch в полноценный гибридный планшет или настольный компьютер. Эти пользовательские ОС работают полностью независимо от ОС Switch, что означает, что все действия в пользовательской ОС не могут быть переданы обратно Nintendo. Пользовательские операционные системы не являются "эмулированными"; они работают непосредственно на SoC Tegra X1 Switch.</p>
+<p>В этом руководстве вы получите возможность выделить место на вашей microSD для установки этих пользовательских ОС, если вы этого захотите. Важно отметить, что эти установки являются необязательными; вам не нужно устанавливать пользовательскую ОС для завершения этого руководства и установки Atmosphère. Однако лучше принять решение раньше, чем позже, так как процесс установки включает форматирование вашей microSD карты.</p>
+<hr />
+<h3 id="_2"><strong>Что устанавливает это руководство?</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>Цель этого руководства — перевести полностью не модифицированный Switch с заводской прошивки на кастомную прошивку под названием Atmosphère.</p>
+<p><a href="files/extras/fusee_gelee_nvidia.pdf">fusee-gelee</a> в настоящее время является самым распространенным программным способом запуска кастомных прошивок. Он использует уязвимость в bootROM систем первого поколения Switch, что позволяет загружать консоль с помощью любой полезной нагрузки, которую мы выбираем, вместо только тех, которые авторизованы Nvidia и Nintendo. Это позволяет получить полный контроль над вашей консолью, включая резервные копии системного хранилища, восстановление, кастомные прошивки и пользовательские операционные системы.
+&nbsp;</p>
+<hr />
+<h3 id="_3"><strong>Что я могу делать с кастомной прошивкой?</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Настраивать главное меню HOME с помощью пользовательских тем и экранов загрузки</li>
+<li>Запускать “ROM-хаки” для игр, которые у вас есть</li>
+<li>Создавать резервные копии, редактировать и восстанавливать сохранения для многих игр</li>
+<li>Играть в игры для старых систем с помощью различных эмуляторов, используя RetroArch или другие самостоятельные эмуляторы</li>
+<li>Безопасно обновляться до последней версии системы без страха потерять доступ к homebrew</li>
+<li>Безопасно настраивать ваше устройство, сохраняя полный доступ к онлайн-сервисам Nintendo</li>
+</ul>
+<p>Более подробная информация об этом будет представлена позже в руководстве.</p>
+<hr />
+<h3 id="_4"><strong>Что мне нужно знать перед началом?</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>Как уже упоминалось, на полное завершение этого руководства потребуется минимум час. Пожалуйста, ответственно выделите это время перед первым прохождением.</p>
+<p>Имейте в виду, что КАЖДЫЙ раз, когда вы модифицируете вашу систему, существует потенциальная угроза НЕВОССТАНОВИМОГО кирпича. Кирпич — это поврежденное устройство, которое больше не функционирует; что-то, что становится "полезным как кирпич". На Switch такие случаи редки, но все же возможны — поэтому внимательно читайте инструкции перед их выполнением и следуйте им ТОЧНО.</p>
+<p>Это руководство будет работать на консолях первого поколения (V1) и модифицированных Switch во всех регионах на любой версии прошивки.</p>
+<div class="admonition note">
+<p class="admonition-title"><strong>Вам потребуется <em>один</em> из следующих элементов, чтобы успешно следовать этому руководству:</strong></p>
+<ul>
+<li>ПК и кабель USB-C, поддерживающий передачу данных, для соединения их вместе</li>
+<li>Устройство Android и кабель USB-C, поддерживающий передачу данных, для соединения их вместе<ul>
+<li>Это не работает на всех Android телефонах</li>
 </ul>
 </li>
-<li><a href="#Бэкап-Эмунанда">Бэкап Эмунанда</a><ul>
-<li><a href="#Бэкап-Эмунанда-на-разделе">Бэкап Эмунанда на разделе</a></li>
-<li><a href="#Бэкап-файлового-Эмунанда">Бэкап файлового Эмунанда</a></li>
+<li>Адаптер Lightning OTG, взломанное iOS устройство и USB кабель, все поддерживающие передачу данных, для соединения всего вместе<ul>
+<li>Этот метод не охвачен в руководстве, но вы можете узнать больше об этом на <a href="https://mologie.github.io/nxboot/">этом сайте</a></li>
 </ul>
 </li>
-</ol>
-<h1 id="_2">Подготовка<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
-<p>Для всех последующих действий потребуется наличие Хекаты на консоли, а так же некоторых других загрузчиков. </p>
-<ol>
-<li>Если у вас уже стоит Ultra или другая CFW - пропустите 3 и 4 пункты.</li>
-<li>Выключите консоль полностью (не в спящий режим).</li>
-<li>Выньте карту памяти и вставьте через картридер в пк.</li>
-<li>Скачайте последнюю <a href="https://github.com/Ultra-NX/Ultra/releases/latest/download/Ultra.zip">Ultra</a>, и распакуйте архив на карту памяти. Верните карту памяти в консоль.</li>
-<li>Включите консоль и на экране с бутлого нажмите <strong>Громкость –</strong> для захода в Hekate.</li>
-</ol>
-<h1 id="sysnand">Сиснанд (sysnand)<a class="headerlink" href="#sysnand" title="Permanent link">&para;</a></h1>
-<p>Это ваша оригинальная система, которая находится в модуле nand памяти.</p>
-<h2 id="_3">Бэкап Сиснанда<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>Обазательно необходим для прошитого свитча. Если мастер вам его не предоставил, или вы сами не делали ранее - обязательно создайте бекап, он может сэкономить вам очень много времени при возникновении серьезных проблем.</p>
-<ol>
-<li>Убедитесь, что на карте памяти есть свободное место для бекапа (v1/v2/lite - 32gb, oled - 64gb).</li>
-<li>Зайдите в <a href="#подготовка">Хекату</a>.</li>
-<li>Перейдите на вкладку <strong>Tools</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ToTools.jpg" /></li>
-<li>Заходим в пункт <strong>Backup eMMC</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Tools-ToBackup.jpg" /></li>
-<li>Делаем бэкапы <strong>BOOT0 &amp; BOOT1</strong> и <strong>RAW GPP</strong> выбрав соответствующие пункты.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Backup-Sysnand.jpg" /></li>
-<li>Бэкап сиснанда готов, не забудьте его перенести с карты памяти по пути <strong>/backup</strong> в безопасное место на компьютере.</li>
-<li>Так же сразу переместите папку <em>/backup/"NAND id"/sysmmc</em> в папку <em>/backup/"NAND id"/restore/</em>.</li>
-<li>Eсли вы не ставили игры во внутреннюю память сиснанда - бэкап будет отлично сжиматься при архивации.</li>
-</ol>
-<h2 id="_4">Бэкап ключей<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>Ключи отвечают за работу лицензионных игр. Последний уровень восстановления консоли, если вы умудрились все сломать, и потеряли бэкап Сиснанд - все можно будет восстановить благодаря ключам.</p>
-<ol>
-<li>Зайдите в <a href="#подготовка">Хекату</a>.</li>
-<li>Перейдите на вкладку <strong>Console Info</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ToConsoleInfo.jpg" /></li>
-<li>Выбираем пункт <strong>Lockpick</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ConsoleInfo-Lockpick.jpg" /></li>
-<li>Консоль загружается в пейлоад LockpickRCM, в нем управляем кнопками <strong>Громкость +</strong> и <strong>Громкость –</strong>. Выбираем пункт <strong>Dump from SysNAND</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Lockpick1.jpg" /></li>
-<li>После снятия ключей нажатием на <strong>Кнопку Питания</strong> возвращаемся в главное меню, и выбираем <strong>Power off</strong>.</li>
-<li>Бэкап ключей готов, не забудьте перенести файлы <strong>prod.keys</strong> и <strong>title.keys</strong> с карты памяти по пути <em>/switch</em> в безопасное место на компьютере.</li>
-</ol>
-<h2 id="_5">Восстановление Сиснанда<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Выключите консоль полностью (не в спящий режим), и вставьте сд карту через картридер в пк.</li>
-<li>Поместите вашу папку бэкапа по пути <strong>/backup</strong>. Убедитесь, что файлы BOOT0, BOOT1 и rawnand.bin (Их может быть много) находятся по пути <em>/backup/"NAND id"/restore/sysmmc/</em>.</li>
-<li>Зайдите в <a href="#подготовка">Хекату</a>.</li>
-<li>Перейдите на вкладку <strong>Tools</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ToTools.jpg" /></li>
-<li>Заходим в пункт <strong>Restore eMMC</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Tools-Restore.jpg" /></li>
-<li>Восстанавливаем бэкапы <code>BOOT0 &amp; BOOT1</code> и <code>RAW GPP</code> выбрав соответствующие пункты.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Restore-Sysnand.jpg" /></li>
-<li>Проверьте работу сиснанда после восстановления.</li>
-</ol>
-<h1 id="emunand">Эмунанд (emunand)<a class="headerlink" href="#emunand" title="Permanent link">&para;</a></h1>
-<p>Копия системы находящаяся на сд карте.
-Очень полезный инструмент для того, что бы обезопасить сиснанд от возможных проблем/бана.
-На большинстве прошивок, включая Ultra - Эмунанд настроен на блокировку серверов нинтендо и скрытие серийного номера консоли, так что вне зависимости от действий производимых на Эмунанде, вы не получите бан консоли.</p>
-<h2 id="_6">Создание Эмунанда<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<h3 id="_7">Эмунанд на разделе<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<p>Размер выбирается по желанию, можно сделать маленький Эмунанд внутри которого будут только сохранения от игр, таким образом Эмунанд будет минимально занимать места на карте. Не отображается как занятое место в файловых менеджерах. Более устойчив к повреждениям от высокого разгона.
-<strong>Создание Эмунанда на разделе форматирует карту памяти!</strong></p>
-<ol>
-<li>Убедитесь, что на карте памяти есть свободное место для создания Эмунанда.</li>
-<li>Зайдите в <a href="#подготовка">Хекату</a>.</li>
-<li>Перейдите на вкладку <strong>Tools</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ToTools.jpg" /></li>
-<li>Заходим в пункт <strong>Partition SD Card</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Tools-SDPart.jpg" /></li>
-<li>Ползунком <strong>emuMMC (RAW)</strong> выбираем желаемый размер будущего Эмунанда.</li>
-<li>Минимульный размер 4гб, с которым вам останется всего 1.3гб места под сохранения игр, что очень мало. Оптимальный размер 10гб, при котором остается 7гб+ свободного места под сохранения, чего вполне достаточно. Так же можно сделать Эмунанд классического размера (v1/v2/lite - 32gb, oled - 64gb), или Тестовый уменьшенный 7гб, где 4.3гб+ места под сохранения.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-SDPart1.jpg" /></li>
-<li>Продолжаем выбирав пункт <strong>Next Step</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-SDPart2.jpg" /></li>
-<li>Подтверждаем создание нажав <strong>Start</strong>. Это форматирует вашу карту памяти.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-SDPart3.jpg" /></li>
-<li>После успешного форматирования карты памяти, выходим обратно на главное меню Хекаты - на вкладку <strong>Home</strong>, после чего заходим в пункт <strong>emuMMC</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ToEmuMMC.jpg" /></li>
-<li>Выбираем пункт <strong>Create emuMMC</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-EmuMMC-Create.jpg" /></li>
-<li>Выбираем пункт <strong>SD Partition</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-EmuMMC-SDPart1.jpg" /></li>
-<li>Выбираем раздел 1 <strong>Part 1</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-EmuMMC-SDPart2.jpg" /></li>
-<li>После окончания нажмите <strong>OK</strong>. Вы создали Эмунанд на разделе.</li>
-</ol>
-<h3 id="_8">Файловый Эмунанд<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<p>Равен размеру Сиснанда, что может быть проблемой для Свитч Олед, у которого Сиснанд 64гб.
-Так же напрямую занимает место на сд карте, что будет отображаться как занятое место в файловых менеджерах. Немного медленнее Эмунанда на разделе, и менее устойчив к высокому разгону консоли, из-за чего выше шанс на поломку Эмунанда.</p>
-<ol>
-<li>Убедитесь, что на карте памяти есть свободное место для создания Эмунанда. Требуемое место зависит от размера Сиснанда (v1/v2/lite - 32gb, oled - 64gb).</li>
-<li>Зайдите в <a href="#подготовка">Хекату</a>.</li>
-<li>Заходим в пункт <strong>emuMMC</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ToEmuMMC.jpg" /></li>
-<li>Выбираем пункт <strong>Create emuMMC</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-EmuMMC-Create.jpg" /></li>
-<li>Выбираем пункт <strong>SD File</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-EmuMMC-SDFile.jpg" /></li>
-<li>После окончания нажмите <strong>OK</strong>. Вы создали Файловый Эмунанд.</li>
-</ol>
-<h2 id="_9">Бэкап Эмунанда<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<p>В бэкапе сохраняется информация об установленных играх на момент бэкапа, а так же время проведенное в играх и сохранения. Имеет смысл делать бэкап перед тестами разных вариантов разгона системы, что бы если у вас сломается Эмунанд - вы могли восстановить его из бэкапа не потеряв ничего. В ином случае вам придется создавать Эмунанд заново, устанавливать по новой игры и восстанавливать сохранения, если вы озаботились их бэкапом.</p>
-<h3 id="_10">Бэкап Эмунанда на разделе<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Убедитесь, что на карте памяти есть свободное место для бекапа. Требуемое место зависит от размера Эмунанда, если вы не редактировали размер при создании, то для v1/v2/lite - 32gb, для oled - 64gb.</li>
-<li>Зайдите в <a href="#подготовка">Хекату</a>.</li>
-<li>Перейдите на вкладку <strong>Tools</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ToTools.jpg" /></li>
-<li>Заходим в пункт <strong>Backup eMMC</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Tools-ToBackup.jpg" /></li>
-<li>Переключаем слот бэкапа на эмунанд нажав на пункт <strong>SD emuMMC Raw Partition</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Backup-ToEmunand.jpg" /></li>
-<li>Делаем бэкапы <code>BOOT0 &amp; BOOT1</code> и <code>RAW GPP</code> выбрав соответствующие пункты.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Backup-Emunand.jpg" /></li>
-<li>Бэкап эмунанда готов, не забудьте его перенести с карты памяти по пути <em>/backup</em> в безопасное место на компьютере.</li>
-</ol>
-<h3 id="_11">Бэкап файлового Эмунанда<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Выключите консоль полностью (не в спящий режим), и вставьте сд карту через картридер в пк.</li>
-<li>Эмунанд находится по пути <em>/emuMMC/SD00/eMMC</em> (вместо SD00 может быть другое название). Скопируйте папку в безопасное место на компьютере. Можно копировать сразу папку <strong><em>emuMMC</em></strong>.</li>
-</ol>
-<p><strong>ВНИМАНИЕ!!!</strong> Внутри папки <strong><em>emuMMC</em></strong> так же находятся все установленные на Эмунанде игры, так что она может весить очень много.</p>
-<h2 id="_12">Восстановление Эмунанда<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
-<h3 id="_13">Восстановление Эмунанда на разделе<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Выключите консоль полностью (не в спящий режим), и вставьте сд карту через картридер в пк.</li>
-<li>Поместите вашу папку бэкапа по пути <strong>/backup</strong>. Убедитесь, что файлы BOOT0, BOOT1 и rawnand.bin (Их может быть много) находятся по пути <em>/backup/"NAND id"/restore/emummc/</em>.</li>
-<li>Зайдите в <a href="#подготовка">Хекату</a>.</li>
-<li>Перейдите на вкладку <strong>Tools</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-ToTools.jpg" /></li>
-<li>Заходим в пункт <strong>Restore eMMC</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Tools-Restore.jpg" /></li>
-<li>Переключаем слот восстановления на эмунанд нажав на пункт <strong>SD emuMMC Raw Partition</strong>.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Restore-ToEmunand.jpg" /></li>
-<li>Восстанавливаем бэкапы <code>BOOT0 &amp; BOOT1</code> и <code>RAW GPP</code> выбрав соответствующие пункты.
-<img alt="" src="https://github.com/Ultra-NX/Ultra/wiki/img/Hekate-Restore-Emunand.jpg" /></li>
-<li>Проверьте работу эмунанда после восстановления.</li>
-</ol>
-<h3 id="_14">Восстановление файлового Эмунанда<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Выключите консоль полностью (не в спящий режим), и вставьте сд карту через картридер в пк.</li>
-<li>Поместите сохраненный эмунанд по пути <em>/emuMMC/SD00/eMMC</em> (вместо SD00 может быть другое название). Если вы сохраняли папку <strong><em>emuMMC</em></strong>, то просто скопируйте ее на карту памяти.</li>
-</ol>
+<li>Успешно модифицированный Switch</li>
+</ul>
+<p>Если вы выберете путь с emuMMC, указанный позже в руководстве, вам также понадобится microSD карта объемом <em>как минимум</em> 128 гигабайт. В этом случае важно отключить функцию <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/41209">Automatic Save Data Cloud</a> заранее, а также убедиться, что <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account">Switch установлен как основная консоль</a>. <br>
+Если вам нужно использовать карту microSD меньшего размера, вы можете выбрать путь sysCFW, приняв на себя связанные с этим риски.</p>
+<p>Кроме того, на V1 "неисправленной" консоли Switch вам потребуется способ доступа к ReCovery Mode (это будет подробно объяснено в разделе "Вход в RCM"). Хотя это возможно с помощью домашних инструментов, вы можете предпочесть потратить деньги на "жиг", который вставляется в разъем Joy-Con для надежного включения RCM.</p>
+</div>
+<p>По завершении вы не потеряете никаких данных и останетесь с тем же, с чем начинали (игры, учетная запись Nintendo, сохранения и т. д. будут сохранены). Ваши функции будут только улучшены.</p>
+<p>Держите устройство подключенным и заряженным на протяжении всего процесса, чтобы избежать потери данных или повреждений от неожиданного выключения.</p>
+<p>Кастомная прошивка не устанавливается навсегда и не изменяет ничего на вашей консоли просто при её запуске. Она будет полностью выгружена после перезагрузки консоли. Однако CFW позволяет вам вносить постоянные изменения в консоль по вашему усмотрению, поэтому <strong>будьте ответственны и осторожны с возможностями, предоставляемыми CFW</strong>.</p>
+<p>Рекомендуется прочитать все руководство от начала до конца один или несколько раз перед тем, как начать следовать инструкциям с вашей системой.</p>
+<p>Если что-то не ясно в процессе следования руководству, пожалуйста, обратитесь за разъяснениями вместо того, чтобы пытаться разобраться самостоятельно. Если ваш русский не идеален, используйте переводчик, такой как <a href="https://translate.google.com/">Google Translate</a> или <a href="https://translate.yandex.ru">Yandex Translate</a> (он лучше справляется с русским языком), чтобы задать свои вопросы, и мы сможем помочь.</p>
+<hr />
+<h3 id="_5"><strong>Нажмите кнопку ниже, чтобы начать следовать руководству!</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><a class="md-button md-button--primary" href="user_guide/getting_started/">К разделу "Начало работы" <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+<hr />
+<p><strong>Примечание:</strong> Мы в настоящее время не связаны, исторически не были связаны и не будем никогда связаны с Anton Retro, sthetix, Ely M. или другими авторами или публикациями на YouTube/TikTok, особенно с теми, кто утверждает, что имеет отношение к нам. Кроме того, мы отвергаем любые намёки на противоположное.</p>
+<p>Более того, мы возмущены любым намеком на обратное.</p>
+<hr />
+<details>
+<summary>Часто задаваемые вопросы тех кто остановился на этой странице:</summary>
+<ul>
+<li>
+<p><strong>Q: В чем разница между консолями "первого поколения" ("V1") и "исправленными" консолями, когда дело доходит до запуска homebrew?</strong> <br>
+        A: После загрузки в Horizon - небольшая. Главное, что следует иметь в виду, это то, что только консоли версии V1 поддерживают функцию Atmosphère "Reboot to payload", но модчипы автоматически загружают payload во время перезагрузок самостоятельно.</p>
+</li>
+<li>
+<p><strong>Q: Что такое Horizon?</strong> <br>
+        A: Horizon это название операционной системы Switch. Иногда ее называют "HorizonNX", потому что на самом деле это производная версия одноименной операционной системы Nintendo 3DS..</p>
+</li>
+<li>
+<p><strong>Q: Почему это называется Atmosphère?</strong> <br>
+        A: Atmosphère "запускается поверх Horizon (горизонта)". Каждый уровень безопасности Horizon ссылается на различные слои Atmosphère. Например, повторная реализация EL1 "ядра" называется mesosphère, а повторная реализация EL3 "TrustZone" называется exosphère. <br> Узнайте больше о уровнях исключений ARM <a href="https://developer.arm.com/documentation/102412/0103/Privilege-and-Exception-levels/Exception-levels">здесь</a>.</p>
+</li>
+<li>
+<p><strong>Q: Что такое "путь emuMMC" и почему рекомендуется, чтобы microSD карта имела минимум 128 ГБ для этого пути?</strong> <br>
+        A: Цель использования emuMMC/emuNAND заключается в предоставлении безопасного пространства для использования функций кастомной прошивки без риска быть замеченным Nintendo. Поскольку это офлайн-клон вашей внутренней памяти, работающий полностью с вашей microSD карты, вам нужно выделить до 64 ГБ на вашей microSD карте для этого (в зависимости от размера вашей внутренней памяти), плюс создать дубликаты ваших цифровых данных игр (emuMMC использует отдельную папку Nintendo для установленных игр).</p>
+</li>
+<li>
+<p><strong>Q: Почему мне нужно указать свою консоль как основную перед началом этого руководства?</strong> <br>
+        A: В противном случае Switch попытается подключиться к серверам Nintendo перед запуском приложений, что может привести к неожиданным задержкам и сделать emuMMC полностью неудобным для использования.</p>
+</li>
+<li>
+<p><strong>Q: Можно ли следовать этому руководству, если у меня есть карта microSD меньшего размера, и какие риски связаны с выбором пути sysCFW?</strong> <br>
+        A: Ничто не мешает вам использовать sysCFW, но для новичков рекомендуется ознакомиться с CFW, начав с использования emuMMC. Если использовать sysCFW неправильно, это может привести к программным brick'ам и/или <a href="https://nx.eiphax.tech/ban.html">блокировкам</a>.</p>
+</li>
+<li>
+<p><strong>Q: Существуют ли какие-либо конкретные риски или ограничения, наложенные Nintendo на консоли с кастомной прошивкой и Homebrew?</strong> <br>
+        A: Nintendo продемонстрировала явное терпение к пользователям, использующим CFW онлайн. Они <strong>не</strong> банят за наличие CFW, они банят за неправильное поведение — например, за пиратство или читерство в интернете. В остальном к вам будут относиться также как ко всем остальным пользователям.</p>
+</li>
+</ul>
+</details>
 
 
 
