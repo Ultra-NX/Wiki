@@ -2,7 +2,7 @@ site_name: Ultra-NX Wiki
 copyright: Copyright &copy; 2024 Ultra-NX.
 site_description: Switch CFW Guide.
 site_author: Ultra-NX
-site_url: ultra-nx.github.io/Wiki/
+site_url: https://ultra-nx.github.io/Wiki/
 repo_url: https://github.com/Ultra-NX/Wiki
 repo_name: Wiki
 
