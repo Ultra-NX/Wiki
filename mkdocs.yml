@@ -4,7 +4,7 @@ site_description: Switch CFW Guide.
 site_author: Ultra-NX
 site_url: https://ultra-nx.github.io/Wiki/
 repo_url: https://github.com/Ultra-NX/Wiki
-repo_name: Wiki
+repo_name: Ultra-NX Wiki
 
 theme:
   name: material
