@@ -1,8 +1,6 @@
 # Switch Guide
 
-[The guide can be found here!](https://switch.hacks.guide)
-
-Nintendo Switch homebrew guide written by staff members of the Nintendo Homebrew Discord server.
+[The guide can be found here!](https://ultranx.ru)
 
 ## Development
 You will need Python 3 installed as well as pip3. The [mkdocs website](https://www.mkdocs.org) will explain how to do this, and how to install mkdocs. This guide was developed on Python 3.6 and 3.7.
