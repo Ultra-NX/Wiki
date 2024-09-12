@@ -1,10 +1,10 @@
-site_name: NH Switch Guide
-copyright: Copyright &copy; 2024 <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew</a>, Maintained by the <a href="/about">NH Discord Server</a>.
+site_name: Ultra-NX Wiki
+copyright: Copyright &copy; 2024 Ultra-NX.
 site_description: Switch CFW Guide.
-site_author: NH Discord Server.
-site_url: https://switch.hacks.guide
-repo_url: https://github.com/nh-server/switch-guide
-repo_name: NH Switch Guide
+site_author: Ultra-NX
+site_url: ultra-nx.github.io/Wiki/
+repo_url: https://github.com/Ultra-NX/Wiki
+repo_name: Wiki
 
 theme:
   name: material
