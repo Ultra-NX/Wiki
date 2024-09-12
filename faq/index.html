@@ -1599,88 +1599,88 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Какие версии прошивки в настоящее время доступны для взлома?
+      Какие версии прошивки в настоящее время поддаются взлому?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-use-fusee-gelee-how-can-i-boot-into-rcm" class="md-nav__link">
+  <a href="#fusee-gelee-rcm" class="md-nav__link">
     <span class="md-ellipsis">
-      How do I use fusee-gelee? How can I boot into RCM?
+      Как использовать fusee-gelee? Как загрузиться в RCM?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-makes-a-good-jig-good-can-i-use-a-paperclip" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      What makes a good jig good? Can I use a paperclip?
+      Что делает хороший джиг хорошим? Можно ли использовать скрепку?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#is-there-an-easier-way-to-enter-rcm" class="md-nav__link">
+  <a href="#rcm" class="md-nav__link">
     <span class="md-ellipsis">
-      Is there an easier way to enter RCM?
+      Есть ли более простой способ войти в RCM?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#should-i-update-my-firmware" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Should I update my Firmware?
+      Стоит ли обновлять прошивку?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#is-it-safe-to-use-homebrew-will-i-get-banned" class="md-nav__link">
+  <a href="#homebrew" class="md-nav__link">
     <span class="md-ellipsis">
-      Is it safe to use homebrew? Will I get banned?
+      Безопасно ли использовать homebrew? Могут ли меня забанить?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-formats-can-homebrew-come-in" class="md-nav__link">
+  <a href="#homebrew_1" class="md-nav__link">
     <span class="md-ellipsis">
-      What formats can homebrew come in
+      Какие форматы могут использоваться для homebrew
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-microsd-cardformat-should-i-use" class="md-nav__link">
+  <a href="#microsd" class="md-nav__link">
     <span class="md-ellipsis">
-      What microSD card/format should I use?
+      Какую microSD карту/формат использовать?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fake-microsd-cards" class="md-nav__link">
+  <a href="#microsd_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Fake microSD cards
+      Поддельные microSD карты
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-homebrew-apps-are-not-showing-up-in-the-homebrew-menu" class="md-nav__link">
+  <a href="#homebrew-homebrew-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      My Homebrew apps are not showing up in the Homebrew menu!
+      Мои приложения Homebrew не отображаются в Homebrew menu!
     </span>
   </a>
   
@@ -1734,121 +1734,126 @@
 
   <h1>FAQ</h1>
 
-<h3 id="_1"><strong>Какие версии прошивки в настоящее время доступны для взлома?</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p>Currently two hardware revisions of the Switch exist. Any Switch bought or manufactured before the middle of 2018 has a bootrom bug that allows us to run code regardless of the firmware version on the Switch. When Nintendo updates the system, however, CFW will usually need an update to account for it.
-This bug cannot be fixed by Nintendo once the console leaves the factory, unless the console is sent in for repairs. This means that all current and future firmwares will be able to launch CFW through this exploit on the old hardware revision.</p>
-<p>Any console purchased after approximately August 2018 is <strong>likely</strong> to be patched. This includes the latest units on shelves, referred to as 'red box' or 'Mariko'.
-    Mariko is hardware patched, but may come on a vulnerable firmware.
-Currently the only way to know if your Switch is hackable is by trying to send the payload in RCM.
-Even with this exploit fixed, many Switch consoles on 8.0.1 and below will be hackable to some degree in the future (see <a href="#should-i-update-my-firmware">Should I update my Firmware?</a> for much more detailed information).
-The serial number on the back of the box can possibly tell you which consoles are patched and which aren't.
-See <a href="https://gbatemp.net/threads/switch-informations-by-serial-number.481215/" target="_blank">here</a> for an up to date list.</p>
-<h3 id="how-do-i-use-fusee-gelee-how-can-i-boot-into-rcm"><strong>How do I use fusee-gelee? How can I boot into RCM?</strong><a class="headerlink" href="#how-do-i-use-fusee-gelee-how-can-i-boot-into-rcm" title="Permanent link">&para;</a></h3>
-<p>To launch CFW through the fusee-gelee, the Switch needs to be in "ReCovery Mode"(RCM).
-The easiest way to enter RCM is by grounding pin 10 in the right joycon rail and holding VOL+ on boot.
-Several methods and designs to do this exist, see <a href="../user_guide/rcm/entering_rcm/">our guide</a> for more information.
-Once the Switch is in RCM it needs to be connected to either a computer, phone or dongle to send the exploit and the payload.</p>
-<p>This procedure needs to happen every time the Switch boots from a completely "off" state, otherwise the Switch will boot into the stock firmware.</p>
-<h3 id="what-makes-a-good-jig-good-can-i-use-a-paperclip"><strong>What makes a good jig good? Can I use a paperclip?</strong><a class="headerlink" href="#what-makes-a-good-jig-good-can-i-use-a-paperclip" title="Permanent link">&para;</a></h3>
-<p>Most people prefer to use 3d-printed jigs to enter RCM.
-These jigs are made in a way that they slide into the right joycon rail and have a piece of connected wire that then bridges pin 10 and one of the grounded pins on the Switch.
-A lot of different designs for these jigs exist, but it is important to understand, that these jigs can damage the Switch if they are made in a bad way.</p>
-<p>Since the wire in the jig is supposed to touch the pads inside the Switch's joycon rail, it is important to use wire that is thin, not rigid and bent/not pointy.
-Paperclips make for potentially dangerous jigs, as they are made out of a hard material, are rigid and pointy and can easily scratch off the pads inside the Switch.
-A good jig uses 32Gauge(0.2mm diameter) wire and is bent in a way that the end of the wire does not scratch the pads.
-You can download and 3d-print your own jig and use the pictures on <a href="https://www.thingiverse.com/thing:2892320">this website</a> to guide you on how to bend the wire correctly.
-Premade jigs can be found on online marketplaces for cheap.</p>
-<h3 id="is-there-an-easier-way-to-enter-rcm"><strong>Is there an easier way to enter RCM?</strong><a class="headerlink" href="#is-there-an-easier-way-to-enter-rcm" title="Permanent link">&para;</a></h3>
-<p>To enter RCM more comfortably a solution called "AutoRCM" exists.
-Once set up, this method will always boot the Switch into RCM, even without a jig or holding any buttons.
-This works by "bricking" the Switch in a controlled manner.
-The Switch detects that something is wrong and boots into RCM to get repaired.
-The big downside of this method is, that it is impossible to boot the Switch without a computer, phone or dongle, as it will never boot into stock firmware by itself, and that it requires an SD card with the proper CFW files on it at all times. In addition, if the battery of the Switch is completely drained, the Switch will need to charge to at least 10% in Hekate before launching Atmosphere, otherwise the Switch will refuse to boot due to the low battery. Charging in RCM is not recommended as this is very slow. AutoRCM can be reversed, but it is advised to keep a working NAND and BOOT0/1 backup before using it.</p>
-<p>Many Android-phones are able to send the exploit to the Switch, making them a perfect portable way to launch CFW. Different designs for portable dongles exist, ranging from Raspberry Pi Zero and Arduino projects to internal dongles, that work completely autonomous. The latter should only be done by advanced users, as it requires soldering onto the Switch mainboard itself.</p>
-<h3 id="should-i-update-my-firmware"><strong>Should I update my Firmware?</strong><a class="headerlink" href="#should-i-update-my-firmware" title="Permanent link">&para;</a></h3>
-<p>If your Switch is one of the new hardware revisions that patched the exploit in RCM and you are on firmware 7.0.1 or lower, you should not update if you want to have CFW in the forseeable future.</p>
-<p>If your Switch is one of the older hardware revisions and you don't mind having to use jigs/hardmods/AutoRCM and sending the exploit via computer, phone or dongle everytime you want to launch into CFW then it is completely safe to update.
-If you want the chance to maybe, one day, not have to use a external device, then it is recommended to stay on a FW as low as possible.
-Beware that this means that you potentially need to wait for a very long time (months to years) for this to happen, if ever. Private exploits to launch CFW over the Browser are known to exist for firmwares up to 7.0.1.</p>
-<p>Downgrading on the Switch is possible, but it requires using AutoRCM and a custom bootloader payload to bypass the Switch's several hardware anti-downgrade mechanisms.
-This will not work on an unpatched system, and is practically useless for most users.
-On every boot the Switch firmware checks how many e-fuses have been burned and how many e-fuses the Switch expects to be burned.
-Major updates to the Switch, or updates in which a large vulnerability has been patched, irreversibly burn one of the Switch's 64 "e-fuses".
-<em>If the Switch ever detects that more e-fuses have been burned than expected (meaning a downgrade happened), it will refuse to boot. Replacing e-fuses is not an option.</em>
-You can find more information about fuses <a href="https://switchbrew.org/wiki/Fuses#Anti-downgrade" target="_blank">here</a>
-Atmosphèreis maintained to support the latest firmware updates on unpatched units. The situation for patched and new units is as follows:</p>
+<h3 id="_1"><strong>Какие версии прошивки в настоящее время поддаются взлому?</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>На данный момент существует две аппаратные ревизии Switch. Любая консоль Switch, купленная или произведенная до середины 2018 года, имеет уязвимость в загрузочном ПЗУ (bootrom), которая позволяет запускать произвольный код независимо от версии прошивки на консоли. Однако при обновлении системы Nintendo обычно требуется обновить кастомную прошивку (CFW), чтобы она работала с новой версией.</p>
+<p>Этот баг не может быть исправлен Nintendo после того, как консоль покидает завод, если только консоль не будет отправлена на ремонт. Это означает, что на старой ревизии оборудования все текущие и будущие версии прошивок смогут запускать CFW с помощью этого эксплойта.</p>
+<p>Любая консоль, купленная после примерно августа 2018 года, <strong>скорее всего</strong> будет с исправленной уязвимостью. Включая последние модели на полках магазинов, известные как 'red box' или 'Mariko'.
+Mariko имеет аппаратное исправление, но может поставляться с уязвимой прошивкой.</p>
+<p>В данный момент единственный способ узнать, можно ли взломать вашу консоль Switch, — это попробовать отправить полезную нагрузку в RCM (Recovery Mode).</p>
+<p>Даже с исправлением этого эксплойта, многие консоли Switch с прошивкой 8.0.1 и ниже смогут быть взломаны в какой-то степени в будущем (см. раздел Стоит ли обновлять прошивку? для более подробной информации).</p>
+<p>Серийный номер на задней стороне коробки может подсказать, какие консоли исправлены, а какие нет. Посмотрите актуальный список <a href="https://gbatemp.net/threads/switch-informations-by-serial-number.481215/" target="_blank">здесь</a>.</p>
+<h3 id="fusee-gelee-rcm"><strong>Как использовать fusee-gelee? Как загрузиться в RCM?</strong><a class="headerlink" href="#fusee-gelee-rcm" title="Permanent link">&para;</a></h3>
+<p>Для запуска кастомной прошивки (CFW) через fusee-gelee, необходимо перевести Switch в "Режим восстановления" (ReCovery Mode, RCM).<br />
+Самый простой способ войти в RCM — это заземлить контакт 10 на правом рельсе джойкона и удерживать кнопку увеличения громкости (VOL+) при включении.<br />
+Существует несколько методов и конструкций для этого, подробности можно найти в <a href="../user_guide/rcm/entering_rcm/">нашем гайде</a>.<br />
+После того как Switch войдет в RCM, его нужно подключить к компьютеру, телефону или специальному устройству (dongle) для отправки эксплойта и полезной нагрузки.</p>
+<p>Эту процедуру необходимо выполнять каждый раз, когда Switch загружается из полностью выключенного состояния, иначе консоль загрузится в стандартную прошивку.</p>
+<h3 id="_2">Что делает хороший джиг хорошим? Можно ли использовать скрепку?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>Большинство людей предпочитают использовать напечатанные на 3D-принтере джиги для входа в RCM.<br />
+Эти джиги создаются таким образом, что они вставляются в правый рельс джойкона и имеют кусок проволоки, который соединяет контакт 10 с одним из заземленных контактов на Switch.<br />
+Существует много различных дизайнов этих джигов, но важно понимать, что плохо сделанный джиг может повредить Switch.</p>
+<p>Поскольку проволока в джиге должна касаться контактных площадок внутри рельса джойкона Switch, важно использовать проволоку, которая тонкая, не жесткая и согнутая/не острая.<br />
+Скрепки могут быть опасными в качестве джигов, так как они сделаны из жесткого материала, твердые и острые, и могут легко поцарапать контактные площадки внутри Switch.<br />
+Хороший джиг использует проволоку толщиной 32 калибра (диаметр 0.2 мм) и согнут таким образом, чтобы конец проволоки не царапал площадки.<br />
+Вы можете скачать и напечатать свой собственный джиг на 3D-принтере, а изображения на <a href="https://www.thingiverse.com/thing:2892320">этом сайте</a> помогут вам правильно согнуть проволоку.<br />
+Готовые джиги можно найти на онлайн-площадках по низкой цене.</p>
+<h3 id="rcm">Есть ли более простой способ войти в RCM?<a class="headerlink" href="#rcm" title="Permanent link">&para;</a></h3>
+<p>Для более удобного входа в RCM существует решение под названием "AutoRCM".<br />
+После настройки этого метода Switch всегда будет загружаться в RCM, даже без джига или удержания кнопок.<br />
+Это работает за счет контролируемого "окирпичивания" консоли.<br />
+Switch определяет, что что-то не так, и загружается в RCM для восстановления.<br />
+Главный недостаток этого метода заключается в том, что невозможно загрузить Switch без компьютера, телефона или донгла, так как консоль никогда не загрузится в стандартную прошивку самостоятельно. Также для работы всегда требуется SD-карта с правильными файлами CFW.<br />
+Кроме того, если батарея Switch полностью разряжена, консоль должна зарядиться как минимум до 10% в Hekate перед запуском Atmosphere, иначе Switch откажется загружаться из-за низкого заряда. Зарядка в RCM не рекомендуется, так как она очень медленная.<br />
+AutoRCM можно отключить, но рекомендуется сделать рабочие резервные копии NAND и BOOT0/1 перед его использованием.</p>
+<p>Многие Android-смартфоны могут отправлять эксплойт на Switch, что делает их идеальным портативным способом для запуска CFW.<br />
+Существует несколько различных дизайнов портативных донглов, начиная от проектов на основе Raspberry Pi Zero и Arduino и заканчивая внутренними донглами, которые работают полностью автономно. Последние подходят только для продвинутых пользователей, так как требуют пайки на материнскую плату Switch.</p>
+<h3 id="_3">Стоит ли обновлять прошивку?<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>Если ваш Switch относится к новым аппаратным ревизиям, в которых был исправлен эксплойт для RCM, и у вас прошивка 7.0.1 или ниже, то не стоит обновляться, если вы хотите иметь возможность использовать CFW в обозримом будущем.</p>
+<p>Если ваш Switch — одна из старых аппаратных ревизий, и вас не смущает необходимость использовать джиги/хардмоды/AutoRCM и отправлять эксплойт через компьютер, телефон или донгл каждый раз, когда вы хотите запустить CFW, то обновляться совершенно безопасно.<br />
+Если вы хотите иметь шанс однажды обходиться без внешних устройств, то рекомендуется оставаться на как можно более низкой версии прошивки.<br />
+Имейте в виду, что для этого, возможно, придется ждать очень долго (месяцы или годы), если это вообще когда-либо случится. Известно, что существуют приватные эксплойты для запуска CFW через браузер на прошивках до версии 7.0.1.</p>
+<p>Downgrade прошивки на Switch возможен, но для этого требуется использование AutoRCM и загрузка кастомного загрузчика для обхода нескольких аппаратных механизмов защиты от понижения версии.<br />
+Это не сработает на неподверженных взлому системах и практически бесполезно для большинства пользователей.<br />
+При каждой загрузке прошивка Switch проверяет, сколько e-fuses (электронных предохранителей) было сожжено и сколько должно быть сожжено по ожиданиям системы.<br />
+Основные обновления Switch или обновления, в которых была исправлена серьезная уязвимость, необратимо сжигают один из 64 e-fuses консоли.<br />
+<em>Если Switch когда-либо обнаружит, что было сожжено больше e-fuses, чем ожидается (то есть произошел даунгрейд), консоль откажется загружаться. Заменить e-fuses невозможно.</em><br />
+Больше информации о предохранителях можно найти <a href="https://switchbrew.org/wiki/Fuses#Anti-downgrade" target="_blank">здесь</a>.</p>
+<p>Atmosphère поддерживается для работы с последними обновлениями прошивки на незащищенных устройствах. Ситуация для исправленных и новых устройств следующая:</p>
 <ul>
 <li>
-<p><strong>"Old"</strong> <em>Patched Switch (HAC-001): Do NOT update past 7.0.1. Units on 7.0.1 and below will eventually get CFW. Patched units that have upgraded to 8.0.0 or 8.0.1 will likely get homebrew.</em></p>
+<p><strong>"Старый"</strong> <em>Исправленный Switch (HAC-001): НЕ обновляйтесь выше версии 7.0.1. Устройства на 7.0.1 и ниже со временем получат поддержку CFW. Исправленные устройства, обновленные до 8.0.0 или 8.0.1, вероятно, смогут запускать homebrew.</em></p>
 </li>
 <li>
-<p><strong>"New"</strong> <em>Switch (HAC-001(-01): Do NOT update past 8.0.1. Units on 8.0.1 and below will likely get homebrew. Units on 8.1.0 and higher are not expected to be hacked and can be updated.</em></p>
+<p><strong>"Новый"</strong> <em>Switch (HAC-001(-01)): НЕ обновляйтесь выше версии 8.0.1. Устройства на 8.0.1 и ниже, вероятно, получат поддержку homebrew. Устройства на версии 8.1.0 и выше не ожидается, что будут взломаны, и их можно обновлять.</em></p>
 </li>
 <li>
-<p><strong>Switch Lite</strong> <em>(HDH-001): Do NOT update past 8.0.1. Units on 8.0.1 and below will likely get homebrew. Units on 8.1.0 and higher are not expected to be hacked and can be updated.</em></p>
+<p><strong>Switch Lite</strong> <em>(HDH-001): НЕ обновляйтесь выше версии 8.0.1. Устройства на 8.0.1 и ниже, вероятно, получат поддержку homebrew. Устройства на версии 8.1.0 и выше не ожидается, что будут взломаны, и их можно обновлять.</em></p>
 </li>
 </ul>
-<p>A method to update without burning e-fuses exists, but, like downgrading, it forces you to use AutoRCM and sending the exploit via USB every time, as booting into the stock firmware even once would instantly burn the e-fuse. Note that other anti-downgrade mechanisms exist, making it for example impossible to boot game carts on a firmware below 4.1/9.0.0 if the Switch has ever launched a game on firmware 4.1+/9.0.0+. This can only be worked around by completely disabling the game cart slot while on 4.1/9.0.0 or greater, which is similarly impractical for most users.</p>
-<h3 id="is-it-safe-to-use-homebrew-will-i-get-banned"><strong>Is it safe to use homebrew? Will I get banned?</strong><a class="headerlink" href="#is-it-safe-to-use-homebrew-will-i-get-banned" title="Permanent link">&para;</a></h3>
-<p>The Switch comes with a lot of telemetry, and has been called a "telemetry monster" by several prominent developers.
-As long as the Switch is connected to the internet, Nintendo gets a report about a lot of different actions and states and has the option to log or act on them.
-Even if the Switch is offline and connects to the internet at a later point, Nintendo still recieves information about what happened while the Switch was disconnected.</p>
-<p>To disable some of this telemetry, it is advised to disable the sending of error reports in the System Settings of the Switch.
-Additionally if you live in the EU you can set the "do not share" option on <a href="https://accounts.nintendo.com/setting" target="_blank">Nintendo's website</a> to prevent your Switch from sending a lot of telemetry, although the effectiveness of this is questionable.</p>
-<p>Nintendo still receives a lot of information, even with those options disabled.
-We also cannot know if Nintendo decides to look for something in the logs and ban people in retrospect.
-They have also shown to expand their telemetry options with every other firmware update.</p>
+<p>Существует метод обновления без сжигания e-fuses, но, как и в случае с даунгрейдом, это заставляет вас использовать AutoRCM и отправлять эксплойт через USB каждый раз, так как даже одна загрузка в стандартную прошивку мгновенно сожжет e-fuse.<br />
+Учтите, что существуют и другие механизмы защиты от даунгрейда, которые, например, делают невозможным запуск игровых картриджей на прошивке ниже 4.1/9.0.0, если Switch когда-либо запускал игры на прошивке 4.1+/9.0.0+. Это можно обойти только полным отключением слота для картриджей на версиях 4.1/9.0.0 или выше, что также непрактично для большинства пользователей.</p>
+<h3 id="homebrew">Безопасно ли использовать homebrew? Могут ли меня забанить?<a class="headerlink" href="#homebrew" title="Permanent link">&para;</a></h3>
+<p>Консоль Switch содержит множество телеметрии, и некоторые известные разработчики называли её "монстром телеметрии".<br />
+Пока Switch подключен к интернету, Nintendo получает отчеты о различных действиях и состояниях системы и может записывать или реагировать на них.<br />
+Даже если Switch был офлайн и подключился к интернету позже, Nintendo все равно получит информацию о том, что происходило, пока консоль была отключена.</p>
+<p>Чтобы отключить часть этой телеметрии, рекомендуется отключить отправку отчетов об ошибках в настройках системы Switch.<br />
+Дополнительно, если вы живете в ЕС, вы можете установить опцию "не делиться" на <a href="https://accounts.nintendo.com/setting" target="_blank">веб-сайте Nintendo</a>, чтобы предотвратить отправку большого объема телеметрии вашей консолью, хотя эффективность этого шага остается под вопросом.</p>
+<p>Nintendo по-прежнему получает много информации, даже если эти опции отключены. Мы также не можем знать, решит ли Nintendo проверить что-то в логах и забанить пользователей ретроспективно. Кроме того, они показывают, что расширяют свои телеметрические опции с каждым обновлением прошивки.</p>
 <div class="admonition warning">
-<p class="admonition-title">Currently all bans have been for very obvious and intrusive actions, specifically:</p>
+<p class="admonition-title">На данный момент все баны были связаны с очень очевидными и вторгающимися действиями, а именно:</p>
 <ul>
-<li>Developers using their unique Switch data to poke and reverse-engineer Nintendos Server responses</li>
-<li>People pirating games and using them online</li>
-<li>People changing their profile pictures to custom pictures</li>
-<li>People using savegame editors to unlock content that is not available yet and using it online (Splatoon 2)</li>
-<li>People cheating online in general (Modifying Cart stats in MK8)</li>
-<li>People installing homebrew NSP files, which Nintendo can pick up on with their telemetry</li>
+<li>Разработчики, использующие уникальные данные Switch для анализа и обратной разработки ответов серверов Nintendo</li>
+<li>Люди, которые пиратят игры и используют их онлайн</li>
+<li>Люди, изменяющие свои фотографии профиля на пользовательские изображения</li>
+<li>Люди, использующие редакторы сохранений для разблокировки контента, который еще не доступен, и использующие его онлайн (Splatoon 2)</li>
+<li>Люди, занимающиеся читерством в интернете в общем (Модификация статистики карт в MK8)</li>
+<li>Люди, устанавливающие homebrew NSP файлы, что Nintendo может обнаружить с помощью своей телеметрии</li>
 </ul>
 </div>
-<p>Atmosphère stops some, but <strong><em>not all</em></strong> of Nintendo's telemetry, and prevents crash reports from being sent. This means Nintendo can't tell if anything, including homebrew or modded games crashed, and Atmosphère dumps the crash log to the microSD card to help homebrew developers. However, Nintendo still receives information about what is being played, and general system report information.</p>
-<p>Atmosphère is not a silver bullet, and this does not mean that Nintendo won't decide to ban people for harmless homebrew in the future. If you are scared to get banned then don't use homebrew for now. Atmosphère now supports emuMMC (emuNAND): a copy of Switch system software, run entirely from the microSD card instead.
-This erases ban risks due to the fact that emuMMC is run in a quarantined, offline state, not touching the internal memory. You are still able to boot into original firmware to play online.</p>
-<p>For patched units reliant on deja-vu, sysNAND will always have to be on a firmware below 4.1. For Switch versions from 5.0 to 7.0.1 deja-vu isn't quite out yet but will come eventually. (Also please note that firmwares 8.0.0+ will never work with deja-vu) You can use an updated emuMMC dedicated to online/clean play, while your sysNAND is used offline for custom firmware.</p>
-<p>We do not recommend the use of ReiNX or SX OS for many reasons, primary among them that they use lots of assets from Atmosphère and offer no real benefit that Atmosphère does not offer anyway.
-We also do not recommend Kosmos, as its large amount of extras on top of regular Atmosphère make it difficult to troubleshoot strange issues.
-All of these alternative CFWs also tend to use non-conventional setups which can cause issues that make it difficult to troubleshoot, which is another reason we prefer using Atmosphere.
-Additionally, it is advised to use 90DNS which blocks connections to any Nintendo servers. If you use an emuNAND for CFW and keep your sysNAND clean for playing online, you should use 90DNS on your emuNAND.
-<em>Note: Keeping your emuNAND "dirty" and your sysNAND "clean" pertains primarily to those using the RCM exploit. Users employing Nereba or Caffeine will do the opposite.</em></p>
-<h3 id="what-formats-can-homebrew-come-in"><strong>What formats can homebrew come in</strong><a class="headerlink" href="#what-formats-can-homebrew-come-in" title="Permanent link">&para;</a></h3>
-<p>Homebrew can come in two different formats, namely in <code>nro</code> files and in <code>bin</code> files.</p>
+<p>Atmosphère блокирует часть, но <strong><em>не всю</em></strong> телеметрию Nintendo и предотвращает отправку отчетов о сбоях. 
+Это означает, что Nintendo не может определить, произошел ли сбой в какой-либо программе, включая homebrew или модифицированные игры, и Atmosphère сохраняет журнал сбоя на microSD-карту для помощи разработчикам homebrew.
+Тем не менее, Nintendo все равно получает информацию о том, что воспроизводится, и общую системную информацию.</p>
+<p>Atmosphère не является панацеей, и это не значит, что Nintendo не решит забанить пользователей за безвредный homebrew в будущем. Если вы боитесь бана, то пока лучше не использовать homebrew. В настоящее время Atmosphère поддерживает emuMMC (emuNAND): копию системного программного обеспечения Switch, которая работает полностью с microSD-карты.
+Это устраняет риски бана, так как emuMMC работает в изолированном, офлайн-состоянии, не затрагивая внутреннюю память. Вы по-прежнему можете загрузиться в оригинальную прошивку для игры онлайн.</p>
+<p>Для исправленных устройств, использующих deja-vu, sysNAND всегда должен быть на прошивке ниже 4.1. Для версий Switch с прошивками от 5.0 до 7.0.1 deja-vu еще не доступен, но появится со временем. (Также обратите внимание, что прошивки 8.0.0 и выше никогда не будут работать с deja-vu.) Вы можете использовать обновленный emuMMC, предназначенный для онлайн/чистой игры, в то время как ваш sysNAND будет использоваться офлайн для кастомной прошивки.</p>
+<p>Мы не рекомендуем использовать ReiNX или SX OS по многим причинам, главным из которых является то, что они используют множество ресурсов от Atmosphère и не предлагают реальных преимуществ, которые не предоставляются Atmosphère.<br />
+Также не рекомендуется использовать Kefir, поскольку большое количество дополнительных функций на основе обычного Atmosphère затрудняет решение необычных проблем.<br />
+Все эти альтернативные CFW также склонны использовать неконвенциональные настройки, которые могут вызывать проблемы, что затрудняет их решение, что является еще одной причиной, почему мы предпочитаем использовать чмсиуб Atmosphère.  </p>
+<p>Дополнительно рекомендуется использовать 90DNS, который блокирует соединения с серверами Nintendo. Если вы используете emuNAND для CFW и держите свой sysNAND чистым для игр онлайн, вы должны использовать 90DNS на вашем emuNAND.
+Или же довериться стандартным настройкам Ultra-NX она уже использует функционал блокировки подключения к серверам Nintendo с помощью стандартных механизмов Atmosphère.<br />
+<em>Примечание: Держать ваш emuNAND "грязным" и sysNAND "чистым" относится в первую очередь к тем, кто использует эксплойт RCM. Пользователи, использующие Nereba или Caffeine, будут делать наоборот.</em></p>
+<h3 id="homebrew_1">Какие форматы могут использоваться для homebrew<a class="headerlink" href="#homebrew_1" title="Permanent link">&para;</a></h3>
+<p>Homebrew может быть в двух разных форматах: <code>nro</code> и <code>bin</code>.</p>
 <ul>
-<li><code>nro</code> Files are placed in the <code>switch</code> folder on your microSD card and can be launched using the Homebrew menu.</li>
-<li><code>bin</code> This format is used as a payload and is to be pushed in RCM using a payload launcher like tegrarcmgui on windows and fusee-interfacee-tk on other operating systems.</li>
+<li><strong><code>nro</code> Файлы</strong> размещаются в папке <code>switch</code> на вашей microSD-карте и могут быть запущены через Homebrew Menu.</li>
+<li><strong><code>bin</code> Файлы</strong> используются в качестве полезной нагрузки и должны быть загружены в RCM с помощью загрузчика полезных нагрузок, такого как tegrarcmgui на Windows и fusee-interface-tk на других операционных системах или же Hekate на консолях с установленным мод-чипом.</li>
 </ul>
-<p><strong>Homebrew risks</strong>
-<em>Be careful with launching downloaded homebrew! If you don't know the source, it's best not to launch it.</em>
-<em>Homebrew can potentially damage your system! Atmosphère provides protections against common bricking methods, but these are not guaranteed to always work!</em></p>
-<h3 id="what-microsd-cardformat-should-i-use"><strong>What microSD card/format should I use?</strong><a class="headerlink" href="#what-microsd-cardformat-should-i-use" title="Permanent link">&para;</a></h3>
-<p>microSD cards that are 32GB or smaller can be used for homebrew, but are not recommended as these will not permit you to have a full NAND dump and/or an emuMMC on them.</p>
-<p>The recommended microSD card size is 128GB. This will permit you to make a full NAND dump as well as having enough space to run an emuNAND in the future while also having adequate space for homebrew.</p>
-<p>The recommended filesystem format is FAT32. While the Switch supports exFAT through an additional update from Nintendo, this filesystem is prone to corruption and as a result is not advisable.</p>
-<h3 id="fake-microsd-cards"><strong>Fake microSD cards</strong><a class="headerlink" href="#fake-microsd-cards" title="Permanent link">&para;</a></h3>
-<p>Do not buy microSD cards from sites like eBay.
-These microSD cards are often fake and do not have the advertised amount of storage and will result in data corruption if used.
-Amazon has had some problems with fake microSD cards, so we recommend buying them at a physical store. Even on trustworthy sites, <em>always, always check reviews on a product before buying!!</em></p>
-<p>If you suspect your microSD card is fake or damaged, see the instructions <a href="https://wiki.hacks.guide/wiki/Checking_SD_card_integrity" target="_blank">here</a> to verify the integrity of your microSD card.</p>
-<h3 id="my-homebrew-apps-are-not-showing-up-in-the-homebrew-menu"><strong>My Homebrew apps are not showing up in the Homebrew menu!</strong><a class="headerlink" href="#my-homebrew-apps-are-not-showing-up-in-the-homebrew-menu" title="Permanent link">&para;</a></h3>
-<p>This is an issue primarily affecting macOS users, but may occur on other devices as well. If you are able to launch the homebrew menu, but you are not seeing some or any of your Homebrew apps, you may need to unset the archive bit with Hekate.</p>
+<p><strong>Риски использования homebrew</strong><br />
+<em>Будьте осторожны при запуске загруженного homebrew! Если вы не знаете источник, лучше не запускать его.</em><br />
+<em>Homebrew может потенциально повредить вашу систему! Atmosphère предоставляет защиту от распространенных методов "окирпичивания", но эти защиты не гарантируют стопроцентную безопасность!</em>
+<em>Homebrew постовляемые в формате <code>.nsp</code> опасны! Этот формат отличается от <code>.nro</code> лишь тем что может быть установлен в главное меню, его установка может привести к бану.</em></p>
+<h3 id="microsd">Какую microSD карту/формат использовать?<a class="headerlink" href="#microsd" title="Permanent link">&para;</a></h3>
+<p>microSD карты объемом 32 ГБ или меньше можно использовать для homebrew, но не рекомендуется, так как они не позволят иметь полный дамп NAND и/или emuMMC.</p>
+<p>Рекомендуемый размер microSD карты — 128 ГБ. Это позволит сделать полный дамп NAND, а также иметь достаточно места для запуска emuNAND в будущем, при этом оставаясь с адекватным пространством для homebrew.</p>
+<p>Рекомендуемый файловый формат — FAT32. Хотя Switch поддерживает exFAT через дополнительное обновление от Nintendo, эта файловая система подвержена повреждениям и, следовательно, не рекомендуется.</p>
+<h3 id="microsd_1">Поддельные microSD карты<a class="headerlink" href="#microsd_1" title="Permanent link">&para;</a></h3>
+<p>Не покупайте microSD карты на таких сайтах, как Aliexpress.<br />
+Эти карты часто бывают поддельными и не имеют заявленного объема хранения, что может привести к повреждению данных при использовании.<br />
+Ozon также сталкивался с проблемами с поддельными microSD картами, поэтому мы рекомендуем покупать их в физических магазинах. Даже на надежных сайтах <em>всегда, всегда проверяйте отзывы о продукте перед покупкой!!</em></p>
+<p>Если вы подозреваете, что ваша microSD карта поддельная или поврежденная, следуйте инструкциям <a href="https://wiki.hacks.guide/wiki/Checking_SD_card_integrity" target="_blank">здесь</a> для проверки целостности вашей microSD карты.</p>
+<h3 id="homebrew-homebrew-menu">Мои приложения Homebrew не отображаются в Homebrew menu!<a class="headerlink" href="#homebrew-homebrew-menu" title="Permanent link">&para;</a></h3>
+<p>Это проблема в первую очередь затрагивает пользователей macOS, но может возникать и на других устройствах. Если вы можете запустить Homebrew menu, но не видите некоторые или все ваши приложения Homebrew, возможно, вам нужно сбросить архивный бит с помощью Hekate.</p>
 <ol>
-<li>Inject the Hekate payload using your favorite payload injector.<ul>
-<li>If you have a modchipped Switch, place the Hekate payload on the root of your microSD card and rename it to payload.bin, reinsert your microSD card into your Switch and turn it on.</li>
+<li>Запустите payload Hekate с помощью вашего любимого загрузчика payload'ов.<ul>
+<li>Если у вас есть модифицированный Switch, поместите payload Hekate в корневую директорию вашей microSD карты и переименуйте её в payload.bin, вставьте microSD карту обратно в Switch и включите его.</li>
 </ul>
 </li>
-<li>Press <code>Tools</code> on the top menu bar.</li>
-<li>In the bottom right corner, press <code>Arch Bit • AutoRCM • Touch • Pkg1/2</code>.</li>
-<li>Press <code>Fix Archive bit</code> - this might take a while.</li>
-<li>Press <code>Close</code> in the top right corner.</li>
-<li>Press <code>Home</code> in the top menu bar to get back from where you started.</li>
-<li>Follow the instructions at the Launching CFW page <a href="../user_guide/all/launching_cfw/">here</a> to launch Atmosphere.</li>
+<li>Нажмите <code>Tools</code> на верхней панели меню.</li>
+<li>В нижнем правом углу нажмите <code>Arch Bit • AutoRCM • Touch • Pkg1/2</code>.</li>
+<li>Нажмите <code>Fix Archive bit</code> — это может занять некоторое время.</li>
+<li>Нажмите <code>Close</code> в верхнем правом углу.</li>
+<li>Нажмите <code>Home</code> на верхней панели меню, чтобы вернуться в исходное меню.</li>
+<li>Следуйте инструкциям на странице запуска CFW <a href="../user_guide/all/launching_cfw/">здесь</a>, чтобы запустить Atmosphere.</li>
 </ol>
 
 
