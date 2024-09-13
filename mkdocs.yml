@@ -37,23 +37,23 @@ theme:
     logo: fontawesome/solid/wrench
 
 nav:
-    - Home: index.md
-    - User Guide:
-        - 'Getting Started': 'user_guide/getting_started.md'
+    - Главная: index.md
+    - Руководство пользователя:
+        - 'Начало работы': 'user_guide/getting_started.md'
         - RCM:
-          - 'Introduction': 'user_guide/rcm/index.md'
-          - 'Entering RCM': 'user_guide/rcm/entering_rcm.md'
-          - 'Sending a payload': 'user_guide/rcm/sending_payload.md'
-        - Modchip:
-          - 'Introduction': 'user_guide/modchip/index.md'
-          - 'Preparing Hekate': 'user_guide/modchip/preparing_hekate.md'
-        - Finalizing Setup:
-          - 'Choosing an Environment': 'user_guide/all/cfw_environment.md'
-          - 'Partitioning the microSD for emuMMC': 'user_guide/all/partitioning_sd.md'
-          - 'Partitioning the microSD for sysCFW': 'user_guide/all/partitioning_sd_syscfw.md'
-          - 'microSD Preparations': 'user_guide/all/sd_preparation.md'
-          - 'Making Essential Backups': 'user_guide/all/making_essential_backups.md'
-          - 'Launching CFW': 'user_guide/all/launching_cfw.md'
+          - 'Введение': 'user_guide/rcm/index.md'
+          - 'Вход в RCM': 'user_guide/rcm/entering_rcm.md'
+          - "Отправка payload'а": 'user_guide/rcm/sending_payload.md'
+        - Модчип:
+          - 'Введение': 'user_guide/modchip/index.md'
+          - 'Подготовка Hekate': 'user_guide/modchip/preparing_hekate.md'
+        - Завершение установки:
+          - 'Выбор окружения': 'user_guide/all/cfw_environment.md'
+          - 'Разметка microSD для emuMMC': 'user_guide/all/partitioning_sd.md'
+          - 'Разметка microSD для sysCFW': 'user_guide/all/partitioning_sd_syscfw.md'
+          - 'Подготовка microSD': 'user_guide/all/sd_preparation.md'
+          - 'Создание необходимых резервных копий': 'user_guide/all/making_essential_backups.md'
+          - 'Запуск CFW': 'user_guide/all/launching_cfw.md'
     - Homebrew:
       - 'Homebrew': 'homebrew/index.md'
       - 'JKSV': 'homebrew/jksv.md'
@@ -70,23 +70,23 @@ nav:
       - 'SysDVR': 'homebrew/sysdvr.md'
       - 'sys-clk': 'homebrew/sys-clk.md'
       - 'ldn_mitm': 'homebrew/ldn_mitm.md'
-    - Tutorials:
-        - 'Extras': 'extras/index.md'
-        - 'Blocking Nintendo servers': 'extras/blocking_nintendo.md'
-        - 'Restoring a NAND Backup': 'extras/nandrestore.md'
+    - Инструкции:
+        - 'Дополненительно': 'extras/index.md'
+        - 'Блокировка серверов Nintendo': 'extras/blocking_nintendo.md'
+        - 'Востановление бэкапа NAND': 'extras/nandrestore.md'
         - 'AutoRCM': 'extras/autorcm.md'
-        - 'Game Modding': 'extras/game_modding.md'
-        - 'Linux injection without root': 'extras/adding_udev.md'
-        - 'Showing File Name Extensions (Windows)': 'extras/showing_file_extensions.md'
-        - 'Alternate Boot Setups': 'extras/alternate_bootsetups.md'
-        - 'RCM Payload Injectors Information': 'extras/rcm_injectors.md'
-        - 'Updating CFW': 'extras/updating.md'
-        - 'Changing SD cards': 'extras/transfer_sd.md'
-        - 'Glossary': 'extras/glossary.md'
-        - 'Installing Android': 'extras/installing_android.md'
-        - 'Installing Linux': 'extras/installing_linux.md'
+        - 'Модификация игр': 'extras/game_modding.md'
+        - "Linux проброс payload'a без root прав": 'extras/adding_udev.md'
+        - 'Показ расширений файлов (Windows)': 'extras/showing_file_extensions.md'
+        - 'Альтернативные методы запуска': 'extras/alternate_bootsetups.md'
+        - "Информация о донглах": 'extras/rcm_injectors.md'
+        - 'Обновление CFW': 'extras/updating.md'
+        - 'Смена SD карт': 'extras/transfer_sd.md'
+        - 'Глоссарий': 'extras/glossary.md'
+        - 'Установка Android': 'extras/installing_android.md'
+        - 'Установка Linux': 'extras/installing_linux.md'
     - FAQ: faq.md
-    - About: about.md
+    - О нас: about.md
 
 markdown_extensions:
   - admonition

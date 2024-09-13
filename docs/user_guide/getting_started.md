@@ -1,98 +1,98 @@
-# Getting Started
+# Начало работы
 
-!!! note "About modchipped Switch console users"
+!!! note "О пользователях с чипованным Switch"
 
-    If you already know you have a modchipped Switch console, you can skip ahead to the [Modchip Introduction](../user_guide/modchip/index.md) page.
+    Если вы уже знаете что ваш Switch чипован вы можете пропустить информацию ниже и перейти к странице [Введение в модчипы](../user_guide/modchip/index.md).
 
-### **Finding your serial number**
+### **Найдите свой серийный номер**
 
-In the RCM path, we'll first determine if your Switch is vulnerable to fusee-gelee, the exploit we will be using to launch CFW.
+В пути RCM мы сначала определим, уязвим ли ваш Switch к эксплойту fusee-gelee, который мы будем использовать для запуска CFW.
 
-The fusee-gelee vulnerability was discovered independently by different Switch hacking teams, who all independently released versions of the exploit in April 2018. Nintendo and NVIDIA were informed 90 days before these releases, and patched consoles were launched by mid-2018. NVIDIA [publicly acknowledged the flaw](https://nvidia.custhelp.com/app/answers/detail/a_id/4660/~/security-notice%3A-nvidia-tegra-rcm-vulnerability) in April as well. In July 2019, Nintendo announced updated consoles: the Switch Lite (HDH-001), and a new model of original Switch (HAC-001(-01)/"V2") with better battery life. Both of these new models use the Tegra X1+ (also known as Mariko, the T214, and T210B01) with a brand-new bootROM, and cannot currently be hacked without a modchip.
+Уязвимость fusee-gelee была независимо обнаружена разными командами по взлому Switch, которые все независимо выпустили версии эксплойта в апреле 2018 года. Nintendo и NVIDIA были проинформированы за 90 дней до этих выпусков, и патчированные консоли были запущены к середине 2018 года. NVIDIA [публично признала ошибку](https://nvidia.custhelp.com/app/answers/detail/a_id/4660/~/security-notice%3A-nvidia-tegra-rcm-vulnerability) в апреле. В июле 2019 года Nintendo анонсировала обновленные консоли: Switch Lite (HDH-001) и новую модель оригинального Switch (HAC-001(-01)/"V2") с лучшим временем автономной работы. Обе эти новые модели используют Tegra X1+ (также известный как Mariko, T214 и T210B01) с совершенно новым bootROM и в настоящее время не могут быть взломаны без модчипа.
 
-Patched and Mariko units can be identified by their serial number. This number can be found in the Settings applet at **System -> Serial Information**. You can also find it on the bottom of the console, adjacent to the charging port. However, it is always more accurate to use the serial reported in Settings instead, especially if you aren't the original owner of the console.
-
-&nbsp;
-
-![Visual for System Settings serial location](../user_guide/img/getting_started_serial_location.jpg)
-
-![Visual for serial location on the bottom of console](../user_guide/img/serial_switch.png)    
+Патченные и Mariko консоли можно идентифицировать по их серийному номеру. Этот номер можно найти в приложении Настройки в разделе **Система -> Информация о серийном номере**. Вы также можете найти его на нижней плоскости консоли, рядом с разъемом для зарядки. Однако всегда более правильно использовать серийный номер, указанный в Настройках, особенно если вы не являетесь первоначальным владельцем консоли.
 
 &nbsp;
 
-### **Determining if your Switch is vulnerable**
+![Изображение расположения серийного номера в настройках](../user_guide/img/getting_started_serial_location.jpg)
 
-The community has crowdsourced a list of known serial numbers which are vulnerable to fusee-gelee.
+![Изображение расположения серийного номера снизу консоли](../user_guide/img/serial_switch.png)
 
-- If your serial number is on this list as "potentially patched", follow the notice directly after this list.
-- If your serial number is listed as "patched", there is nothing you can do at this time besides installing a modchip (hardware modification. It __requires__ experience with microsoldering.).
-- If your system is patched, it is highly advised to keep it on 7.0.1 or lower, if possible, as there may be a vulnerability for these versions in the far future. **DO NOT update patched consoles past 7.0.1 if you want to ever have a chance of running homebrew and/or CFW on them if you do not have the skills required to install a modchip.**
+&nbsp;
 
-!!! note "Notice"
-    If you are unsure if your serial is patched, you can test your console yourself following the instructions [here](rcm/sending_payload.md).
+### **Определение того, можно ли взломать ваш Switch**
+
+Сообщество разместило на краудсорсинге список известных серийных номеров, которые уязвимы для fusee-gelee.
+
+- Если ваш серийный номер внесен в этот список как "потенциально исправленный", следуйте уведомлению непосредственно после этого списка.
+- Если ваш серийный номер указан как "исправленный", на данный момент вы ничего не можете сделать, кроме установки модчипа (Аппаратная модификация. **Требуется** опыт пайки очень маленьких элементов.).
+- Если ваша система пропатчена, настоятельно рекомендуется оставаться на версии 7.0.1 или ниже, если это возможно, так как в будущем может появиться уязвимость для этих версий. **НЕ обновляйте патченные консоли выше 7.0.1, если вы хотите когда-либо иметь возможность запускать Homebrew и/или CFW на них, если у вас нет навыков установки модчипа.**
+
+!!! note "Уведомление"
+    Если вы не уверены, относится ли ваш серийный номер к патченной консоли, вы можете проверить это сами, следуя инструкциям [здесь](rcm/sending_payload.md).
 
 -----
 
-### **Serial list**
+### **Список серийных номеров**
 
-The following information is based on [this GBATemp thread](https://gbatemp.net/threads/switch-informations-by-serial-number-read-the-first-post-before-asking-questions.481215/).
+Следующая информация основана на [этой теме GBATemp](https://gbatemp.net/threads/switch-informations-by-serial-number-read-the-first-post-before-asking-questions.481215/).
 
-|  Serial Numbers  | <span style="color:green">Unpatched</span> | <span style="color:orange">Potentially patched</span> | <span style="color:red">Patched</span> |
+|  Серийные номера  | <span style="color:green">Уязвимые</span> | <span style="color:orange">Потенциально пропатчены</span> | <span style="color:red">Пропатчены</span> |
 | :----|:---------------------------------|:---------------------------------|:----------------------|
-| XAW1 | XAW10000000000 to XAW10074000000 | XAW10074000000 to XAW10120000000 | XAW10120000000 and up |
-| XAW4 | XAW40000000000 to XAW40011000000 | XAW40011000000 to XAW40012000000 | XAW40012000000 and up |
-| XAW7 | XAW70000000000 to XAW70017800000 | XAW70017800000 to XAW70030000000 | XAW70030000000 and up |
-| XAJ1 | XAJ10000000000 to XAJ10020000000 | XAJ10020000000 to XAJ10030000000 | XAJ10030000000 and up |
-| XAJ4 | XAJ40000000000 to XAJ40046000000 | XAJ40046000000 to XAJ40060000000 | XAJ40060000000 and up |
-| XAJ7 | XAJ70000000000 to XAJ70040000000 | XAJ70040000000 to XAJ70050000000 | XAJ70050000000 and up |
-| XAK1 | **N/A**                          | XAK10000000000 and up            | **N/A**               |
+| XAW1 | XAW10000000000 до XAW10074000000 | XAW10074000000 до XAW10120000000 | XAW10120000000 и выше |
+| XAW4 | XAW40000000000 до XAW40011000000 | XAW40011000000 до XAW40012000000 | XAW40012000000 и выше |
+| XAW7 | XAW70000000000 до XAW70017800000 | XAW70017800000 до XAW70030000000 | XAW70030000000 и выше |
+| XAJ1 | XAJ10000000000 до XAJ10020000000 | XAJ10020000000 до XAJ10030000000 | XAJ10030000000 и выше |
+| XAJ4 | XAJ40000000000 до XAJ40046000000 | XAJ40046000000 до XAJ40060000000 | XAJ40060000000 и выше |
+| XAJ7 | XAJ70000000000 до XAJ70040000000 | XAJ70040000000 до XAJ70050000000 | XAJ70050000000 и выше |
+| XAK1 | **N/A**                          | XAK10000000000 и выше            | **N/A**               |
 
-If your serial number is not listed above, your device is not vulnerable to the fusee-gelee exploit.
+Если ваш серийный номер не указан выше, ваша консоль не уязвима к эксплойту fusee-gelee.
 
-### **Version Table**
+### **Таблица версий**
 
-!!! note "Note"
-    While the "New" Switch (HAC-001(-01)'s earliest possible firmware is 7.0.1, it is **not** vulnerable to *déjà vu*, the exploit used by Nereba and Caffeine, because of hardware differences from the "old" Switch (HAC-001).
+!!! note "Важно"
+    Хотя на "новой" модели Switch (HAC-001(-01)) минимальная версия прошивки — 7.0.1, она **не** уязвима к *déjà vu*, эксплоиту, используемому Nereba и Caffeine, из-за аппаратных различий по сравнению со "старой" моделью Switch (HAC-001).
 
-| Firmware Version | Unpatched Switch systems (HAC-001)    | Patched Switch systems (HAC-001) | "New" Switch (HAC-001(-01)  | Switch Lite (HDH-001)                                |
-|:-----------------|:--------------------------------------|:---------------------------------|:----------------------------|:-----------------------------------------------------|
-| 1.0.0            | Nereba or [**RCM**](rcm/index.md)     | **N/A**                          | **N/A**                     | **N/A**                                              |
-| 2.0.0 - 3.0.2    | Caffeine or [**RCM**](rcm/index.md)   | **N/A**                          | **N/A**                     | **N/A**                                              |
-| 4.0.0 - 4.1.0    | Caffeine or [**RCM**](rcm/index.md)   | Caffeine                         | **N/A**                     | **N/A**                                              |
-| 5.0.0 - 7.0.0    | [**RCM**](rcm/index.md)               | [**Modchip**](modchip/index.md) / Wait for CFW                 | **N/A**                     | **N/A**                |
-| 7.0.1            | [**RCM**](rcm/index.md)               | [**Modchip**](modchip/index.md) (no software exploit)          | [**Modchip**](modchip/index.md) (no software exploit)| **N/A**  |
-| 8.0.1            | [**RCM**](rcm/index.md)               | [**Modchip**](modchip/index.md) (no software exploit)          | [**Modchip**](modchip/index.md) (no software exploit)| [**Modchip**](modchip/index.md) (no software exploit)|
-| 8.1.0 and up     | [**RCM**](rcm/index.md)               | [**Modchip**](modchip/index.md) (no software exploit)          | [**Modchip**](modchip/index.md) (no software exploit)| [**Modchip**](modchip/index.md) (no software exploit)|
+| Версия прошивки  | Уязвимые Switch (HAC-001)             | Пропатченные Switch (HAC-001)    | "Новые" Switch (HAC-001(-01)   | Switch Lite (HDH-001)          |
+|:-----------------|:--------------------------------------|:---------------------------------|:-------------------------------|:-------------------------------|
+| 1.0.0            | Nereba или [**RCM**](rcm/index.md)     | **N/A**                         | **N/A**                        | **N/A**                        |
+| 2.0.0 - 3.0.2    | Caffeine или [**RCM**](rcm/index.md)   | **N/A**                         | **N/A**                        | **N/A**                        |
+| 4.0.0 - 4.1.0    | Caffeine или [**RCM**](rcm/index.md)   | Caffeine                        | **N/A**                        | **N/A**                        |
+| 5.0.0 - 7.0.0    | [**RCM**](rcm/index.md)                | [**Модчип**](modchip/index.md)  | **N/A**                        | **N/A**                        |
+| 7.0.1            | [**RCM**](rcm/index.md)                | [**Модчип**](modchip/index.md)  | [**Модчип**](modchip/index.md) | **N/A**                        |
+| 8.0.1            | [**RCM**](rcm/index.md)                | [**Модчип**](modchip/index.md)  | [**Модчип**](modchip/index.md) | [**Модчип**](modchip/index.md) |
+| 8.1.0 и выше     | [**RCM**](rcm/index.md)                | [**Модчип**](modchip/index.md)  | [**Модчип**](modchip/index.md) | [**Модчип**](modchip/index.md) |
 
-!!! note "About Mariko Switch models"
-    All Mariko (V2) Switch models (`HAC-001(-01)`, `HDH-001`, `HEG-001`) are currently unhackable via software. If **Modchip** is listed as a method for your console model, then that means the device is currently unhackable without a hardware modification (modchip). If there are theoretical exploits that may lead to CFW or homebrew for that device, you also have the choice to "wait" for their release. These exploits may (and will likely) never launch and there is **NO ETA**, so what you choose to do is up to you. This guide assumes you have a functional modchip installation if you *do* have a Patched console.
+!!! note "О моделях Switch Mariko"
+    Все модели Switch Mariko (V2) (`HAC-001(-01)`, `HDH-001`, `HEG-001`) в настоящее время невозможно взломать програмно. Если **Модчип** указан как метод для вашей модели консоли, это означает, что устройство в настоящее время невозможно взломать без аппаратной модификации (модчипа). Если существуют теоретические эксплойты, которые могут привести к установке CFW или Homebrew для этого устройства, вы также можете "подождать" их выхода. Эти эксплойты могут (и, скорее всего, никогда) не появиться, и **нет точной даты** их выхода, поэтому решение остается за вами. В этом руководстве предполагается, что у вас установлен модчип, если у вас патченная консоль.
 
 
-### **Console Preparation**
+### **Подготовка консоли**
 
-#### Important
+#### Важно
 
-Before setting up for homebrew, install at least one eShop title to utilize "title takeover", an Atmosphère feature that allows homebrew to use more resources than they would normally have. Try downloading a free game (like [Fallout Shelter](https://www.nintendo.com/games/detail/fallout-shelter-switch/)), application (like [YouTube](https://www.nintendo.com/games/detail/youtube-switch/)), or a game demo (like [10 Second Run RETURNS](https://www.nintendo.com/games/detail/10-second-run-returns-switch)). Running the Homebrew Menu via a game cartridge is an alternative, but requires the game to be inserted any time you want to launch the Homebrew Menu. Generally, title takeover doesn't permanently alter the donor game or application. <br> Once you obtain any bootable title, you are prepared to continue on with the guide.
+Перед тем как погрузиться в мир Homebrew, установите хотя бы одну игру из eShop, чтобы использовать функцию "title takeover" от Atmosphère, которая позволяет Homebrew использовать больше ресурсов, чем обычно. Попробуйте загрузить бесплатную игру (например, [Fallout Shelter](https://www.nintendo.com/games/detail/fallout-shelter-switch/)), приложение (например, [YouTube](https://www.nintendo.com/games/detail/youtube-switch/)) или демо-версию игры (например, [10 Second Run RETURNS](https://www.nintendo.com/games/detail/10-second-run-returns-switch)). Запуск Homebrew Menu через картридж с игрой также является альтернативой, но требует наличия картриджа каждый раз, когда вы хотите запустить Homebrew Menu. Как правило, "title takeover" не изменяет навсегда донорскую игру или приложение. <br> После того как вы заимеете любой из этих вариантов, вы готовы продолжить следовать руководству.
 
 -----
 
 <div class="grid cards" markdown>
 
--   #### If your Switch is not patched, click the button below to follow the RCM path of the guide.
+-   #### Если ваш Switch не пропатчен, нажмите кнопку ниже, чтобы следовать по пути RCM в руководстве.
 
-    [Continue to RCM :material-arrow-right:](rcm/index.md){ .md-button .md-button--primary }
+    [Перейти к RCM :material-arrow-right:](rcm/index.md){ .md-button .md-button--primary }
 
--   #### If your Switch is patched and modchipped, click the button below to follow the Modchip path of the guide.
+-   #### Если ваш Switch пропатчен и модифицирован модчипом, нажмите кнопку ниже, чтобы следовать по пути Модчип'а в руководстве.
 
-    [Continue to Modchip introduction :material-arrow-right:](modchip/index.md){ .md-button .md-button--primary }
+    [Перейти к Модчип'ам :material-arrow-right:](modchip/index.md){ .md-button .md-button--primary }
 
 </div>
 
-??? "Frequently Asked Questions about this page"
+??? "Часто задаваемые вопросы тех, кто остановился на этой странице:"
 
-      - **Q: How reliable is the crowdsourced list of vulnerable serial numbers, and what if my serial number is not listed?** <br>
-          A: To our knowledge, there hasn't been a single console which has disproved the trends documented here. Unless your serial is potentially patched, you can be certain that the table is accurate to reality.
-      - **Q: Why is it essential to install at least one eShop title before setting up homebrew, and what is "title takeover"?** <br>
-          A: By default, the homebrew menu and its apps inherit the resources of the Album applet. Applets don't have as many system resources as full apps, and as such have inconsistent behavior when used for homebrew purposes. Title takeover ensures the best performance, and is required for some homebrew.
-      - **Q: Why is the "New" Switch (HAC-001(-01) not vulnerable to *déjà vu*, and what are the implications for Switch Lite (HDH-001) and OLED Switch consoles?** <br>
-          A: Despite being exploitable via software, *déjà vu* is actually a bootROM exploit that isn't present in the new bootROM of the Tegra X1+.
+      - **Q: Насколько надежен список уязвимых серийных номеров, составленный на основе краудсорсинга, и что делать, если мой серийный номер не указан?** <br>
+          A: Насколько нам известно, не было зафиксировано ни одного случая, который бы опроверг тенденции, документированные в этом списке. Если ваш серийный номер не попадает в категорию потенциально пропатченных, можно быть уверенным, что таблица верна.
+      - **Q: Почему важно установить хотя бы одно приложение из eShop перед настройкой homebrew и что такое "title takeover"?** <br>
+          A: По умолчанию меню homebrew и его приложения наследуют ресурсы приложения "Альбом". Апплеты не имеют столько ресурсов системы, сколько полноценные приложения, и поэтому их поведение при использовании для целей homebrew может быть непредсказуемым. Title takeover обеспечивает лучшую производительность и требуется для некоторых приложений homebrew.
+      - **Q: Почему "новый" Switch (HAC-001(-01)) не уязвим к *déjà vu*, и какие последствия это имеет для Switch Lite (HDH-001) и Switch OLED (HEG-001)?** <br>
+          A: Несмотря на то что *déjà vu* является уязвимостью, доступной с помощью ПО, это эксплойт bootROM, которого нет в новом bootROM чипа Tegra X1+.
