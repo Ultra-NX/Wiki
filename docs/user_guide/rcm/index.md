@@ -1,17 +1,20 @@
 # RCM
 
-### **About RCM**
+### **Об RCM**
 
-RCM (short for **R**e**C**overy **M**ode) is a pre-boot mode for Tegra processors that allows NVIDIA and Nintendo to send the Switch tiny programs for various internal uses. On unpatched consoles, once a payload was sent,  then quickly copied into the memory buffer behind the stack, it overflowed the memory buffer into the stack. This leads to a  "smashed stack" and unsigned code execution within a bootROM context, giving us access to nearly everything on the console. We use it here to launch Atmosphère.
-
-If you choose the emuMMC path introduced later in the guide, it'll be important to disable the [Automatic Save Data Cloud](https://en-americas-support.nintendo.com/app/answers/detail/a_id/41209) function beforehand, as well as making sure [the Switch is set as the primary console](https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account). <br>
+RCM (аббревиатура **R**e**C**overy **M**ode) — это режим предзагрузки для процессоров Tegra, который позволяет NVIDIA и Nintendo отправлять Nintendo Switch небольшие программы для различных внутренних нужд. На прошиваемых консолях, после отправки payload'a, она быстро копировалась в буфер памяти за стеком, что вызывало переполнение буфера и приводило к нарушению структуры стека. Это позволяет выполнять неподписанный код в контексте bootROM, что даёт доступ практически ко всему на консоли. Мы используем его здесь для запуска Atmosphère.
 
 
-[Continue to Entering RCM :material-arrow-right:](entering_rcm.md){ .md-button .md-button--primary }
+Если вы выберете путь emuMMC, который будет представлен позже в руководстве, важно отключить функцию [Автоматическое сохранение данных в облаке](https://en-americas-support.nintendo.com/app/answers/detail/a_id/41209) заранее, а также убедиться, что [Switch установлен в качестве основной консоли](https://en-americas-support.nintendo.com/app/answers/detail/a_id/22453/~/how-to-change-the-primary-console-for-your-nintendo-account).
+<br>
 
-??? "Frequently Asked Questions about this page"
-      - **Q: How does the RCM exploit work on unpatched Nintendo Switch consoles?** <br>
-      A: For more information, please reference [this page](../../fusee_gelee.md). There is also a Medium article about it [here](https://medium.com/@SoyLatteChen/inside-fus%C3%A9e-gel%C3%A9e-the-unpatchable-entrypoint-for-nintendo-switch-hacking-26f42026ada0).
 
-      - **Q: Does RCM work on patched consoles?** <br>
-      A: Yes. RCM is an intended mode for all Switch consoles. The exploit is the unintended effect that only some consoles can use. Consoles with the Tegra X1+ have a completely new bootROM with no evidence of the exploit, while "patched" V1 systems have an IROM patch to the bootROM applied that effectively removes fusee-gelee as well.
+
+[Перейти ко входу в RCM :material-arrow-right:](entering_rcm.md){ .md-button .md-button--primary }
+
+??? "Часто задаваемые вопросы об этой странице"
+      - **В: Как работает эксплойт RCM на прошиваемых консолях Nintendo Switch?** <br>
+      О: Для получения дополнительной информации, пожалуйста, обратитесь к [этой странице](../../fusee_gelee.md). Также есть статья на Medium об этом [здесь](https://medium.com/@SoyLatteChen/inside-fus%C3%A9e-gel%C3%A9e-the-unpatchable-entrypoint-for-nintendo-switch-hacking-26f42026ada0).
+
+      - **В: Работает ли RCM на непрошваемых консолях?** <br>
+      О: Да. RCM является предусмотренным режимом для всех консолей Switch. Эксплойт является непреднамеренным эффектом, который могут использовать только некоторые консоли. Консоли с Tegra X1+ имеют совершенно новый bootROM, в котором нет никаких следов эксплойта, тогда как "непрошиваемые" системы V1 имеют IROM патч к bootROM, который эффективно удаляет fusee-gelee.
