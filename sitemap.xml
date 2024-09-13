@@ -21,11 +21,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ultra-nx.github.io/Wiki/glossary/</loc>
-         <lastmod>2024-09-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://ultra-nx.github.io/Wiki/extras/</loc>
          <lastmod>2024-09-13</lastmod>
          <changefreq>daily</changefreq>
@@ -167,6 +162,11 @@
     </url>
     <url>
          <loc>https://ultra-nx.github.io/Wiki/homebrew/tesla-menu/</loc>
+         <lastmod>2024-09-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ultra-nx.github.io/Wiki/switch_hack_guide/glossary/</loc>
          <lastmod>2024-09-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
