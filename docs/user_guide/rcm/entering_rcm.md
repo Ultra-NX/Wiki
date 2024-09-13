@@ -1,132 +1,132 @@
-### **Entering RCM**
+### **Вход в RCM**
 
-The Switch's Tegra X1 processor has a recovery mode referred to shorthand as RCM, intended to be useless for end-users. Fortunately, due to the fusee-gelee vulnerability, this special mode acts as our gateway into CFW.
+Процессор Switch Tegra X1 оснащен режимом восстановления, который сокращенно называется RCM и предназначен для использования конечными пользователями. К счастью, из-за уязвимости fusee-gelee этот специальный режим служит нашим шлюзом в CFW.
 
-Methods to enter RCM can require nothing more than household items (not recommended) to affordable tools ($5-10) available on platforms like AliExpress and Amazon. Avoid the "metal bridge" or "paperclip method" as it can damage your console. You can also consider 3D printing necessary tools.
+Для входа в RCM могут потребоваться только предметы домашнего обихода (не рекомендуется) или недорогие инструменты (100-500 рублей), доступные на таких платформах, как AliExpress, ozon и другие. Избегайте использования "металлического моста" или "скрепки", так как это может повредить вашу консоль. Вы также можете воспользоваться необходимыми инструментами для 3D-печати.
 
-!!! danger "Patched Switch"
-    Note that patched units **can** enter RCM, but it is not possible to send a payload on those systems. Also note that RCM is a different recovery mode than the one accessed by holding Volume Up, Volume Down and powering on your console.
+!!! внимание "Непрошивайка"
+    Обратите внимание, что исправленные устройства ** могут ** входить в RCM, но отправить полезную информацию в этих системах невозможно. Также обратите внимание, что RCM - это другой режим восстановления, отличный от того, к которому можно получить доступ, удерживая нажатой клавишу Увеличения, затем уменьшения громкости и включения консоли.
 
-!!! note "Information about the methods below"
-    The order of methods on this page is in the order of ease. The easiest method to immediately accomplish is the `RCM Jig` method. The most advanced/difficult methods are mentioned in the other tabs and should not be attempted by most people as they require voiding your warranty and/or soldering.
-    **USING A PAPERCLIP OR TIN FOIL CAN/WILL DAMAGE YOUR CONSOLE, DO NOT DO THIS!**
+!!! обратите внимание на "Информацию о методах, приведенных ниже"
+    На этой странице методы приведены в порядке их простоты. Самый простой метод, который можно сразу же применить, - это метод "RCM-Jig". Наиболее продвинутые/сложные методы указаны в других вкладках, и большинству людей не следует их применять, поскольку они требуют аннулирования гарантии и/или пайки.
+    **НЕ ДЕЛАЙТЕ ЭТОГО, ЕСЛИ ИСПОЛЬЗУЕТЕ СКРЕПКУ ДЛЯ БУМАГИ ИЛИ ФОЛЬГУ, ЭТО МОЖЕТ ПОВРЕДИТЬ ВАШУ КОНСОЛЬ!**
 
 -----
 
-#### **Instructions:**
+#### **Инструкции:**
 
-1. Power off the Switch and short the pins on the right Joy-Con rail using one of the methods listed below.
-2. While holding the `Volume Up` button, press the `Power` button once while holding `Volume Up`.
-    - If your Switch displays the Nintendo logo and boots normally (or the screen was on and goes black), you didn't successfully enter RCM and should try again. Otherwise, if your console still has a black screen (even after tapping the power button again), your Switch is in RCM and you can let go of the `Volume Up` button.
-3. Once your Switch is in RCM, remove the RCM jig (if applicable) and continue with the next page of the guide by clicking on the button at the bottom of this page.
+1. Выключите питание и закоротите контакты на правой рельсе джойкона, используя один из перечисленных ниже способов.
+2. Удерживая кнопку "Увеличить громкость", нажмите кнопку "Питание" один раз, удерживая "Увеличить громкость`.
+    - Если на вашей консоли отображается логотип Nintendo и она загружается нормально (или экран был включен и затемнился), вам не удалось успешно войти в RCM и следует повторить попытку. В противном случае, если на вашей консоли по-прежнему отображается черный экран (даже после повторного нажатия кнопки включения), ваш switch находится в режиме RCM, и вы можете отпустить кнопку "Увеличить громкость".
+3. Как только switch будет установлен в положение RCM, снимите фиксатор RCM (если применимо) и перейдите к следующей странице руководства, нажав на кнопку внизу этой страницы.
 
 -----
 
 === "RCM Jig"
 
-    Some jig designs use paperclips, inheriting the same risks as the "metal bridge" / "paperclip method" and should not be done.
+    В некоторых конструкциях зажимов используются скрепки, что сопряжено с теми же рисками, что и при использовании "металлического моста" / "метода скрепок", и этого делать не следует.
 
-    Once you have successfully entered RCM, you can take the jig out of the Joy-Con rail.
+    После успешного ввода RCM вы можете вынуть зажимы из рельсы джойкона.
 
-    This method is similar to the "metal bridge" / "paperclip method", but is more reliable and safer in many cases. Jigs hold a wire in place so the correct pins (10 and a ground) are reliably shorted.
+    Этот метод аналогичен методу "металлического моста" / "скрепки", но во многих случаях является более надежным и безопасным. Зажимы удерживают провод на месте, поэтому правильные контакты (10 и заземление) надежно замыкаются.
 
-    #### The RCM jig pictured below is the model we recommend:
+    #### Мы рекомендуем модель зажимного устройства RCM, представленную на фото ниже:
 
-    ![recommended_jig](../rcm/img/recommended_jig.jpg){ width="250"}
+    ![](../rcm/img/recommended_jig.jpg){ width="250"}
 
     -----
     
-    ??? note "Making your own RCM Jig"
-        If you plan on making your own jig, the second image lays out the right Joy-Con pad out on the console. Make sure your jig NEVER touches pin 4. Pin 4 provides 5 volts of power to the Joy-Con, and can permanently damage the rail or console if shorted.
-        ![switchjigs.com jigs](../rcm/img/entering_rcm_jig.jpg){ width="600"}
+    ??? обратите внимание на "Создание собственного зажимного устройства RCM"
+        Если вы планируете создавать свое собственное зажимное устройство, на втором рисунке показана правильная панель Joy-Con на консоли. Следите за тем, чтобы зажимное устройство НЕ касалось контакта 4. Вывод 4 подает на Joy-Con напряжение в 5 вольт и при коротком замыкании может привести к необратимому повреждению направляющей или консоли.
+        ![switchjigs.com зажимы](../rcm/img/entering_rcm_jig.jpg){ ширина="600"}
 
-        ![Console Numbered Pads Refrence](../rcm/img/entering_rcm_pads_numbered.jpg){ width="600"}
-
-
-=== "Soldered Joy-Con Pads - Physical RCM Button"
-
-    This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.
-
-    This method comes to us from the mind of `pbanj` on Discord. All pictures of this method in action were provided by him, with some supplementary images provided by `eip618` on Discord.
-
-    The goal of this method is to open the right Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however you will be soldering wires to pins 7 and 10 (shown below) and wiring them to the "rail release button" at the top back of the right Joy-Con.
-
-    #### JoyCon pad pinout:
-    ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
-
-    In order to start this method you will want to take two lengths of wire, and wrap one end of each into a small circle.
-
-    #### Wire reference:
-    ![wire reference](../rcm/img/entering_rcm_button_1.jpg){ width="675"}
-
-	You will then want to take the circular end of one of the wires and add a small amount of solder, keeping it mostly flat (ONLY DO THIS TO ONE OF THE WIRES!). You will then glue this wire down to the below point on the rail release button. Make sure glue doesn't cover the top of the solder/wire as it will act as a contact point. Also, ensure that you leave enough space for the button to function correctly. Try pushing the button from the outside and observing its travel path so that you can see where and how you should safely glue the solder glob.
-
-    #### Joy-Con button:
-    ![eip joycon button reference](../rcm/img/entering_rcm_button_5.jpg){ width="650"}
-
-    #### Joy-Con button:
-    ![pbanj joycon button reference](../rcm/img/entering_rcm_button_3.jpg){ width="650"}
-
-    The first wire should now be in place as seen by the green circle below. The second wire does not need any solder, instead you will hold it in place using the screw as shown by the red circle in the picture below.
-
-    #### Joy-Con button in place:
-    ![pbanj joycon button reference](../rcm/img/entering_rcm_button_6.jpg){ width="650"}
-
-    Pressing the Joy-Con button in you should now notice the solder point you created making contact with the piece of metal held in by the screw. Once you have these elements in place you want to connect one wire to pad 7 and the other to pad 10 (it doesn't matter which is which). After that you have successfully created an RCM button on your Joycon. You will now need to hold down the Joycon release button when attempting to boot RCM.
-
-    #### Successful installation:
-    ![pbanj joycon button reference](../rcm/img/entering_rcm_button_2.jpg){ width="650"}
+        ![Ссылка на пронумерованные панели консоли](../rcm/img/entering_rcm_pads_numbered.jpg){ width="600"}
 
 
+=== "Запаянные накладки Joy-Con - Физическая кнопка RCM"
 
-=== "Soldered Joy-Con Pads - 7 & 10"
+    Этот метод требует вскрытия правой части Joy-Con, что аннулирует гарантию на него. Не для слабонервных.
 
-    This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.
+    Этот метод пришел к нам из `pbanj` на Discord. Все фотографии этого метода в действии были предоставлены им самим, а некоторые дополнительные изображения были предоставлены `eip618` на Discord.
 
-    The goal of this method is to open the right handed Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however the goal is to solder pins 7 and 10 (shown below) together with a surface-mount `0805 10k` resistor. Apart from using a physical switch/button, this is currently considered the safest method that involves soldering to pads.
+    Цель этого метода - правильно открыть Joy-Con до такой степени, чтобы вы могли легко дотянуться до контактных площадок. Этот метод аналогичен предыдущему, однако вам придется припаять провода к контактам 7 и 10 (показано ниже) и подключить их к "кнопке разблокировки направляющей" в верхней части задней панели правого Joy-Con.
 
-    #### JoyCon pad pinout:
-    ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
+    #### Распиновка JoyCon pad:
+    ![ссылка на joycon numbered pads](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
 
-    Here is an example from `stuck_pixel` from the ReSwitched Discord server.
+    Для того, чтобы начать использовать этот метод, вам понадобится взять два отрезка проволоки и обернуть один конец каждого в небольшой круг.
 
-    #### Successful installation:
-    ![stuckpixel solder example](../rcm/img/entering_rcm_solder_710_stuckpixel.jpg){ width="650"}
+    #### Ссылка на проволоку:
+    ![ссылка на провод](../rcm/img/entering_rcm_button_1.jpg){ width="675"}
+
+	Затем вам нужно будет взять круглый конец одного из проводов и добавить небольшое количество припоя, стараясь, чтобы он был в основном плоским (ДЕЛАЙТЕ ЭТО ТОЛЬКО С ОДНИМ из ПРОВОДОВ!). Затем вы приклейте этот провод к нижней точке на кнопке разблокировки направляющей. Убедитесь, что клей не покрывает верхнюю часть припоя / провода, так как он будет выступать в качестве контактной точки. Кроме того, убедитесь, что вы оставили достаточно места для правильной работы кнопки. Попробуйте нажать на кнопку снаружи и понаблюдать за траекторией ее перемещения, чтобы понять, куда и как следует надежно приклеить шарик припоя.
+
+    #### Кнопка Joy-Con:
+    ![ссылка на кнопку eip joycon](../rcm/img/entering_rcm_button_5.jpg){ width="650"}
+
+    #### Кнопка Joy-Con:
+    ![ссылка на кнопку pbanj joycon](../rcm/img/entering_rcm_button_3.jpg){ width="650"}
+
+    Теперь первый провод должен быть на месте, как показано зеленым кружком ниже. Второй провод не нуждается в пайке, вместо этого вы закрепите его с помощью винта, как показано красным кружком на картинке ниже.
+
+    #### Кнопка Joy-Con на месте:
+    ![ссылка на кнопку pbanj joycon](../rcm/img/entering_rcm_button_6.jpg){ width="650"}
+
+    Нажав кнопку Joy-Con, вы должны заметить, что точка припоя, которую вы создали, соприкасается с кусочком металла, удерживаемым винтом. Установив эти элементы, вы хотите подключить один провод к панели 7, а другой - к панели 10 (не имеет значения, какая из них какая). После этого вы успешно создали кнопку RCM на своем Joycon. Теперь вам нужно будет удерживать нажатой кнопку разблокировки Joycon при попытке загрузки RCM.
+
+    #### Успешная установка:
+    ![ссылка на кнопку pbanj joycon](../rcm/img/entering_rcm_button_2.jpg){ width="650"}
 
 
 
-=== "Soldered Joy-Con Pads - 9 & 10"
+=== "=== "Спаянные накладки JoyCon - 7 и 10"
 
-    This method will result in the right Joy-Con being seen as "detached" while physically connected to the Switch, so it will not be able to charge. This method may result in the Joy-Con being permanently detected as wireless if you update the Joy-Con firmware while this mod is installed. In the latter case, fixing this requires opening up the Joy-Con and reseating the battery. It is recommended to solder pads 7 and 10 together with a resistor instead.
+    Этот метод требует вскрытия правой части Joy-Con, что аннулирует гарантию. Не для слабонервных.
 
-    This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.
+    Цель этого метода - открыть джойкон правой рукой до такой степени, чтобы вы могли легко дотянуться до контактных площадок. Этот метод аналогичен предыдущему, однако цель состоит в том, чтобы спаять контакты 7 и 10 (показано ниже) вместе с резистором `0805 10k` для поверхностного монтажа. Помимо использования физического переключателя / кнопки, в настоящее время это считается самым безопасным методом, который предполагает пайку с контактными площадками.
 
-    The goal of this method is to open the right Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however the goal is to solder pads 9 and 10 (seen below) together. This can either be done using a small wire, or directly bridging the pads with solder.
+    #### Распиновка контактных площадок JoyCon:
+    ![![ссылка на joycon numbered pages](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
 
-    #### JoyCon pad pinout:
-    ![joycon numbered pads reference](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
+    Вот пример из stuck_pixel с подключенного сервера Discord.
 
-    Below is an example from `yami0666` from our Discord server.
-
-    #### Successful soldering job:
-    ![YyAoMmIi solder example](../rcm/img/entering_rcm_solder_910_yyaommii.jpg){ width="650" }
+    #### Успешная установка:
+    ![пример припоя stuckpixel](../rcm/img/entering_rcm_solder_710_stuckpixel.jpg){ width="650"}
 
 
-=== "Bent Joy-Con Pins (Not recommended)"
 
-    This method will result in the right Joy-Con being detected as in wireless mode while attached to the Switch, and this method may result in the Joy-Con being permanently detected as wireless if you update the Joy-Con firmware while this mod is installed. In the latter case, fixing this requires opening up the Joy-Con and reseating the battery.
+=== "Припаянные колодки Joy-Con - 9 и 10"
 
-    This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.
+    В результате этого метода правильный Joy-Con будет отображаться как "отсоединенный" при физическом подключении к консоли, поэтому он не сможет заряжаться. Этот метод может привести к тому, что Joy-Con будет постоянно распознаваться как беспроводной, если вы обновите прошивку Joy-Con во время установки этого мода. В последнем случае для устранения неполадок потребуется открыть Joy-Con и повторно установить батарею. Вместо этого рекомендуется припаять контактные площадки 7 и 10 вместе с резистором.
 
-    The goal of this method is to open the right handed Joy-Con to the point that you can reach the contact pads easily, and use a thin object such as a knife to gently bend pin 9 and 10 (shown below) slightly up and towards each other so they touch, shorting them.
+    Этот метод требует вскрытия правильного Joy-Con, что аннулирует гарантию на него. Не для слабонервных.
 
-    #### JoyCon pinout:
-    ![Joycon Pin Reference](../rcm/img/enterting_rcm_pins_numbered.jpg){ width="600"}
+    Цель этого метода - открыть правильный Joy-Con так, чтобы вы могли легко дотянуться до контактных площадок. Этот метод аналогичен предыдущему, однако его цель состоит в том, чтобы спаять контактные площадки 9 и 10 (см. ниже) вместе. Это можно сделать либо с помощью небольшой проволоки, либо непосредственно соединив контактные площадки припоем.
 
-    Here is an example from `sonlen` on our Discord server.
+    #### Распиновка контактной площадки JoyCon:
+    ![ссылка на пронумерованные подушечки joycon](../rcm/img/entering_rcm_solder_numbered.jpg){ width="600"}
 
-    #### Bent Joy-Con pins:
-    ![Sonlen's example](../rcm/img/entering_rcm_bent_pins.jpg){ width="650"}
+    Ниже приведен пример от `yami0666` с нашего сервера Discord.
+
+    #### Успешная работа по пайке:
+    ![Пример пайки YyAoMmIi](../rcm/img/entering_rcm_solder_910_yyaommii.jpg){ width="650" }
 
 
-[Continue to Sending a Payload :material-arrow-right:](sending_payload.md){ .md-button .md-button--primary }
+=== "Погнутые контакты Joy-Con (не рекомендуется)"
+
+    Этот метод приведет к тому, что нужный Joy-Con будет обнаружен как находящийся в беспроводном режиме при подключении к консоли, и этот метод может привести к тому, что Joy-Con будет постоянно обнаружен как беспроводной, если вы обновите встроенное ПО Joy-Con во время установки этого мода. В последнем случае для устранения неполадок необходимо вскрыть Joy-Con и установить батарею на место.
+
+    Для этого необходимо вскрыть ваш правый Joy-Con, что аннулирует гарантию на него. Это не для слабонервных.
+
+    Цель этого метода - открыть Joy-Con правой рукой до такой степени, чтобы вы могли легко дотянуться до контактных площадок, и с помощью тонкого предмета, такого как нож, аккуратно отогнуть контакты 9 и 10 (показаны ниже) немного вверх и навстречу друг другу, чтобы они соприкоснулись, закоротив их.
+
+    #### Распиновка JoyCon:
+    ![Ссылка на пин-код Joycon](../rcm/img/enterting_rcm_pins_numbered.jpg){ width="600"}
+
+    Вот пример из `sonlen` на нашем сервере Discord.
+
+    #### Изогнутые пины Joy-Con:
+    ![пример Сонлена](../rcm/img/entering_rcm_bent_pins.jpg){ width="650"}
+
+
+[Продолжение отправки payload :material-arrow-right:](sending_payload.md){ .md-button .md-button--primary }
