@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entering-rcm" class="md-skip">
+        <a href="#rcm" class="md-skip">
           Skip to content
         </a>
       
@@ -565,9 +565,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#entering-rcm" class="md-nav__link">
+  <a href="#rcm" class="md-nav__link">
     <span class="md-ellipsis">
-      Entering RCM
+      Вход в RCM
     </span>
   </a>
   
@@ -1653,98 +1653,98 @@
 
   <h1>Вход в RCM</h1>
 
-<h3 id="entering-rcm"><strong>Entering RCM</strong><a class="headerlink" href="#entering-rcm" title="Permanent link">&para;</a></h3>
-<p>The Switch's Tegra X1 processor has a recovery mode referred to shorthand as RCM, intended to be useless for end-users. Fortunately, due to the fusee-gelee vulnerability, this special mode acts as our gateway into CFW.</p>
-<p>Methods to enter RCM can require nothing more than household items (not recommended) to affordable tools ($5-10) available on platforms like AliExpress and Amazon. Avoid the "metal bridge" or "paperclip method" as it can damage your console. You can also consider 3D printing necessary tools.</p>
+<h3 id="rcm"><strong>Вход в RCM</strong><a class="headerlink" href="#rcm" title="Permanent link">&para;</a></h3>
+<p>Процессор Tegra X1 в консоли Nintendo Switch имеет Recovery mode (режим восстановления), который сокращённо называется RCM и он не предназначался для использования конечными пользователями. К счастью, благодаря уязвимости fusee-gelee, этот специальный режим, послужит нам для запуска CFW.</p>
+<p>Методы входа в RCM могут варьироваться от использования подручных средств, (что не рекомендуется) до недорогих инструментов стоимостью 100-300 рублей, которые можно приобрести на таких площадках, как AliExpress и Ozon. Избегайте использования кусочка фольги или скрепки, так как они могут повредить вашу консоль. Вы также можете рассмотреть возможность напечатать на 3D принтере необходимые инструменты.</p>
 <div class="admonition danger">
-<p class="admonition-title">Patched Switch</p>
-<p>Note that patched units <strong>can</strong> enter RCM, but it is not possible to send a payload on those systems. Also note that RCM is a different recovery mode than the one accessed by holding Volume Up, Volume Down and powering on your console.</p>
+<p class="admonition-title">Пропатченные консоли</p>
+<p>Обратите внимание, что пропатченные консоли <strong>могут</strong> войти в RCM, но на этих системах невозможно отправить payload. Также имейте в виду, что RCM — это другой режим восстановления, чем тот, к которому можно получить доступ, удерживая кнопки увеличения громкости, уменьшения громкости и питания консоли.</p>
 </div>
 <div class="admonition note">
-<p class="admonition-title">Information about the methods below</p>
-<p>The order of methods on this page is in the order of ease. The easiest method to immediately accomplish is the <code>RCM Jig</code> method. The most advanced/difficult methods are mentioned in the other tabs and should not be attempted by most people as they require voiding your warranty and/or soldering.
-<strong>USING A PAPERCLIP OR TIN FOIL CAN/WILL DAMAGE YOUR CONSOLE, DO NOT DO THIS!</strong></p>
+<p class="admonition-title">Информация о методах ниже</p>
+<p>Порядок методов на этой странице располагается по степени удобства. Самый простой метод, который можно сразу выполнить, — это метод <code>RCM Jig</code>. Самые сложные и продвинутые методы упоминаются в других вкладках и не должны использоваться большинством людей, так как они требуют аннулирования гарантии и/или пайки.
+<strong>ИСПОЛЬЗОВАНИЕ СКРЕПКИ ИЛИ ФОЛЬГИ МОЖЕТ/БУДЕТ ПОВРЕЖДАТЬ ВАШУ КОНСОЛЬ, НЕ ДЕЛАЙТЕ ЭТО!</strong></p>
 </div>
 <hr />
-<h4 id="instructions"><strong>Instructions:</strong><a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h4>
+<h4 id="_1"><strong>Инструкции:</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Power off the Switch and short the pins on the right Joy-Con rail using one of the methods listed below.</li>
-<li>While holding the <code>Volume Up</code> button, press the <code>Power</code> button once while holding <code>Volume Up</code>.<ul>
-<li>If your Switch displays the Nintendo logo and boots normally (or the screen was on and goes black), you didn't successfully enter RCM and should try again. Otherwise, if your console still has a black screen (even after tapping the power button again), your Switch is in RCM and you can let go of the <code>Volume Up</code> button.</li>
+<li>Выключите Switch и замкните контакты на правой рельсе Joy-Con, используя один из методов, перечисленных ниже.</li>
+<li>Удерживая кнопку <code>Увеличение громкости</code>, нажмите кнопку <code>Включение</code> один раз, продолжая удерживать <code>Увеличение громкости</code>.<ul>
+<li>Если на вашем Switch появляется логотип Nintendo и он загружается нормально (или экран был включен и стал чёрным), вы не вошли в RCM и должны попробовать снова. В противном случае, если ваша консоль всё ещё показывает чёрный экран (даже после повторного нажатия кнопки включения), ваш Switch находится в RCM, и вы можете отпустить кнопку <code>Увеличение громкости</code>.</li>
 </ul>
 </li>
-<li>Once your Switch is in RCM, remove the RCM jig (if applicable) and continue with the next page of the guide by clicking on the button at the bottom of this page.</li>
+<li>Как только ваш Switch находится в RCM, уберите RCM jig (если применимо) и продолжайте со следующей страницы руководства, нажав на кнопку внизу этой страницы.</li>
 </ol>
 <hr />
-<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">RCM Jig</label><label for="__tabbed_1_2">Soldered Joy-Con Pads - Physical RCM Button</label><label for="__tabbed_1_3">Soldered Joy-Con Pads - 7 &amp; 10</label><label for="__tabbed_1_4">Soldered Joy-Con Pads - 9 &amp; 10</label><label for="__tabbed_1_5">Bent Joy-Con Pins (Not recommended)</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">RCM Jig</label><label for="__tabbed_1_2">Припаянные контакты Joy-Con — физическая кнопка RCM</label><label for="__tabbed_1_3">Припаянные контакты Joy-Con — 7 и 10</label><label for="__tabbed_1_4">Припаянные контакты Joy-Con — 9 и 10</label><label for="__tabbed_1_5">Изогнутые контакты Joy-Con (не рекомендуется)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Some jig designs use paperclips, inheriting the same risks as the "metal bridge" / "paperclip method" and should not be done.</p>
-<p>Once you have successfully entered RCM, you can take the jig out of the Joy-Con rail.</p>
-<p>This method is similar to the "metal bridge" / "paperclip method", but is more reliable and safer in many cases. Jigs hold a wire in place so the correct pins (10 and a ground) are reliably shorted.</p>
-<h4 id="the-rcm-jig-pictured-below-is-the-model-we-recommend">The RCM jig pictured below is the model we recommend:<a class="headerlink" href="#the-rcm-jig-pictured-below-is-the-model-we-recommend" title="Permanent link">&para;</a></h4>
+<p>Некоторые конструкции jig используют скрепки, унаследовав те же риски, что и использование кусочка фольги / скрепки, и их не следует использовать.</p>
+<p>Как только вы успешно вошли в RCM, вы можете убрать jig из рельсы Joy-Con.</p>
+<p>Этот метод похож на "кусочек фольги" / "метод скрепки", но в большинстве случаев он более надёжен и безопасен. Jigs удерживают провод на месте, так что правильные контакты (10 и земля) надёжно замыкаются.</p>
+<h4 id="rcm-jig">RCM jig, изображённый ниже, является моделью, которую мы рекомендуем:<a class="headerlink" href="#rcm-jig" title="Permanent link">&para;</a></h4>
 <p><img alt="recommended_jig" src="../img/recommended_jig.jpg" width="250" /></p>
 <hr />
 <details class="note">
-<summary>Making your own RCM Jig</summary>
-<p>If you plan on making your own jig, the second image lays out the right Joy-Con pad out on the console. Make sure your jig NEVER touches pin 4. Pin 4 provides 5 volts of power to the Joy-Con, and can permanently damage the rail or console if shorted.
-<img alt="switchjigs.com jigs" src="../img/entering_rcm_jig.jpg" width="600" /></p>
-<p><img alt="Console Numbered Pads Refrence" src="../img/entering_rcm_pads_numbered.jpg" width="600" /></p>
+<summary>Создание собственного RCM Jig</summary>
+<p>Если вы планируете создать свой собственный jig, на втором изображении показана правильная раскладка правой рельсы Joy-Con на консоли. Убедитесь, что ваш jig НИКОГДА не касается контакта 4. Контакт 4 подаёт 5 вольт питания на Joy-Con и может навсегда повредить рельсу или консоль, если будет замкнут.</p>
+<p><img alt="switchjigs.com jigs" src="../img/entering_rcm_jig.jpg" width="600" /></p>
+<p><img alt="Console Numbered Pads Reference" src="../img/entering_rcm_pads_numbered.jpg" width="600" /></p>
 </details>
 </div>
 <div class="tabbed-block">
-<p>This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.</p>
-<p>This method comes to us from the mind of <code>pbanj</code> on Discord. All pictures of this method in action were provided by him, with some supplementary images provided by <code>eip618</code> on Discord.</p>
-<p>The goal of this method is to open the right Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however you will be soldering wires to pins 7 and 10 (shown below) and wiring them to the "rail release button" at the top back of the right Joy-Con.</p>
-<h4 id="joycon-pad-pinout">JoyCon pad pinout:<a class="headerlink" href="#joycon-pad-pinout" title="Permanent link">&para;</a></h4>
-<p><img alt="joycon numbered pads reference" src="../img/entering_rcm_solder_numbered.jpg" width="600" /></p>
-<p>In order to start this method you will want to take two lengths of wire, and wrap one end of each into a small circle.</p>
-<h4 id="wire-reference">Wire reference:<a class="headerlink" href="#wire-reference" title="Permanent link">&para;</a></h4>
-<p><img alt="wire reference" src="../img/entering_rcm_button_1.jpg" width="675" /></p>
-<p>You will then want to take the circular end of one of the wires and add a small amount of solder, keeping it mostly flat (ONLY DO THIS TO ONE OF THE WIRES!). You will then glue this wire down to the below point on the rail release button. Make sure glue doesn't cover the top of the solder/wire as it will act as a contact point. Also, ensure that you leave enough space for the button to function correctly. Try pushing the button from the outside and observing its travel path so that you can see where and how you should safely glue the solder glob.</p>
-<h4 id="joy-con-button">Joy-Con button:<a class="headerlink" href="#joy-con-button" title="Permanent link">&para;</a></h4>
-<p><img alt="eip joycon button reference" src="../img/entering_rcm_button_5.jpg" width="650" /></p>
-<h4 id="joy-con-button_1">Joy-Con button:<a class="headerlink" href="#joy-con-button_1" title="Permanent link">&para;</a></h4>
-<p><img alt="pbanj joycon button reference" src="../img/entering_rcm_button_3.jpg" width="650" /></p>
-<p>The first wire should now be in place as seen by the green circle below. The second wire does not need any solder, instead you will hold it in place using the screw as shown by the red circle in the picture below.</p>
-<h4 id="joy-con-button-in-place">Joy-Con button in place:<a class="headerlink" href="#joy-con-button-in-place" title="Permanent link">&para;</a></h4>
-<p><img alt="pbanj joycon button reference" src="../img/entering_rcm_button_6.jpg" width="650" /></p>
-<p>Pressing the Joy-Con button in you should now notice the solder point you created making contact with the piece of metal held in by the screw. Once you have these elements in place you want to connect one wire to pad 7 and the other to pad 10 (it doesn't matter which is which). After that you have successfully created an RCM button on your Joycon. You will now need to hold down the Joycon release button when attempting to boot RCM.</p>
-<h4 id="successful-installation">Successful installation:<a class="headerlink" href="#successful-installation" title="Permanent link">&para;</a></h4>
-<p><img alt="pbanj joycon button reference" src="../img/entering_rcm_button_2.jpg" width="650" /></p>
+<p>Этот метод требует вскрытия правого Joy-Con, что аннулирует его гарантию. Не для слабонервных.</p>
+<p>Этот метод предложен пользователем <code>pbanj</code> в Discord. Все фотографии, демонстрирующие выполнение этого метода, были предоставлены им, с дополнительными изображениями от <code>eip618</code> на Discord.</p>
+<p>Цель этого метода — открыть правый Joy-Con настолько, чтобы можно было легко добраться до контактных площадок. Это похоже на предыдущий метод, однако здесь вы будете припаивать провода к контактам 7 и 10 (показано ниже) и подключать их к кнопке "освобождения рельсы" на задней верхней части правого Joy-Con.</p>
+<h4 id="joy-con">Контактные площадки Joy-Con:<a class="headerlink" href="#joy-con" title="Permanent link">&para;</a></h4>
+<p><img alt="ссылка на нумерацию контактов Joy-Con" src="../img/entering_rcm_solder_numbered.jpg" width="600" /></p>
+<p>Чтобы начать этот метод, вам понадобятся два куска провода, каждый из которых нужно обернуть в небольшое кольцо с одного конца.</p>
+<h4 id="_2">Ссылка на провода:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<p><img alt="ссылка на провода" src="../img/entering_rcm_button_1.jpg" width="675" /></p>
+<p>Затем вам нужно будет взять кольцевой конец одного из проводов и добавить небольшое количество припоя, оставив его в основном плоским (ДЕЛАЙТЕ ЭТО ТОЛЬКО С ОДНИМ ПРОВОДОМ!). Затем приклейте этот провод к точке на кнопке освобождения рельсы, показанной ниже. Убедитесь, что клей не покрывает верхнюю часть припоя/провода, так как это будет точка контакта. Также убедитесь, что оставлено достаточно места для правильной работы кнопки. Попробуйте нажать на кнопку снаружи и наблюдайте её ход, чтобы понять, где и как безопасно приклеить припой.</p>
+<h4 id="joy-con_1">Кнопка Joy-Con:<a class="headerlink" href="#joy-con_1" title="Permanent link">&para;</a></h4>
+<p><img alt="ссылка на кнопку Joy-Con от eip" src="../img/entering_rcm_button_5.jpg" width="650" /></p>
+<h4 id="joy-con_2">Кнопка Joy-Con:<a class="headerlink" href="#joy-con_2" title="Permanent link">&para;</a></h4>
+<p><img alt="ссылка на кнопку Joy-Con от pbanj" src="../img/entering_rcm_button_3.jpg" width="650" /></p>
+<p>Первый провод теперь должен быть на месте, как показано зелёным кругом ниже. Второй провод не требует припоя, вместо этого вы будете удерживать его на месте, используя винт, как показано красным кругом на изображении ниже.</p>
+<h4 id="joy-con_3">Кнопка Joy-Con на месте:<a class="headerlink" href="#joy-con_3" title="Permanent link">&para;</a></h4>
+<p><img alt="ссылка на кнопку Joy-Con от pbanj" src="../img/entering_rcm_button_6.jpg" width="650" /></p>
+<p>При нажатии на кнопку Joy-Con вы должны заметить, что созданная вами контактная точка соприкасается с металлической частью, удерживаемой винтом. Когда все элементы будут на месте, подключите один провод к контакту 7, а другой — к контакту 10 (не важно, какой к какому). После этого вы успешно создадите кнопку RCM на своём Joy-Con. Теперь вам нужно будет удерживать кнопку освобождения Joy-Con при попытке загрузки RCM.</p>
+<h4 id="_3">Успешная установка:<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p><img alt="ссылка на кнопку Joy-Con от pbanj" src="../img/entering_rcm_button_2.jpg" width="650" /></p>
 </div>
 <div class="tabbed-block">
-<p>This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.</p>
-<p>The goal of this method is to open the right handed Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however the goal is to solder pins 7 and 10 (shown below) together with a surface-mount <code>0805 10k</code> resistor. Apart from using a physical switch/button, this is currently considered the safest method that involves soldering to pads.</p>
-<h4 id="joycon-pad-pinout_1">JoyCon pad pinout:<a class="headerlink" href="#joycon-pad-pinout_1" title="Permanent link">&para;</a></h4>
-<p><img alt="joycon numbered pads reference" src="../img/entering_rcm_solder_numbered.jpg" width="600" /></p>
-<p>Here is an example from <code>stuck_pixel</code> from the ReSwitched Discord server.</p>
-<h4 id="successful-installation_1">Successful installation:<a class="headerlink" href="#successful-installation_1" title="Permanent link">&para;</a></h4>
-<p><img alt="stuckpixel solder example" src="../img/entering_rcm_solder_710_stuckpixel.jpg" width="650" /></p>
+<p>Этот метод требует вскрытия правого Joy-Con, что аннулирует его гарантию. Не для слабонервных.</p>
+<p>Цель этого метода — открыть правый Joy-Con до такой степени, чтобы можно было легко добраться до контактных площадок. Это похоже на предыдущий метод, однако цель заключается в том, чтобы припаять контакты 7 и 10 (показано ниже) с помощью поверхностного резистора <code>0805 10k</code>. Помимо использования физического переключателя/кнопки, этот метод в настоящее время считается самым безопасным, который включает пайку на площадках.</p>
+<h4 id="joy-con_4">Контактные площадки Joy-Con:<a class="headerlink" href="#joy-con_4" title="Permanent link">&para;</a></h4>
+<p><img alt="ссылка на нумерацию контактов Joy-Con" src="../img/entering_rcm_solder_numbered.jpg" width="600" /></p>
+<p>Вот пример от пользователя <code>stuck_pixel</code> с Discord-сервера ReSwitched.</p>
+<h4 id="_4">Успешная установка:<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p><img alt="пример пайки от stuck_pixel" src="../img/entering_rcm_solder_710_stuckpixel.jpg" width="650" /></p>
 </div>
 <div class="tabbed-block">
-<p>This method will result in the right Joy-Con being seen as "detached" while physically connected to the Switch, so it will not be able to charge. This method may result in the Joy-Con being permanently detected as wireless if you update the Joy-Con firmware while this mod is installed. In the latter case, fixing this requires opening up the Joy-Con and reseating the battery. It is recommended to solder pads 7 and 10 together with a resistor instead.</p>
-<p>This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.</p>
-<p>The goal of this method is to open the right Joy-Con to the point that you can reach the contact pads easily. This is similar to the previous method, however the goal is to solder pads 9 and 10 (seen below) together. This can either be done using a small wire, or directly bridging the pads with solder.</p>
-<h4 id="joycon-pad-pinout_2">JoyCon pad pinout:<a class="headerlink" href="#joycon-pad-pinout_2" title="Permanent link">&para;</a></h4>
-<p><img alt="joycon numbered pads reference" src="../img/entering_rcm_solder_numbered.jpg" width="600" /></p>
-<p>Below is an example from <code>yami0666</code> from our Discord server.</p>
-<h4 id="successful-soldering-job">Successful soldering job:<a class="headerlink" href="#successful-soldering-job" title="Permanent link">&para;</a></h4>
-<p><img alt="YyAoMmIi solder example" src="../img/entering_rcm_solder_910_yyaommii.jpg" width="650" /></p>
+<p>Этот метод приведёт к тому, что правый Joy-Con будет восприниматься как "отсоединённый", будучи физически подключённым к Switch, и поэтому он не сможет заряжаться. Этот метод может привести к тому, что Joy-Con будет постоянно определяться как беспроводной, если вы обновите прошивку Joy-Con с установленной модификацией. В последнем случае, чтобы это исправить, потребуется открыть Joy-Con и переподключить аккумулятор. Рекомендуется вместо этого припаять контакты 7 и 10 с помощью резистора.</p>
+<p>Этот метод требует вскрытия правого Joy-Con, что аннулирует его гарантию. Не для слабонервных.</p>
+<p>Цель этого метода — открыть правый Joy-Con до такой степени, чтобы можно было легко добраться до контактных площадок. Это похоже на предыдущий метод, однако цель заключается в том, чтобы припаять контакты 9 и 10 (показано ниже) вместе. Это можно сделать либо с помощью небольшого провода, либо напрямую, замкнув контакты с помощью припоя.</p>
+<h4 id="joy-con_5">Контактные площадки Joy-Con:<a class="headerlink" href="#joy-con_5" title="Permanent link">&para;</a></h4>
+<p><img alt="ссылка на нумерацию контактов Joy-Con" src="../img/entering_rcm_solder_numbered.jpg" width="600" /></p>
+<p>Ниже приведён пример от пользователя <code>yami0666</code> с нашего Discord-сервера.</p>
+<h4 id="_5">Успешная пайка:<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p><img alt="пример пайки от YyAoMmIi" src="../img/entering_rcm_solder_910_yyaommii.jpg" width="650" /></p>
 </div>
 <div class="tabbed-block">
-<p>This method will result in the right Joy-Con being detected as in wireless mode while attached to the Switch, and this method may result in the Joy-Con being permanently detected as wireless if you update the Joy-Con firmware while this mod is installed. In the latter case, fixing this requires opening up the Joy-Con and reseating the battery.</p>
-<p>This method requires opening your right Joy-Con, voiding its warranty. Not for the faint of heart.</p>
-<p>The goal of this method is to open the right handed Joy-Con to the point that you can reach the contact pads easily, and use a thin object such as a knife to gently bend pin 9 and 10 (shown below) slightly up and towards each other so they touch, shorting them.</p>
-<h4 id="joycon-pinout">JoyCon pinout:<a class="headerlink" href="#joycon-pinout" title="Permanent link">&para;</a></h4>
-<p><img alt="Joycon Pin Reference" src="../img/enterting_rcm_pins_numbered.jpg" width="600" /></p>
-<p>Here is an example from <code>sonlen</code> on our Discord server.</p>
-<h4 id="bent-joy-con-pins">Bent Joy-Con pins:<a class="headerlink" href="#bent-joy-con-pins" title="Permanent link">&para;</a></h4>
-<p><img alt="Sonlen's example" src="../img/entering_rcm_bent_pins.jpg" width="650" /></p>
+<p>Этот метод приведёт к тому, что правый Joy-Con будет определяться как находящийся в беспроводном режиме, даже будучи подключённым к Switch. Этот метод также может привести к тому, что Joy-Con будет постоянно определяться как беспроводной, если вы обновите прошивку Joy-Con с установленной модификацией. В последнем случае, чтобы это исправить, потребуется открыть Joy-Con и переподключить аккумулятор.</p>
+<p>Этот метод требует вскрытия правого Joy-Con, что аннулирует его гарантию. Не для слабонервных.</p>
+<p>Цель этого метода — открыть правый Joy-Con до такой степени, чтобы можно было легко добраться до контактных площадок, и использовать тонкий предмет, например нож, чтобы слегка подогнуть контакты 9 и 10 (показаны ниже) вверх и друг к другу, чтобы они соприкасались и замыкались.</p>
+<h4 id="joy-con_6">Контактные площадки Joy-Con:<a class="headerlink" href="#joy-con_6" title="Permanent link">&para;</a></h4>
+<p><img alt="Ссылка на контакты Joy-Con" src="../img/enterting_rcm_pins_numbered.jpg" width="600" /></p>
+<p>Вот пример от пользователя <code>sonlen</code> с нашего Discord-сервера.</p>
+<h4 id="joy-con_7">Изогнутые контакты Joy-Con:<a class="headerlink" href="#joy-con_7" title="Permanent link">&para;</a></h4>
+<p><img alt="Пример от Sonlen" src="../img/entering_rcm_bent_pins.jpg" width="650" /></p>
 </div>
 </div>
 </div>
-<p><a class="md-button md-button--primary" href="../sending_payload/">Continue to Sending a Payload <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="../sending_payload/">Перейти к отправке payload'a <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
 
 

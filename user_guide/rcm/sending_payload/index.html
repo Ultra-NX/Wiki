@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sending-a-payload" class="md-skip">
+        <a href="#payloada" class="md-skip">
           Skip to content
         </a>
       
@@ -590,9 +590,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#preparing-hekate" class="md-nav__link">
+  <a href="#hekate" class="md-nav__link">
     <span class="md-ellipsis">
-      Preparing Hekate
+      Подготовка Hekate
     </span>
   </a>
   
@@ -1655,136 +1655,120 @@
   
 
 
-<h1 id="sending-a-payload">Sending a Payload<a class="headerlink" href="#sending-a-payload" title="Permanent link">&para;</a></h1>
+<h1 id="payloada">Отправка payload'a<a class="headerlink" href="#payloada" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
-<p class="admonition-title">If you are here to test if your Switch is patched</p>
-<p>Make sure you have <a href="../entering_rcm/">put your device into RCM</a> and downloaded Hekate. Once finished, if your console is <strong>not</strong> patched, continue with the "Preparing Hekate" section at the bottom of the page.</p>
+<p class="admonition-title">Если вы здесь, чтобы проверить, уязвим ли ваш Switch</p>
+<p>Убедитесь, что вы <a href="../entering_rcm/">перевели ваше устройство в режим RCM</a> и скачали Hekate. Когда закончите, если ваша консоль <strong>уязвима</strong>, переходите к разделу "Подготовка Hekate" внизу страницы.</p>
 </div>
-<p>Now that the device is in RCM, we will need to send it a payload. The methods are mostly the same but slightly differ depending on what hardware you have available.</p>
+<p>Теперь, когда консоль находится в RCM, нам нужно отправить на него payload. Методы в основном одинаковы, но слегка различаются в зависимости от того, какое оборудование у вас есть.</p>
 <p>&nbsp;</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux</label><label for="__tabbed_1_3">Mac</label><label for="__tabbed_1_4">Android</label><label for="__tabbed_1_5">Chromebook</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<h4 id="what-you-need"><strong>What you need:</strong><a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h4>
+<h4 id="_1"><strong>Что вам нужно:</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The latest release of <a href="https://github.com/eliboa/TegraRcmGUI/releases" target="_blank">TegraRcmGUI</a> (either the MSI or zip)</li>
-<li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located inside of the <code>hekate_ctcaer_(version).zip</code>.</li>
+<li>Последняя версия <a href="https://github.com/eliboa/TegraRcmGUI/releases" target="_blank">TegraRcmGUI</a> (можно скачать MSI или zip)</li>
+<li>Кабель USB-A на USB-C (или кабель USB-C на USB-C, если ваш компьютер поддерживает этот стандарт)</li>
+<li>Последняя версия <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. Payload Hekate (<code>hekate_ctcaer_(версия).bin</code>) находится внутри архива <code>hekate_ctcaer_(версия).zip</code>.</li>
 </ul>
-<h4 id="instructions"><strong>Instructions:</strong><a class="headerlink" href="#instructions" title="Permanent link">&para;</a></h4>
+<h4 id="_2"><strong>Инструкция:</strong><a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Install and run TegraRcmGUI.</li>
-<li>Navigate to the <code>Settings</code> tab, then press <code>Install Driver</code> and follow the on-screen instructions.<ul>
-<li>If you face issues when installing the driver, follow the <a href="#driver-installation-with-zadig">driver installation with Zadig</a> section below.</li>
-</ul>
-</li>
-<li>Connect your Switch in RCM to your PC using the USB cable.</li>
-<li>Navigate to the <code>Payload</code> tab of TegraRcmGUI.<ul>
-<li>Your Switch should be shown as detected in the bottom left corner.</li>
-</ul>
-</li>
-<li>Press the file button next to <code>Inject payload</code>, and navigate to and select the <code>hekate_ctcaer_X.X.X.bin</code> file.</li>
-<li>Click <code>Inject payload</code> to launch the payload you selected.<ul>
-<li>If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.</li>
-</ul>
-</li>
+<li>Установите и запустите TegraRcmGUI.</li>
+<li>Перейдите на вкладку <code>Settings</code>, затем нажмите <code>Install Driver</code> и следуйте инструкциям на экране.</li>
+<li>Если возникнут проблемы при установке драйвера, следуйте инструкциям в разделе <a href="#driver-installation-with-zadig">установка драйвера с помощью Zadig</a> ниже.</li>
+<li>Подключите ваш Switch в режиме RCM к ПК с помощью USB-кабеля.</li>
+<li>Перейдите на вкладку <code>Payload</code> в TegraRcmGUI.</li>
+<li>В левом нижнем углу должно появиться сообщение о том, что Switch обнаружен.</li>
+<li>Нажмите кнопку выбора файла рядом с <code>Inject payload</code>, выберите и укажите файл <code>hekate_ctcaer_X.X.X.bin</code>.</li>
+<li>Нажмите <code>Inject payload</code>, чтобы запустить выбранную полезную нагрузку.</li>
+<li>Если payload был успешно загружен, на экране Switch появится жёлтый текст с надписью "Update bootloader folder!". Это будет исправлено в ближайшее время.</li>
 </ol>
-<h4 id="driver-installation-with-zadig"><strong>Driver installation with Zadig</strong><a class="headerlink" href="#driver-installation-with-zadig" title="Permanent link">&para;</a></h4>
-<p>Follow these steps if you face issues when installing the driver with TegraRcmGUI. You will need the latest version of <a href="https://zadig.akeo.ie" target="_blank">Zadig</a>.</p>
+<h4 id="zadig"><strong>Установка драйвера с помощью Zadig</strong><a class="headerlink" href="#zadig" title="Permanent link">&para;</a></h4>
+<p>Следуйте этим шагам, если у вас возникли проблемы с установкой драйвера через TegraRcmGUI. Вам понадобится последняя версия <a href="https://zadig.akeo.ie" target="_blank">Zadig</a>.</p>
 <ol>
-<li>Launch Zadig. In the <code>Options</code> menu, be sure that <code>List All Devices</code> is enabled.</li>
-<li>Connect your Switch in RCM to your PC using the USB cable.</li>
-<li>In Zadig, select "APX" in the device list.</li>
-<li>Select <code>libusbK (v3.1.0.0)</code> in the driver list.</li>
-<li>Click <code>Install Driver</code> and wait for the installation to finish.</li>
+<li>Запустите Zadig. В меню <code>Options</code> убедитесь, что включена опция <code>List All Devices</code>.</li>
+<li>Подключите ваш Switch в режиме RCM к ПК с помощью USB-кабеля.</li>
+<li>В Zadig выберите "APX" в списке устройств.</li>
+<li>В списке драйверов выберите <code>libusbK (v3.1.0.0)</code>.</li>
+<li>Нажмите <code>Install Driver</code> и дождитесь завершения установки.</li>
 </ol>
 </div>
 <div class="tabbed-block">
-<h4 id="what-you-need_1"><strong>What you need:</strong><a class="headerlink" href="#what-you-need_1" title="Permanent link">&para;</a></h4>
+<h4 id="_3"><strong>Что вам нужно:</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The latest release of <a href="https://github.com/DefenderOfHyrule/fusee-nano/releases">fusee-nano</a> (also available on the <a href="https://aur.archlinux.org/packages/fusee-nano">AUR</a>)<ul>
-<li>If you use Arch Linux or a derivative distro, the AUR package is recommended.</li>
+<li>Последняя версия <a href="https://github.com/DefenderOfHyrule/fusee-nano/releases">fusee-nano</a> (также доступна на <a href="https://aur.archlinux.org/packages/fusee-nano">AUR</a>)</li>
+<li>Если вы используете Arch Linux или дистрибутив, основанный на Arch, рекомендуется использовать пакет из AUR.</li>
+<li>Кабель USB-A на USB-C (или кабель USB-C на USB-C, если ваш компьютер поддерживает этот стандарт)</li>
+<li>Последняя версия <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. Payload Hekate (<code>hekate_ctcaer_(версия).bin</code>) находится внутри архива <code>hekate_ctcaer_(версия).zip</code>.</li>
 </ul>
-</li>
-<li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located inside of the <code>hekate_ctcaer_(version).zip</code>.</li>
-</ul>
-<h4 id="instructions_1"><strong>Instructions:</strong><a class="headerlink" href="#instructions_1" title="Permanent link">&para;</a></h4>
+<h4 id="_4"><strong>Инструкция:</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Download and run the payload injector from your terminal. You will need to run the injector as root, unless you follow the instructions at <a href="../../../extras/adding_udev/">Linux injection without root</a>.</li>
-<li>Connect your Switch in RCM to your PC using the USB cable.</li>
-<li>Run fusee-nano with: <code>./fusee-nano /path/to/hekate-ctcaer_X.X.X.bin</code><ul>
-<li>As mentioned earlier, unless you have followed the instructions at <a href="../../../extras/adding_udev/">Linux injection without root</a>, this will require root to run. For most systems, this is done with <code>sudo</code></li>
-<li>If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.</li>
-</ul>
-</li>
+<li>Скачайте и запустите загрузчик payload'a из терминала. Вам нужно будет запускать загрузчик от имени суперпользователя, если вы не следуете инструкциям по <a href="../../../extras/adding_udev/">инъекции в Linux без root прав</a>.</li>
+<li>Подключите ваш Switch в режиме RCM к ПК с помощью USB-кабеля.</li>
+<li>Запустите fusee-nano с помощью команды: <code>./fusee-nano /path/to/hekate-ctcaer_X.X.X.bin</code></li>
+<li>Как упоминалось ранее, если вы не следовали инструкциям по <a href="../../../extras/adding_udev/">инъекции в Linux без root прав</a>, это потребует root права. Для большинства систем это делается с помощью команды <code>sudo</code>.</li>
+<li>Если payload был успешно загружен, на экране Switch появится жёлтый текст с надписью "Update bootloader folder!". Это будет исправлено в ближайшее время.</li>
 </ol>
 </div>
 <div class="tabbed-block">
-<h4 id="what-you-need_2"><strong>What you need:</strong><a class="headerlink" href="#what-you-need_2" title="Permanent link">&para;</a></h4>
+<h4 id="_5"><strong>Что вам нужно:</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The latest release of <a href="https://github.com/prayerie/CrystalRCM/releases">CrystalRCM</a> (the <code>CrystalRCM.(version).dmg</code> file)</li>
-<li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located inside of the <code>hekate_ctcaer_(version).zip</code>.</li>
+<li>Последняя версия <a href="https://github.com/prayerie/CrystalRCM/releases">CrystalRCM</a> (файл <code>CrystalRCM.(версия).dmg</code>)</li>
+<li>Кабель USB-A на USB-C (или кабель USB-C на USB-C, если ваш компьютер поддерживает этот стандарт)</li>
+<li>Последняя версия <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. Payload Hekate (<code>hekate_ctcaer_(версия).bin</code>) находится внутри архива <code>hekate_ctcaer_(версия).zip</code>.</li>
 </ul>
-<h4 id="instructions_2"><strong>Instructions:</strong><a class="headerlink" href="#instructions_2" title="Permanent link">&para;</a></h4>
+<h4 id="_6"><strong>Инструкция:</strong><a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Download the latest release of CrystalRCM.</li>
-<li>Connect your Switch in RCM to your PC using the USB cable, make sure it's also detected in CrystalRCM.</li>
-<li>Mount the <code>CrystalRCM.(version).dmg</code> file, open the mounted disk image in File Explorer and copy the <code>CrystalRCM.app</code> file inside of the mounted disk image to any location on your Mac.</li>
-<li>Open the <code>CrystalRCM.app</code> app, then click <code>Payload...</code> and select the <code>hekate_ctcaer_X.X.X.bin</code> file.</li>
-<li>Once selected, click <code>Push!</code>. The payload should now be injected successfully.<ul>
-<li>If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.</li>
-</ul>
-</li>
+<li>Скачайте последнюю версию CrystalRCM.</li>
+<li>Подключите ваш Switch в режиме RCM к ПК с помощью USB-кабеля и убедитесь, что он также обнаруживается в CrystalRCM.</li>
+<li>Смонтируйте файл <code>CrystalRCM.(версия).dmg</code>, откройте смонтированный образ диска в Finder и скопируйте файл <code>CrystalRCM.app</code> из смонтированного образа в любое место на вашем Mac.</li>
+<li>Откройте приложение <code>CrystalRCM.app</code>, затем нажмите <code>Payload...</code> и выберите файл <code>hekate_ctcaer_X.X.X.bin</code>.</li>
+<li>После выбора нажмите <code>Push!</code>. Payload должен быть успешно загружен.</li>
+<li>Если payload была успешно загружен, на экране Switch появится жёлтый текст с надписью "Update bootloader folder!". Это будет исправлено в ближайшее время.</li>
 </ol>
 </div>
 <div class="tabbed-block">
-<h4 id="what-you-need_3"><strong>What you need:</strong><a class="headerlink" href="#what-you-need_3" title="Permanent link">&para;</a></h4>
+<h4 id="_7"><strong>Что вам нужно:</strong><a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The latest release of <a href="https://github.com/MenosGrante/Rekado/releases" target="_blank">Rekado</a></li>
-<li>You will need to enable Unknown Sources in your device settings to install this</li>
-<li>A USB-C cable</li>
-<li>If your device has a USB-C port, you may use a C-C cable</li>
-<li>If your device only has a Micro USB port, you will need a USB OTG adapter and a USB A-C cable</li>
-<li>This <strong>will not work</strong> on every phone!</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. The Hekate payload (<code>hekate_ctcaer_(version).bin</code>) is located inside of the <code>hekate_ctcaer_(version).zip</code>.</li>
+<li>Последняя версия <a href="https://github.com/MenosGrante/Rekado/releases" target="_blank">Rekado</a></li>
+<li>Вам нужно будет включить "Неизвестные источники" в настройках устройства для установки этого приложения.</li>
+<li>Кабель USB-C</li>
+<li>Если ваше устройство имеет порт USB-C, вы можете использовать кабель USB-C на USB-C</li>
+<li>Если у вашего устройства есть только порт Micro USB, вам понадобится адаптер USB OTG и кабель USB-A на USB-C</li>
+<li>Это <strong>не будет работать</strong> на каждом телефоне!</li>
+<li>Последняя версия <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a>. Payload Hekate (<code>hekate_ctcaer_(версия).bin</code>) находится внутри архива <code>hekate_ctcaer_(версия).zip</code>.</li>
 </ul>
-<h4 id="instructions_3"><strong>Instructions:</strong><a class="headerlink" href="#instructions_3" title="Permanent link">&para;</a></h4>
+<h4 id="_8"><strong>Инструкция:</strong><a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Copy the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file to a location on your phone.<ul>
-<li>A tool such as Amaze File Manager can do this.</li>
-</ul>
-</li>
-<li>Launch Rekado on your phone.</li>
-<li>Navigate to <code>Payloads</code> (Signified by a downwards arrow with a line), then press the <code>+</code> button at the bottom right.</li>
-<li>Navigate to your hekate_ctcaer <code>.bin</code> file and tap it to add it to Rekado's menu.</li>
-<li><strong>Optional, but recommended</strong>: Navigate to Rekado's settings in the top right and enable <code>Hide bundled</code>.</li>
-<li>Connect your Switch in RCM to your phone using the USB cable.</li>
-<li>If prompted, grant Rekado access to the Switch.</li>
-<li>Select the <code>hekate_ctcaer_X.X.X.bin</code> file in the dialog that pops up.<ul>
-<li>If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.</li>
-</ul>
-</li>
+<li>Скопируйте файл hekate_ctcaer <code>.bin</code> из архива Hekate в любое место на вашем телефоне.</li>
+<li>Для этого можно использовать такие инструменты, как Amaze File Manager.</li>
+<li>Запустите Rekado на своем телефоне.</li>
+<li>Перейдите в раздел <code>Payloads</code> (обозначен вниз стрелкой с линией), затем нажмите кнопку <code>+</code> в правом нижнем углу.</li>
+<li>Найдите свой файл hekate_ctcaer <code>.bin</code> и коснитесь его, чтобы добавить его в меню Rekado.</li>
+<li><strong>Необязательно, но рекомендуется</strong>: Перейдите в настройки Rekado в правом верхнем углу и включите <code>Hide bundled</code>.</li>
+<li>Подключите ваш Switch в режиме RCM к вашему телефону с помощью USB-кабеля.</li>
+<li>Если будет предложено, предоставьте Rekado доступ к Switch.</li>
+<li>Выберите файл <code>hekate_ctcaer_X.X.X.bin</code> в появившемся диалоговом окне.</li>
+<li>Если payload был успешно загружен, на экране Switch появится жёлтый текст с надписью "Update bootloader folder!". Это будет исправлено в ближайшее время.</li>
 </ol>
 </div>
 <div class="tabbed-block">
-<h4 id="what-you-need_4"><strong>What you need:</strong><a class="headerlink" href="#what-you-need_4" title="Permanent link">&para;</a></h4>
+<h4 id="_9"><strong>Что вам нужно:</strong><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
 <ul>
-<li>A USB-A to USB-C cable</li>
+<li>Кабель USB-A на USB-C</li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">About USB-C</p>
-<p>If your Chromebook has a USB-C port, do note that this will not work using a C-C cable.</p>
+<p class="admonition-title">Об USB-C</p>
+<p>Если у вашего Chromebook есть порт USB-C, имейте в виду, что это не сработает с кабелем USB-C на USB-C.</p>
 </div>
-<h4 id="instructions_4"><strong>Instructions:</strong><a class="headerlink" href="#instructions_4" title="Permanent link">&para;</a></h4>
+<h4 id="_10"><strong>Инструкция:</strong><a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Go to the injection <a href="https://fusee.eiphax.tech/">website</a> and scroll all the way down</li>
-<li>Open the dropdown menu and select <code>hekate_ctcaer_X_X_X</code> from the list.</li>
-<li>Connect your Switch in RCM to your Chromebook using the USB cable.</li>
-<li>Select "Deliver Payload". A pop-up will appear. Click the <code>APX</code> option.</li>
-<li>Press the Connect button and the payload will be injected.<ul>
-<li>If your payload was successfully injected your switch should have yellow text that says "Update bootloader folder!", this will be resolved soon.</li>
+<li>Перейдите на сайт для инъекции <a href="https://fusee.eiphax.tech/">инъекции</a> и прокрутите вниз.</li>
+<li>Откройте выпадающее меню и выберите <code>hekate_ctcaer_X_X_X</code> из списка.</li>
+<li>Подключите ваш Switch в режиме RCM к вашему Chromebook с помощью USB-кабеля.</li>
+<li>Выберите "Deliver Payload". Появится всплывающее окно. Нажмите на опцию <code>APX</code>.</li>
+<li>Нажмите кнопку "Connect", и payload будет инъецирован.<ul>
+<li>Если payload была успешно загружен, на экране Switch появится жёлтый текст с надписью "Update bootloader folder!". Это будет исправлено в ближайшее время.</li>
 </ul>
 </li>
 </ol>
@@ -1792,36 +1776,38 @@
 </div>
 </div>
 <div class="admonition danger">
-<p class="admonition-title">If nothing happens after you send the payload</p>
-<p>If your console's screen remains black after you've sent Hekate (or any other payload), it's possible your payload was corrupted, or that your console is patched. If your payload injector program shows that zero or 0x0000 bytes were sent, then it is patched. This isn't a one-time glitch or up for debate; it is patched. Consider an alternate method that isn't via RCM.</p>
+<p class="admonition-title">Если ничего не происходит после отправки payload'a</p>
+<p>Если экран вашей консоли остаётся чёрным после того, как вы отправили Hekate (или любой другой payload), возможно, ваш payload был повреждён или ваша консоль пропатчена. Если программа инъектора payload показывает, что ноль или 0x0000 байт были отправлены, то это значит, что она пропатчена. Это не временная ошибка и не подлежит обсуждению; консоль пропатчена. Рассмотрите альтернативный метод, который не требует RCM.</p>
 </div>
 <hr />
-<h3 id="preparing-hekate"><strong>Preparing Hekate</strong><a class="headerlink" href="#preparing-hekate" title="Permanent link">&para;</a></h3>
-<p>We will prepare the microSD card for formatting/partitioning before going to the next page. Removing the microSD card while in Hekate is safe so turning off the console is not necessary and keeping it on will save time that would be spent reinjecting the payload.</p>
+<h3 id="hekate"><strong>Подготовка Hekate</strong><a class="headerlink" href="#hekate" title="Permanent link">&para;</a></h3>
+<p>Мы подготовим microSD-карту к форматированию/разделению перед переходом на следующую страницу. Извлекать microSD-карту во время работы Hekate безопасно, поэтому выключать консоль не обязательно; её включение сэкономит время, которое ушло бы на повторную инъекцию payload'a.</p>
 <div class="admonition danger">
-<p class="admonition-title">Following the guide will delete everything on your microSD card!</p>
-<p>Later in the guide, you will be formatting and/or partitioning your microSD card. This means that all data on the microSD card will be lost. Now is a good time to back up <em>all</em> of its data to a safe place (for example, on your PC or external drive) so that you can restore it later. You can do this by following the instructions below.</p>
+<p class="admonition-title">Следуя этому руководству, вы удалите всё на вашей microSD-карте!</p>
+<p>Позже в руководстве вы будете форматировать и/или разделять вашу microSD-карту. Это означает, что все данные на microSD-карте будут потеряны. Сейчас хорошее время, чтобы сделать резервную копию <em>всех</em> данных в безопасное место (например, на вашем ПК или внешнем диске), чтобы вы могли восстановить их позже. Вы можете сделать это, следуя инструкциям ниже.</p>
 </div>
 <hr />
-<h4 id="what-you-need_5"><strong>What you need:</strong><a class="headerlink" href="#what-you-need_5" title="Permanent link">&para;</a></h4>
+<h4 id="_11"><strong>Что вам нужно:</strong><a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target ="_blank">Hekate</a>.</li>
-<li>Your microSD card</li>
+<li>Последняя версия <a href="https://github.com/CTCaer/hekate/releases/" target ="_blank">Hekate</a>.</li>
+<li>Ваша microSD-карта.</li>
 </ul>
-<h4 id="instructions_5"><strong>Instructions:</strong><a class="headerlink" href="#instructions_5" title="Permanent link">&para;</a></h4>
+<h4 id="_12"><strong>Инструкции:</strong><a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Without turning your Switch off, remove the microSD card from the Switch.</li>
-<li>Insert your microSD card into your computer.</li>
-<li>Copy the <code>Nintendo</code> folder (and any other important data) from the root of your microSD card to a safe space on your device.</li>
-<li>Extract the Hekate <code>.zip</code> to a location on your computer</li>
-<li>Inside the extracted Hekate folder you will find a folder named <code>bootloader</code>.</li>
-<li>Copy the <code>bootloader</code> folder to the root of your microSD card.</li>
-<li>Put your microSD card back into your Switch.</li>
-<li>Press any button to continue to the Hekate menu.</li>
-<li>Use volume up and volume down to navigate the Hekate menu. Hover over 'reload' and press the power button to select. Your screen should now have the Hekate GUI (Nyx) pictured below.
-<img alt="Nyx" src="../../all/img/nyx.bmp" width="600" /></li>
+<li>Не выключая ваш Switch, извлеките microSD-карту из устройства.</li>
+<li>Вставьте microSD-карту в ваш компьютер.</li>
+<li>Скопируйте папку <code>Nintendo</code> (и любые другие важные данные) с корня вашей microSD-карты в безопасное место на вашем устройстве.</li>
+<li>Извлеките Hekate <code>.zip</code> в любое место на вашем компьютере.</li>
+<li>Внутри извлеченной папки Hekate вы найдете папку с названием <code>bootloader</code>.</li>
+<li>Скопируйте папку <code>bootloader</code> в корень вашей microSD-карты.</li>
+<li>Верните microSD-карту обратно в вашу Switch.</li>
+<li>Нажмите любую кнопку, чтобы продолжить в меню Hekate.</li>
+<li>
+<p>Используйте кнопки увеличения и уменьшения громкости, чтобы управлять в меню Hekate. Наведите курсор на 'reload' и нажмите кнопку питания для выбора. На экране теперь должно появиться графическое меню Hekate (Nyx), изображенное ниже.</p>
+<p><img alt="Nyx" src="../../all/img/nyx.bmp" width="600" /></p>
+</li>
 </ol>
-<p><a class="md-button md-button--primary" href="../../all/cfw_environment/">Continue to choosing your CFW environment <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="../../all/cfw_environment/">Перейти к выбору среды для CFW <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></span></a></p>
 
 
 
