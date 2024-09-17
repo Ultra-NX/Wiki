@@ -1,76 +1,82 @@
-# Games cheats
+# Игровые читы
 
 ### **EdiZon**
 
-For cheats management, [EdiZon](https://github.com/WerWolv/EdiZon) and/or [EdiZon-SE](https://github.com/tomvita/EdiZon-SE) (up to date and offers more features) are recommended. They offer support for Atmosphere's cheat engine, providing an easy way to download new cheats, as well as toggle them on or off.
-
-#### Installation requirements:
-- An archive manager like [7-Zip](https://www.7-zip.org/)
-- The latest release of [EdiZon](https://github.com/WerWolv/EdiZon/releases) (the `EdiZon.nro` file) or [EdiZon-SE](https://github.com/tomvita/EdiZon-SE/releases) (the `EdiZon.zip` file)
-
-!!! note "EdiZon overlay"
-    EdiZon also offers a Tesla-Menu overlay, however, the official EdiZon overlay is no longer maintained and will result in Atmosphere crashing when trying to use the EdiZon overlay on firmware version 16.0.0+.
-    The maintained EdiZon overlay can be found [here](https://github.com/proferabg/EdiZon-Overlay/releases).
+Для управления читами рекомендуется использовать [EdiZon](https://github.com/WerWolv/EdiZon) и/или [EdiZon-SE](https://github.com/tomvita/EdiZon-SE) (более актуальная версия с дополнительными функциями). Эти инструменты поддерживают чит-движок Atmosphere, обеспечивая удобный способ загрузки новых читов, а также их включение и отключение.
 
 
-=== "Installation instructions (EdiZon):"
-    1. Boot into Hekate and go to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-    2. Your microSD card should now be accessible on your PC, open it.
-    3. Put the `EdiZon.nro` in `sd:/switch`.
-    4. Boot into CFW.
+#### Требования для установки:
+- Архиватор, например, [7-Zip](https://www.7-zip.org/)
+- Последняя версия [EdiZon](https://github.com/WerWolv/EdiZon/releases) (файл `EdiZon.nro`) или [EdiZon-SE](https://github.com/tomvita/EdiZon-SE/releases) (файл `EdiZon.zip`)
 
-=== "Installation instructions (EdiZon-SE):"
-    1. Boot into Hekate and go to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-    2. Your microSD card should now be accessible on your PC, open it.
-    3. Extract the `.zip` file to a location on your computer.
-    - If your archive manager allows for it, you can also simply open the `.zip` file directly.
-    4. Copy the *contents* of the (extracted) `.zip` file to the root of your microSD card.
-    - **Optional:** You can verify if you've installed EdiZon-SE correctly, you should have a folder called `054e4f4558454000` (EdiZon-SE) in `sd:/atmosphere/contents` and an `EdiZon.nro` file in `sd:/switch/EdiZon`.
-    5. Boot into CFW.
+!!! note "EdiZon оверлей"
+    EdiZon также предлагает оверлей для Tesla-Menu, однако официальный оверлей EdiZon больше не поддерживается и приведет к сбою Atmosphere при попытке его использования на версии прошивки 16.0.0 и выше.
+    Поддерживаемую версию оверлея EdiZon можно найти [здесь](https://github.com/proferabg/EdiZon-Overlay/releases).
 
------
 
-### **Usage instructions**
 
-Atmosphère looks for cheats to load in the `contents` sub-folder of the `atmosphere` folder. The template it looks for is `sd:/atmosphere/contents/<title_id>/cheats/<build_id>.txt`.
-You need to create the `<title_id>` folder and sub-folders manually:
+=== "Инструкции по установке (EdiZon):"
+    1. Загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите вашу консоль к ПК через USB.
+    2. Ваша microSD карта теперь должна быть доступна на ПК, откройте её.
+    3. Поместите файл `EdiZon.nro` в папку `sd:/switch`.
+    4. Загрузитесь в CFW.
 
-- `title_id` being the title or program of a game. This is game specific and can be found on EdiZon's cheat menu (TID and BID, see the bottom of this page for a sample), [switchbrew](https://switchbrew.org/wiki/Title_list/Games) and [nswdb](https://nswdb.com/).
+=== "Инструкции по установке (EdiZon-SE):"
+    1. Загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите вашу консоль к ПК через USB.
+    2. Ваша microSD карта теперь должна быть доступна на ПК, откройте её.
+    3. Извлеките содержимое `.zip` файла в любую папку на вашем компьютере.
+    - Если ваш архиватор это поддерживает, вы можете открыть `.zip` файл напрямую.
+    4. Скопируйте *содержимое* извлечённого `.zip` файла в корень вашей microSD карты.
+    - **Опционально:** Вы можете проверить правильность установки EdiZon-SE: у вас должна быть папка `054e4f4558454000` (EdiZon-SE) в `sd:/atmosphere/contents` и файл `EdiZon.nro` в `sd:/switch/EdiZon`.
+    5. Загрузитесь в CFW.
 
-    - **Note:** Title ID means the same thing as Program ID.
-
-- `build_id` being the version of a game. This is game specific and can be found on EdiZon's cheat menu (BID, see the bottom of this page for a sample) Cheats can be version specific so make sure the cheats you are using are compatible with your game version.
-
-**Note:** On Atmosphère 0.9.4 and below `contents` is called `titles`.
-
-Once the title is launched while in Atmosphere, your cheats should be applied.
 
 -----
 
-### **Preventing cheats from being enabled by default**
+### **Инструкции по использованию**
 
-To prevent cheats from being enabled by default, you can change your Atmosphère configuration by following the steps below.
+Atmosphère ищет читы в подпапке `contents` в папке `atmosphere`. Шаблон, который он использует: `sd:/atmosphere/contents/<title_id>/cheats/<build_id>.txt`.
+Вам нужно создать папку `<title_id>` и подпапки вручную:
 
-1. Copy `system_settings.ini` from `sd:/atmosphere/config_templates` to `sd:/atmosphere/config` if it's not already there.
-2. Open the `system_settings.ini` file with a text editor and edit the line `; dmnt_cheats_enabled_by_default = u8!0x1` to `dmnt_cheats_enabled_by_default = u8!0x0`.
+- `title_id` — это идентификатор программы или игры. Он специфичен для каждой игры и может быть найден в меню читов EdiZon (TID и BID, см. пример внизу страницы), на [switchbrew](https://switchbrew.org/wiki/Title_list/Games) и [nswdb](https://nswdb.com/).
 
-    - Make sure you remove the space and the semicolon "`; `" in front of `dmnt_cheats_enabled_by_default`.
+    - **Примечание:** Title ID означает то же самое, что и Program ID.
 
-By default, holding the L button while launching a game will disable any game modification.
+- `build_id` — это версия игры. Он специфичен для каждой игры и может быть найден в меню читов EdiZon (BID, см. пример внизу страницы). Читы могут быть сделаны для конкретной версии игры, поэтому убедитесь, что используемые вами читы совместимы с версией вашей игры.
 
-Here the Title ID of the game (TID) is `0100646009FBE000` and the Build ID of the game (BID) is `0B9A75586BC1A6C6`. Cheats are loaded from `sd:/atmosphere/contents/0100646009FBE000/cheats/0B9A75586BC1A6C6.txt` in this example.
+**Примечание:** В Atmosphère версии 0.9.4 и ниже папка `contents` называлась `titles`.
 
-![ExampleGameCheat](../extras/img/game_cheating.jpg)
+Как только игра запущена в Atmosphere, ваши читы должны быть применены.
+
 
 -----
 
-### **Additional information:**
+### **Предотвращение автоматического включения читов**
 
-For more in-depth details about Atmosphere's cheat engine, you can refer to [this page](https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/features/cheats.md).<br>
+Чтобы предотвратить автоматическое включение читов, вы можете изменить конфигурацию Atmosphère, выполнив следующие шаги.
 
-### **Troubleshooting**
-#### **EdiZon isn't showing up when I open the Homebrew menu!:**
+1. Скопируйте файл `system_settings.ini` из папки `sd:/atmosphere/config_templates` в `sd:/atmosphere/config`, если он там ещё не находится.
+2. Откройте файл `system_settings.ini` в текстовом редакторе и измените строку `; dmnt_cheats_enabled_by_default = u8!0x1` на `dmnt_cheats_enabled_by_default = u8!0x0`.
 
-Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.
+    - Убедитесь, что вы удалили пробел и точку с запятой "`; `" перед строкой `dmnt_cheats_enabled_by_default`.
 
-This can be done by booting into Hekate and going to `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+По умолчанию при удержании кнопки L при запуске игры все игровые модификации будут отключены.
+
+В данном примере идентификатор игры (TID) — `0100646009FBE000`, а идентификатор версии игры (BID) — `0B9A75586BC1A6C6`. Читы загружаются из файла `sd:/atmosphere/contents/0100646009FBE000/cheats/0B9A75586BC1A6C6.txt`.
+
+![ПримерЧитовИгры](../extras/img/game_cheating.jpg)
+
+
+-----
+
+### **Дополнительная информация:**
+
+Для получения более подробной информации о чит-движке Atmosphere, вы можете обратиться к [этой странице](https://github.com/Atmosphere-NX/Atmosphere/blob/master/docs/features/cheats.md).<br>
+
+### **Устранение неполадок**
+#### **EdiZon не отображается при открытии меню Homebrew!:**
+
+Если вы следовали инструкциям по установке, вероятнее всего, проблема заключается в установленном архивном бите на одной или нескольких папках/файлах на вашей microSD карте. Это обычно происходит при копировании файлов на microSD карту через Mac. Если у вас возникла эта проблема, попробуйте запустить утилиту для исправления архивного бита через Hekate для всех файлов.
+
+Это можно сделать, загрузившись в Hekate и перейдя в `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+
