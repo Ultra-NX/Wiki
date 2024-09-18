@@ -12,21 +12,24 @@
 - [NX-Shell](nx-shell.md)
 
 
-#### Terminologies
+#### Терминология
 
-Homebrew is a general term, the term can be used for Homebrew apps (`.nro` files) or in the form of background processes, called "sysmodules". The Switch natively has sysmodules built into its firmware but you can run additional Homebrew sysmodules that can add functionality to your Switch. In the section below, you can find additional and commonly used Homebrew apps and sysmodules.
+Homebrew — это общий термин, который можно использовать для обозначения приложений Homebrew (`.nro` файлы) или в виде фоновых процессов, называемых "системными модулями" (sysmodules). Switch изначально имеет системные модули, встроенные в свою прошивку, но вы можете запускать дополнительные системные модули Homebrew, которые могут добавить функциональность вашей Консоли. В разделе ниже вы можете найти дополнительные и часто используемые приложения Homebrew и системные модули.
 
-Homebrew apps are stored in `sd:/switch` by default and Homebrew sysmodules are stored in `sd:/atmosphere/contents` by default.
 
-#### Additional Homebrew apps/sysmodules:
+Приложения Homebrew по умолчанию хранятся в `sd:/switch`, а системные модули Homebrew хранятся в `sd:/atmosphere/contents` по умолчанию.
 
-- [EdiZon](edizon.md) (sysmodule and Homebrew app)
-- [SimpleModManager](simplemodmanager.md) (Homebrew app)
-- [Tesla-Menu](tesla-menu.md) (sysmodule)
-- [MissionControl](mission-control.md) (sysmodule)
-- [sys-con](sys-con.md)(sysmodule)
-- [sys-botbase](sys-botbase.md) (sysmodule)
-- [SysDVR](sysdvr.md) (sysmodule and Homebrew app)
-- [sys-clk](sys-clk.md) (sysmodule and Homebrew app)
-- [ldn_mitm](ldn_mitm.md) (sysmodule and Homebrew app)
+
+#### Дополнительные Homebrew/системные модули Homebrew:
+
+- [EdiZon](edizon.md) (системный модуль и приложение Homebrew)
+- [SimpleModManager](simplemodmanager.md) (приложение Homebrew)
+- [Tesla-Menu](tesla-menu.md) (системный модуль)
+- [MissionControl](mission-control.md) (системный модуль)
+- [sys-con](sys-con.md) (системный модуль)
+- [sys-botbase](sys-botbase.md) (системный модуль)
+- [SysDVR](sysdvr.md) (системный модуль и приложение Homebrew)
+- [sys-clk](sys-clk.md) (системный модуль и приложение Homebrew)
+- [ldn_mitm](ldn_mitm.md) (системный модуль и приложение Homebrew)
+
 
