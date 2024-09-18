@@ -1,14 +1,16 @@
-### **Information**
+### **Информация**
 
-This page summarizes the included Homebrew apps and additional Homebrew you can check out.
+Эта страница содержит краткое описание приложений Homebrew включённых в большинство сборок и дополнительных приложений Homebrew, которые вы можете изучить.
 
-#### The guide includes a few Homebrew apps by default, these apps are:
+
+#### В руководстве по умолчанию включено несколько приложений Homebrew, это приложения:
 
 - [JKSV](jksv.md)
 - [Goldleaf](goldleaf.md)
 - [FTPD](ftpd.md)
 - [NXTheme Installer](nxtheme-installer.md)
 - [NX-Shell](nx-shell.md)
+
 
 #### Terminologies
 
