@@ -1,30 +1,31 @@
-### Information
+# SimpleModManager
 
-SimpleModManager is a [homebrew app](index.md#terminologies) that allows easily adding and removing mods to the layeredFS directory from another directory on the SD card.
+SimpleModManager — это [homebrew](index.md#terminologies), которое позволяет легко добавлять и удалять моды в директорию layeredFS из другой директории на SD-карте.
 
-#### Common use cases for SimpleModManager:
+#### Общие случаи использования SimpleModManager:
 
-- Switching between large modpacks
-- Enabling and disabling individual mods
+- Переключение между большими модпаками
+- Включение и отключение отдельных модов
 
-!!! warning "What **not** to use SimpleModManager for."
-    SimpleModManager should not be used for some specific games like Super Smash Bros. Ultimate and The Legend of Zelda: Breath of the Wild and Tears of the Kingdom. This is due to how these games handle mods differently from others.
- -----
+!!! warning "Чего **не** следует делать с SimpleModManager."
+    SimpleModManager не следует использовать для некоторых конкретных игр, таких как Super Smash Bros. Ultimate, The Legend of Zelda: Breath of the Wild и Tears of the Kingdom. Это связано с тем, как эти игры обрабатывают моды иначе, чем другие.
 
-#### Installation requirements:
-- The latest release of [SimpleModManager](https://github.com/nadrino/SimpleModManager/releases/latest) (the `SimpleModManager.nro` file)
+-----
 
-#### Installation instructions:
-1. Boot into Hekate and go to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-2. Your microSD card should now be accessible on your PC, open it.
-3. Copy the `SimpleModManager.nro` file the `/switch/` folder on your microSD card.
-4. Boot into CFW.
+#### Требования к установке:
+- Последняя версия [SimpleModManager](https://github.com/nadrino/SimpleModManager/releases/latest) (файл `SimpleModManager.nro`)
 
-#### Usage instructions:
-1. Create a directory named `mods/<game name>/<mod name>/` on the root of the SD card.
-    - What you put for the mod name does not have to align with anything, put whatever you like!
-2. Create the layeredFS directory for your mod that can be found on the [Game Modding](../extras/game_modding.md) page, skipping the `atmosphere` folder inside the `<mod name>` folder.
-3. Launch SimpleModManager via the Homebrew Menu and your games will show up, pressing A on them will show the mods available.
+#### Инструкция по установке:
+1. Загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите вашу Switch к ПК через USB.
+2. Ваша microSD карта теперь должна быть доступна на вашем ПК, откройте её.
+3. Скопируйте файл `SimpleModManager.nro` в папку `/switch/` на вашей microSD карте.
+4. Загрузитесь в CFW.
 
-![ExampleSwitchTheme](img/simplemodmanager1.jpg){ width="600" }
-![ExampleSwitchTheme](img/simplemodmanager2.jpg){ width="600" }
+#### Инструкция по использованию:
+1. Создайте директорию с именем `mods/<имя игры>/<имя мода>/` в корне SD-карты.
+    - Имя мода не обязательно должно соответствовать чему-либо, можете назвать его как угодно!
+2. Создайте директорию layeredFS для вашего мода, которую можно найти на странице [моддинг игр](../extras/game_modding.md), пропустив папку `atmosphere` внутри папки `<имя мода>`.
+3. Запустите SimpleModManager через Homebrew меню, и ваши игры появятся. Нажмите A на них, чтобы увидеть доступные моды.
+
+![Пример использования SimpleModManager](img/simplemodmanager1.jpg){ width="600" }
+![Пример использования SimpleModManager](img/simplemodmanager2.jpg){ width="600" }

@@ -1,33 +1,34 @@
-### **Information**
+### **Информация**
 
-MissionControl is a [sysmodule](index.md#terminologies) that allows you to pair normally-unsupported controllers as if they were natively supported, like PS3, PS4, PS5 and Xbox One S/X controllers via Bluetooth. The full supported controller list can be found on the official Github repository [here](https://github.com/ndeadly/MissionControl) including pairing instructions for the supported controllers.
-
------
-
-#### Installation requirements:
-- An archive manager like [7-Zip](https://www.7-zip.org/)
-- The latest release of [MissionControl](https://github.com/ndeadly/MissionControl/releases) (the `MissionControl-(version)-master.zip` file)
-
-#### Installation instructions:
-1. Boot into Hekate and go to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-2. Your microSD card should now be accessible on your PC, open it.
-3. Extract the `.zip` file to a location on your computer.
-    - If your archive manager allows for it, you can also simply open the `.zip` file directly.
-4. Copy the *contents* of the (extracted) `.zip` file to the root of your microSD card.
-    - **Optional:** You can verify if you've installed MissionControl correctly, you should have a folder called `010000000000BD00` (MissionControl) in `sd:/atmosphere/contents`.
-5. Boot into CFW.
+MissionControl — это [системный модуль](index.md#terminologies), который позволяет подключать контроллеры, не поддерживаемые по умолчанию, как если бы они были нативно поддержаны. Это касается таких контроллеров, как PS3, PS4, PS5 и Xbox One S/X, которые можно подключить по Bluetooth. Полный список поддерживаемых контроллеров доступен в официальном репозитории Github [здесь](https://github.com/ndeadly/MissionControl), включая инструкции по сопряжению для каждого из них.
 
 -----
 
-### **Troubleshooting**
-#### **My Switch crashes on boot after I installed MissionControl!:**
+#### Требования для установки:
+- Архиватор, например, [7-Zip](https://www.7-zip.org/)
+- Последняя версия [MissionControl](https://github.com/ndeadly/MissionControl/releases) (файл `MissionControl-(version)-master.zip`)
 
-**Cause:** If your Switch crashes with Error `std::abort (0xFFE)` and Title ID `010000000000BD00`, you're using a version of MissionControl that's incompatible with your Atmosphere version. The expected Atmosphere version is mentioned on each release page of a MissionControl release.
+#### Инструкция по установке:
+1. Загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите Switch к ПК через USB.
+2. Ваша карта microSD теперь должна быть доступна на ПК, откройте её.
+3. Извлеките файлы из архива `.zip` в удобное место на вашем компьютере.
+    - Если ваш архиватор позволяет, вы можете открыть файл `.zip` напрямую.
+4. Скопируйте *содержимое* (извлечённого) архива `.zip` в корень вашей карты microSD.
+    - **Дополнительно:** Для проверки правильности установки MissionControl, на карте памяти должен появиться каталог `010000000000BD00` (MissionControl) в `sd:/atmosphere/contents`.
+5. Загрузитесь в CFW.
+
+-----
+
+### **Устранение неполадок**
+
+#### **Моя Switch вылетает при загрузке после установки MissionControl!**
+
+**Причина:** Если ваша система вылетает с ошибкой `std::abort (0xFFE)` и идентификатором приложения `010000000000BD00`, это означает, что вы используете версию MissionControl, несовместимую с вашей версией Atmosphere. Необходимая версия Atmosphere указана на странице релиза каждой версии MissionControl.
 
 &nbsp;
 
-#### **MissionControl isn't working!:**
+#### **MissionControl не работает!**
 
-Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.
+Если вы правильно следовали инструкциям по установке, проблема, скорее всего, связана с тем, что архивный бит установлен на одной или нескольких папках/файлах на вашей карте microSD. Это часто происходит, если файлы были скопированы на microSD с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте использовать утилиту для исправления архивного бита через Hekate для всех файлов.
 
-This can be done by booting into Hekate and going to `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+Это можно сделать, загрузившись в Hekate и выбрав `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.

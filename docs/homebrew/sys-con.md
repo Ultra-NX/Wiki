@@ -1,35 +1,35 @@
-### **Information**
+# sys-con
 
-sys-con is a [sysmodule](index.md#terminologies) that allows you to use normally-unsupported controllers as if they were natively supported, like PS3, PS4, PS5 and Xbox One S/X controllers via USB. The full supported feature and controller list can be found on the official Github repository [here](https://github.com/cathery/sys-con) including usage instructions and configuration options.
-
------
-
-#### Installation requirements:
-- An archive manager like [7-Zip](https://www.7-zip.org/)
-- The latest release of [sys-con](https://github.com/cathery/sys-con/releases) (the `sys-con-(version).zip` file)
-
-#### Installation instructions:
-1. Boot into Hekate and go to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-2. Your microSD card should now be accessible on your PC, open it.
-3. Extract the `.zip` file to a location on your computer.
-    - If your archive manager allows for it, you can also simply open the `.zip` file directly.
-4. Copy the *contents* of the (extracted) `.zip` file to the root of your microSD card.
-    - **Optional:** You can verify if you've installed sys-con correctly, you should have a folder called `690000000000000D` (sys-con) in `sd:/atmosphere/contents`.
-5. Boot into CFW.
+sys-con — это [системный модуль](index.md#terminologies), который позволяет вам использовать контроллеры, которые обычно не поддерживаются, так, как если бы они были нативно поддерживаемыми, такие как контроллеры PS3, PS4, PS5 и Xbox One S/X через USB. Полный список поддерживаемых функций и контроллеров можно найти в официальном репозитории на Github [здесь](https://github.com/cathery/sys-con), включая инструкции по использованию и параметры конфигурации.
 
 -----
 
-### **Troubleshooting**
-#### **My Switch crashes on boot after I installed sys-con!:**
+#### Требования к установке:
+- Архиватор, например, [7-Zip](https://www.7-zip.org/)
+- Последняя версия [sys-con](https://github.com/cathery/sys-con/releases) (файл `sys-con-(version).zip`)
 
-**Cause:** While it's almost impossible for this to happen, if your Switch crashes with Error code `2162-0002 (0x4a2)` and Title ID `690000000000000D`, you're using a version of sys-con that's incompatible with your Switch firmware version. The expected firmware version is mentioned on each release page of a sys-con release.
+#### Инструкция по установке:
+1. Загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите вашу Switch к ПК через USB.
+2. Ваша microSD карта теперь должна быть доступна на вашем ПК, откройте её.
+3. Извлеките `.zip` файл в папку на вашем компьютере.
+    - Если ваш архиватор это позволяет, вы также можете просто открыть `.zip` файл напрямую.
+4. Скопируйте *содержимое* извлеченного `.zip` файла в корень вашей microSD карты.
+    - **Дополнительно:** Вы можете проверить, правильно ли вы установили sys-con, у вас должна быть папка с именем `690000000000000D` (sys-con) в `sd:/atmosphere/contents`.
+5. Загрузитесь в CFW.
 
-- **Note:** sys-con hasn't needed an update for years as of the moment of writing this. If it does need an update, an updated release will be mentioned here.
+-----
+
+### **Устранение неполадок**
+#### **Моя система выдает ошибку при загрузке после установки sys-con!**
+
+**Причина:** Хотя это почти невозможно, если ваша система выдает ошибку с кодом `2162-0002 (0x4a2)` и ID заголовка `690000000000000D`, это означает, что вы используете версию sys-con, несовместимую с версией прошивки вашей консоли. Необходимая версия прошивки указана на каждой странице выпуска sys-con.
+
+- **Примечание:** sys-con не требовал обновления в течение многих лет на момент написания. Если он действительно нуждается в обновлении, информация об обновленном выпуске будет указана здесь.
 
 &nbsp;
 
-#### **sys-con isn't working!:**
+#### **sys-con не работает!**
 
-Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.
+Предполагая, что вы успешно следовали инструкциям по установке, это, вероятно, связано с тем, что бит архива установлен на одну или несколько папок/файлов на вашей microSD карте. Обычно это происходит при копировании файлов на microSD карту с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте запустить утилиту для исправления бита архива через Hekate для всех файлов.
 
-This can be done by booting into Hekate and going to `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+Это можно сделать, загрузившись в Hekate и перейдя в `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.

@@ -1,48 +1,48 @@
-### **Information**
+# sys-clk
 
-sys-clk is a [sysmodule](index.md#terminologies) that allows you to overclock the hardware of your Switch. The usage, configuration and clock speed information can be found on the official Github repository [here](https://github.com/retronx-team/sys-clk)
+sys-clk — это [системный модуль](index.md#terminologies), который позволяет вам разгонять железо вашей консоли. Информацию об использовании, настройке и частотах можно найти в официальном репозитории на Github [здесь](https://github.com/retronx-team/sys-clk).
 
-!!! danger "Limits of sys-clk"
-    sys-clk has limits for a reason, which is to not damage the hardware of your Switch. Using ***any*** modified version of sys-clk puts your Switch at risk of hardware failure. We do not support any modified version of sys-clk nor should you ever touch them. Overclocking is not something you should be doing 24/7 as overclocking in general will always degrade/wear out the hardware of your Switch faster and you should know what you're doing if you *do* decide to do so.
-
------
-
-#### Installation requirements:
-- An archive manager like [7-Zip](https://www.7-zip.org/)
-- The latest release of [sys-clk](https://github.com/retronx-team/sys-clk/releases) (the `sys-clk-(version).zip` file)
-
-#### Installation instructions:
-1. Boot into Hekate and go to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-2. Your microSD card should now be accessible on your PC, open it.
-3. Extract the `.zip` file to a location on your computer.
-    - If your archive manager allows for it, you can also simply open the `.zip` file directly.
-4. Copy the *contents* of the (extracted) `.zip` file to the root of your microSD card.
-    - **Optional:** You can verify if you've installed sys-clk correctly, you should have a folder called `00FF0000636C6BFF` (sys-clk) in `sd:/atmosphere/contents`.
-5. Boot into CFW.
+!!! danger "Ограничения sys-clk"
+    У sys-clk есть ограничения по определенной причине — чтобы не повредить оборудование вашей Switch. Использование ***любой*** модифицированной версии sys-clk подвергает вашу консоль риску аппаратных повреждений. Мы не поддерживаем никакие модифицированные версии sys-clk и не рекомендуем с ними работать. Разгон — это не то, что следует делать 24/7, так как разгон в целом всегда приводит к более быстрому износу оборудования вашей консоли, и вы должны понимать, что делаете, если *решите* это сделать.
 
 -----
 
-### **Basic usage instructions**
+#### Требования к установке:
+- Архиватор, например, [7-Zip](https://www.7-zip.org/)
+- Последняя версия [sys-clk](https://github.com/retronx-team/sys-clk/releases) (файл `sys-clk-(version).zip`)
 
-Open the Homebrew menu and open sys-clk's manager app. This app allows you to change the global clock speeds or clock speeds based on title.
+#### Инструкция по установке:
+1. Загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите вашу Switch к ПК через USB.
+2. Ваша microSD карта теперь должна быть доступна на вашем ПК, откройте её.
+3. Извлеките `.zip` файл в папку на вашем компьютере.
+    - Если ваш архиватор это позволяет, вы также можете просто открыть `.zip` файл напрямую.
+4. Скопируйте *содержимое* извлеченного `.zip` файла в корень вашей microSD карты.
+    - **Дополнительно:** Вы можете проверить, правильно ли вы установили sys-clk, у вас должна быть папка с именем `00FF0000636C6BFF` (sys-clk) в `sd:/atmosphere/contents`.
+5. Загрузитесь в CFW.
 
 -----
 
-### **Troubleshooting**
-#### **My Switch crashes on boot after I installed sys-clk!:**
+### **Основные инструкции по использованию**
 
-**Cause:** If your Switch crashes on boot, make sure you're using the latest release of sys-clk. If it continues to crash afterwards, see the troubleshooting step at the bottom of this page.
+Откройте меню Homebrew и запустите приложение менеджера sys-clk. Это приложение позволяет вам изменять глобальные частоты или конкретного приложения.
+
+-----
+
+### **Устранение неполадок**
+#### **Моя система выдает ошибку при загрузке после установки sys-clk!**
+
+**Причина:** Если ваша система выдает ошибку при загрузке, убедитесь, что вы используете последнюю версию sys-clk. Если она продолжает выдавать ошибку после этого, смотрите шаг устранения неполадок внизу этой страницы.
 
 &nbsp;
 
-#### **My Switch crashes while using sys-clk!:**
+#### **Моя система выдает ошибку во время использования sys-clk!**
 
-**Cause:** You're either using a modified version of sys-clk and pushing the hardware of your Switch too far or your console is overheating. The cooling system of the Switch is *not* the best and overheating can be a cause of dried up thermal paste/lack of thermal paste. Overclock with caution and be careful, monitor the temperatures of your Switch using a Tesla-Menu overlay like [Status-Monitor-Overlay](https://github.com/masagrator/Status-Monitor-Overlay) (requires Tesla-Menu).
+**Причина:** Вы либо используете модифицированную версию sys-clk и перегружаете оборудование своей консоли, либо ваша консоль перегревается. Система охлаждения Switch *не* лучшая, и перегрев может быть вызван иссушением термопасты или отсутствием термопасты. Разгоняйте с осторожностью и внимательно следите за температурами вашей Switch с помощью оверлея Tesla-Menu, такого как [Status-Monitor-Overlay](https://github.com/masagrator/Status-Monitor-Overlay) (требуется Tesla-Menu).
 
 &nbsp;
 
-#### **sys-clk isn't working!:**
+#### **sys-clk не работает!**
 
-Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.
+Предполагая, что вы успешно следовали инструкциям по установке, это, вероятно, связано с тем, что бит архива установлен на одну или несколько папок/файлов на вашей microSD карте. Обычно это происходит при копировании файлов на microSD карту с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте запустить утилиту для исправления бита архива через Hekate для всех файлов.
 
-This can be done by booting into Hekate and going to `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+Это можно сделать, загрузившись в Hekate и перейдя в `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
