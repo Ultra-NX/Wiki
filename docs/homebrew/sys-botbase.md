@@ -1,40 +1,40 @@
-### **Information**
+# sys-botbase
 
-sys-botbase is an advanced [sysmodule](index.md#terminologies) that allows users to interact with their Switch remotely, to "remote control" their Switch. This remote control allows users to create automated tasks, simulate button presses, simulate touchscreen input and read/write to the memory of the Switch while in-game.
+sys-botbase — это продвинутый [системный модуль](index.md#terminologies), который позволяет пользователям взаимодействовать со своей консолью удаленно, чтобы "управлять" ею. Этот удаленный контроль позволяет пользователям создавать автоматизированные задачи, симулировать нажатия кнопок, симулировать ввод с сенсорного экрана и читать/записывать данные в память Switch во время игры.
 
-#### Common use cases for sys-botbase:
-- Use ACNHPokerCore in combination with ACNH
-- Controlling a game remotely
-- Automation
-
------
-
-#### Installation requirements:
-- An archive manager like [7-Zip](https://www.7-zip.org/)
-- The latest release of [sys-botbase](https://github.com/olliz0r/sys-botbase/releases) (the `sys-botbase(version).zip` file)
-
-#### Installation instructions:
-1. Boot into Hekate and go to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-2. Your microSD card should now be accessible on your PC, open it.
-3. Extract the `.zip` file to a location on your computer.
-    - If your archive manager allows for it, you can also simply open the `.zip` file directly.
-4. Copy the *contents* of each (extracted) `.zip` file to the root of your microSD card.
-    - **Optional:** You can verify if you've installed sys-botbase correctly, you should have a folder called `430000000000000B` (sys-botbase) in `sd:/atmosphere/contents`.
-5. Boot into CFW.
+#### Общие случаи использования sys-botbase:
+- Использование ACNHPokerCore в сочетании с ACNH
+- Удалённое управление игрой
+- Автоматизация
 
 -----
 
-### **Troubleshooting**
-#### **My Switch crashes on boot after I installed sys-botbase!:**
+#### Требования к установке:
+- Архиватор, например, [7-Zip](https://www.7-zip.org/)
+- Последняя версия [sys-botbase](https://github.com/olliz0r/sys-botbase/releases) (файл `sys-botbase(version).zip`)
 
-**Cause:** While it's almost impossible for this to happen, if your Switch crashes with Error `2001-0123 (0xf601)` and Title ID `430000000000000B`, you're using a version of sys-botbase that's incompatible with your Atmosphere version.
+#### Инструкция по установке:
+1. Загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите вашу консоль к ПК через USB.
+2. Ваша microSD карта теперь должна быть доступна на вашем ПК, откройте её.
+3. Извлеките `.zip` файл в папку на вашем компьютере.
+    - Если ваш архиватор это позволяет, вы также можете просто открыть `.zip` файл напрямую.
+4. Скопируйте *содержимое* каждого (извлеченного) `.zip` файла в корень вашей microSD карты.
+    - **Дополнительно:** Вы можете проверить, правильно ли вы установили sys-botbase, у вас должна быть папка с именем `430000000000000B` (sys-botbase) в `sd:/atmosphere/contents`.
+5. Загрузитесь в CFW.
 
-- **Note:** sys-botbase will almost never crash unless something is fundamentally wrong with the contents of your microSD card. If it does crash and need an update, an updated release will be mentioned here.
+-----
+
+### **Устранение неполадок**
+#### **Моя система выдает ошибку при загрузке после установки sys-botbase!**
+
+**Причина:** Хотя это почти невозможно, если ваша система выдает ошибку `2001-0123 (0xf601)` и идентификатор заголовка `430000000000000B`, вы используете версию sys-botbase, несовместимую с вашей версией Atmosphere.
+
+- **Примечание:** sys-botbase почти никогда не вызывает сбоев, если только что-то фундаментально неверно с содержимым вашей microSD карты. Если это происходит и требуется обновление, обновленная версия будет указана здесь.
 
 &nbsp;
 
-#### **sys-botbase isn't working!:**
+#### **sys-botbase не работает!**
 
-Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.
+Предполагая, что вы успешно следовали инструкциям по установке, это, вероятно, связано с тем, что бит архива установлен на одну или несколько папок/файлов на вашей microSD карте. Обычно это происходит при копировании файлов на microSD карту с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте запустить утилиту для исправления бита архива через Hekate для всех файлов.
 
-This can be done by booting into Hekate and going to `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+Это можно сделать, загрузившись в Hekate и перейдя в `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.

@@ -1,24 +1,25 @@
 ### **NX-Shell**
-NX-Shell is a file manager.
+NX-Shell — это файловый менеджер.
 
 -----
 
-#### Common use cases for NX-Shell
+#### Основные сценарии использования NX-Shell
 
-- Copying files
-- Moving files
-- Deleting files
-- View properties of files and folders
-- Create new folders
-- Create new files
-- Set the archive bit on files and folders
+- Копирование файлов
+- Перемещение файлов
+- Удаление файлов
+- Просмотр свойств файлов и папок
+- Создание новых папок
+- Создание новых файлов
+- Установка архивного бита на файлы и папки
 
-For more information, you can check out NX-Shell's Github repository [here](https://github.com/joel16/NX-Shell).
+Для получения дополнительной информации вы можете посетить репозиторий NX-Shell на Github [здесь](https://github.com/joel16/NX-Shell).
 
 -----
 
-#### NX-Shell screenshots:
+#### Скриншоты NX-Shell:
 
 ![nx-shell-main](img/nx-shell-main.jpg)
 
 ![nx-shell-menu](img/nx-shell-menu.jpg)
+

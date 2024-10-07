@@ -1,92 +1,92 @@
-### **Information**
+# Tesla-Menu
 
-Tesla-Menu is an overlay menu developed by [WerWolv](https://github.com/WerWolv), Tesla-Menu is comparable to Rosalina menu on the 3DS and its purpose is to be able to load community made overlays for Homebrew apps and sysmodules that can be accessed at any time. Below you can find common use cases for Tesla-Menu. The official Github page for Tesla-Menu can be found [here](https://github.com/WerWolv/Tesla-Menu).
+Tesla-Menu — это оверлейное меню, разработанное [WerWolv](https://github.com/WerWolv). Tesla-Menu можно сравнить с меню Rosalina на 3DS, и его цель — возможность загружать созданные сообществом оверлеи для Homebrew приложений и системных модулей, которые можно использовать в любое время. Ниже приведены распространенные случаи использования Tesla-Menu. Официальная страница GitHub для Tesla-Menu доступна [здесь](https://github.com/WerWolv/Tesla-Menu).
 
-!!! note "Dependencies"
-    Tesla-Menu is dependent on a [sysmodule](index.md#terminologies) called `nx-ovlloader`, this sysmodule is responsible for loading `ovlmenu.ovl` from `sd:/switch/.overlays`.
+!!! note "Зависимости"
+    Tesla-Menu зависит от [системного модуля](index.md#terminologies) под названием `nx-ovlloader`, который отвечает за загрузку `ovlmenu.ovl` из `sd:/switch/.overlays`.
 
-#### Common use cases for Tesla-Menu:
-- Load community made Tesla-Menu overlays
-- Viewing the temperatures/clock speeds of your hardware
-- Editing sysmodule configs on the fly (if applicable)
-- Editing Homebrew app configs on the fly (if applicable)
-- Toggling cheats easily
-- Toggling sysmodules
-
------
-
-#### Installation requirements:
-- An archive manager like [7-Zip](https://www.7-zip.org/)
-- The latest release of [Tesla-Menu](https://github.com/WerWolv/Tesla-Menu/releases/tag/v1.2.3) (the `ovlmenu.zip` file)
-- The latest release of [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader/releases/tag/v1.0.7) (the `nx-ovlloader.zip` file)
-
-#### Installation instructions:
-1. Boot into Hekate and go to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-2. Your microSD card should now be accessible on your PC, open it.
-3. Extract both `.zip` files to a location on your computer.
-    - If your archive manager allows for it, you can also simply open the `.zip` files directly.
-4. Copy the *contents* of each (extracted) `.zip` file to the root of your microSD card.
-    - **Optional:** You can verify if you've installed Tesla-Menu and nx-ovlloader correctly, you should have a folder called `420000000007E51A` (nx-ovlloader) in `sd:/atmosphere/contents` and the `ovlmenu.ovl` (Tesla-Menu) file in `sd:/switch/.overlays`.
-5. Boot into CFW.
+#### Распространенные случаи использования Tesla-Menu:
+- Загрузка созданных сообществом оверлеев Tesla-Menu
+- Просмотр температур/частот процессора вашего оборудования
+- Редактирование конфигураций системных модулей на лету (если применимо)
+- Редактирование конфигураций Homebrew приложений на лету (если применимо)
+- Легкое включение и отключение читов
+- Легкое включение и отключение системных модулей
 
 -----
 
-### **Opening Tesla-Menu**
-Tesla-Menu can be opened by pressing `L` + `R Stick press (R3)` + `DPAD down`, assuming you use the default configuration.
+#### Требования к установке:
+- Архиватор, например, [7-Zip](https://www.7-zip.org/)
+- Последняя версия [Tesla-Menu](https://github.com/WerWolv/Tesla-Menu/releases/tag/v1.2.3) (файл `ovlmenu.zip`)
+- Последняя версия [nx-ovlloader](https://github.com/WerWolv/nx-ovlloader/releases/tag/v1.0.7) (файл `nx-ovlloader.zip`)
+
+#### Инструкции по установке:
+1. Загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите свою консоль к ПК через USB.
+2. Ваша microSD-карта теперь должна быть доступна на вашем ПК, откройте ее.
+3. Извлеките оба `.zip` файла в папку на вашем компьютере.
+    - Если ваш архиватор позволяет, вы можете открыть `.zip` файлы напрямую.
+4. Скопируйте *содержимое* каждого (извлеченного) `.zip` файла в корень вашей microSD-карты.
+    - **Необязательно:** Вы можете проверить, правильно ли вы установили Tesla-Menu и nx-ovlloader. У вас должна быть папка с именем `420000000007E51A` (nx-ovlloader) в `sd:/atmosphere/contents` и файл `ovlmenu.ovl` (Tesla-Menu) в `sd:/switch/.overlays`.
+5. Загрузитесь в CFW.
+
+-----
+
+### **Открытие Tesla-Menu**
+Tesla-Menu можно открыть, нажав `L` + `R Stick press (R3)` + `DPAD down`, если вы используете конфигурацию по умолчанию.
 
 ![tesla](img/tesla-menu.jpg)
 
-#### Changing the button combination
+#### Изменение комбинации кнопок
 
-If you wish to change the default button configuration, see the instructions below:
+Если вы хотите изменить конфигурацию кнопок по умолчанию, следуйте инструкциям ниже:
 
-1. Navigate to `sd:/config` on your microSD card.
-2. Create a folder named `tesla` if it doesn't exist already.
-3. Create a file named `config.ini` in `sd:/config/tesla`.
-4. Paste the following text inside of `config.ini`:
+1. Перейдите в `sd:/config` на вашей microSD-карте.
+2. Создайте папку с именем `tesla`, если она еще не существует.
+3. Создайте файл с именем `config.ini` в `sd:/config/tesla`.
+4. Вставьте следующий текст в `config.ini`:
     ```
     [tesla]
     key_combo=L+R+RS
     # A, B, X, Y, LS, RS, L, R, ZL, ZR, PLUS, MINUS, DLEFT, DUP, DRIGHT, DDOWN, SL, SR
     ```
-5. Change the `key_combo` value to anything you desire and save the file. The accepted inputs are mentioned on the third line.
+5. Измените значение `key_combo` на любое желаемое и сохраните файл. Допустимые значения указаны на третьей строке.
 
 -----
 
-### **Commonly used Tesla-Menu overlays**
+### **Распространенные оверлеи Tesla-Menu**
 - [Status-Monitor-Overlay](https://github.com/masagrator/Status-Monitor-Overlay)
 - [EdiZon overlay](https://github.com/proferabg/EdiZon-Overlay)
 - [QuickNTP](https://github.com/nedex/QuickNTP)
-- [Emuiibo](https://github.com/XorTroll/emuiibo) (this requires you to also install the Emuiibo sysmodule)
-- [TriPlayer](https://github.com/DefenderOfHyrule/TriPlayer) (this requires you to also install the TriPlayer sysmodule)
-- [ldn_mitm](https://github.com/DefenderOfHyrule/ldn_mitm) (this requires you to also install the ldn_mitm sysmodule)
-- [Fizeau](https://github.com/averne/Fizeau) (this requires you to also install the Fizeau sysmodule)
+- [Emuiibo](https://github.com/XorTroll/emuiibo) (это требует установки системного модуля Emuiibo)
+- [TriPlayer](https://github.com/DefenderOfHyrule/TriPlayer) (это требует установки системного модуля TriPlayer)
+- [ldn_mitm](https://github.com/DefenderOfHyrule/ldn_mitm) (это требует установки системного модуля ldn_mitm)
+- [Fizeau](https://github.com/averne/Fizeau) (это требует установки системного модуля Fizeau)
 
 -----
 
-### **Troubleshooting**
-#### **My Switch crashes on boot after I installed Tesla-Menu/nx-ovlloader!:**
+### **Устранение неполадок**
+#### **Моя система выдает ошибку при загрузке после установки Tesla-Menu/nx-ovlloader!:**
 
-**Cause:** If your Switch crashes with Error code `2001-0123 (0xf601)` and Title ID `420000000007E51A`, you didn't successfully install Tesla-Menu or you aren't using the latest release of Tesla-Menu, re-follow the installation instructions above.
-
-&nbsp;
-
-#### **My Switch crashes when I open an overlay via Tesla-Menu!:**
-
-**Cause:** If your Switch crashes with Error code `2001-0123 (0xf601)` and Title ID `420000000007E51A`, the overlay you're trying to open/use isn't up to date. Check its source repository for updates.
-
-- If this overlay doesn't have an updated release, you may have to look for a forked (updated) release or compile it yourself using the latest `libtesla` library. The latter is for developers (or advanced users).
+**Причина:** Если ваша консоль выдает ошибку с кодом `2001-0123 (0xf601)` и идентификатором заголовка `420000000007E51A`, это означает, что вы допустили ошибку во время установки Tesla-Menu или не использовали последнюю версию Tesla-Menu. Повторите инструкции по установке выше.
 
 &nbsp;
 
-#### **Tesla-Menu is only showing while on the main menu and not in-game!:**
+#### **Моя система выдает ошибку, когда я открываю оверлей через Tesla-Menu!:**
 
-**Cause:** This issue will only happen when the Switch is docked, ensure that you've set the "Screen size" in `System Settings` > `TV Output` to 100%. Adjust your TV/monitor to fit the entirety of the screen of your Switch using its OSD (On Screen Display) or remote.
+**Причина:** Если ваша консоль выдает ошибку с кодом `2001-0123 (0xf601)` и идентификатором заголовка `420000000007E51A`, это означает, что оверлей, который вы пытаетесь открыть/использовать, не обновлен. Проверьте его репозиторий для получения обновлений.
+
+- Если у этого оверлея нет обновленной версии, возможно, вам придется искать форк (обновленную версию) или собрать его самостоятельно с использованием последней библиотеки `libtesla`. Последний вариант предназначен для разработчиков (или продвинутых пользователей).
 
 &nbsp;
 
-#### **Tesla-Menu isn't opening when I press the correct button combination!:**
+#### **Tesla-Menu отображается только на главном экране, а не в игре!:**
 
-Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.
+**Причина:** Эта проблема возникает только когда Switch находится в док-станции. Убедитесь, что вы установили "Размер экрана" в `Настройки системы` > `Выходной сигнал ТВ` на 100%. Настройте ваш телевизор/монитор, чтобы он соответствовал полному экрану вашей Switch, используя его OSD (On Screen Display) или пульт.
 
-This can be done by booting into Hekate and going to `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+&nbsp;
+
+#### **Tesla-Menu не открывается, когда я нажимаю правильную комбинацию кнопок!:**
+
+Предполагая, что вы успешно выполнили инструкции по установке, это, вероятно, связано с тем, что архивный бит установлен на одну или несколько папок/файлов на вашей microSD-карте. Обычно это происходит при копировании файлов на microSD-карту с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте запустить утилиту исправления архивного бита через Hekate для всех файлов.
+
+Это можно сделать, загрузившись в Hekate и перейдя в `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.

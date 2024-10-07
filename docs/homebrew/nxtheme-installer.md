@@ -1,115 +1,112 @@
-# Theming
+# Темизация
 
-Using NXTheme Installer, you can install and create unique styles and layouts for your Switch Home Menu.
+С помощью NXTheme Installer вы можете устанавливать и создавать уникальные стили и макеты для главного меню вашей консоли.
 
-### **Index**
+### **Ссылки**
 
-- Follow the [Installing a theme](#installing-a-theme) section if you want to install a theme.
-
-- Follow the [Making a theme](#making-a-theme) section if you want to make a theme manually.
-
-- Follow the [Installing a custom font](#installing-a-custom-font) section if you want to install a custom font.
-
-- If you run into any issues, visit the [Troubleshooting](#troubleshooting) section.
+- Перейдите в раздел [Установка темы](#installing-a-theme), если вы хотите установить тему.
+- Перейдите в раздел [Создание темы](#making-a-theme), если вы хотите создать тему вручную.
+- Перейдите в раздел [Установка пользовательского шрифта](#installing-a-custom-font), если вы хотите установить пользовательский шрифт.
+- Если у вас возникли какие-либо проблемы, посетите раздел [Устранение неполадок](#troubleshooting).
 
 -----
 
-### **Installing a theme**
+### **Установка темы**
 
-!!! note "Community Themes"
-	If you want to use community made themes, for example from the <a href="https://www.reddit.com/r/NXThemes/" target="_blank">r/NXThemes</a> subreddit or [Themezer](https://themezer.net), you can follow the guide below to install a community provided `.nxtheme` file.
+!!! note "Темы от сообщества"
+    Если вы хотите использовать темы, созданные сообществом, например, из сабреддита <a href="https://www.reddit.com/r/NXThemes/" target="_blank">r/NXThemes</a> или [Themezer](https://themezer.net), вы можете следовать приведённому ниже руководству для установки предоставленного `.nxtheme` файла.
 
-#### **What you need:**
+#### **Что вам нужно:**
 
-- The latest release of [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases)
+- Последняя версия [NXThemes Installer](https://github.com/exelix11/SwitchThemeInjector/releases)
 
-#### **Instructions:**
+#### **Инструкция:**
 
-1. Download `NXThemesInstaller.nro` and put it in `sd:/switch`.
-1. Copy the `.nxtheme` files to the `themes` folder on your microSD card (It is recommended you put them into their own folders, e.g. `sd:/themes/awesome_theme/awesome.nxtheme`).
-	- Create the `themes` folder on the root of your microSD card if it does not exist.
-2. Boot into sysCFW/emuMMC and launch the Homebrew Menu, then launch `NXThemes Installer` *with* an internet connection.
-    - NXTheme Installer will automatically download the required theme patches if it has a connection to the internet. These theme patches are required for themes to work.
-	If you don't want to or don't have the ability connect to a Wi-Fi network, installing the theme patches can be done manually.
-	See the instructions [here](https://github.com/exelix11/theme-patches#if-you-dont-want-to-connect-your-console-to-the-internet) on how to install them manually.
-3. If you get prompted about extracting your home menu data, do so.
-    - You can always do this manually via the `Extract home menu` tab in `NXTheme Installer`.
-3. You should now see the main menu of `NXTheme Installer`, the `Themes` tab is where you will find your themes. To install them, press the folder name of your theme and go through each home menu section to install the desired theme for that section (e.g. going to `/awesome_theme` and selecting your theme for the specific menu you want to change, do the same for the other menus).
-4. Reboot into CFW via the `Reboot` tab to see the changes.
+1. Скачайте `NXThemesInstaller.nro` и поместите его в `sd:/switch`.
+2. Скопируйте файлы `.nxtheme` в папку `themes` на вашей microSD карте (рекомендуется помещать их в отдельные папки, например, `sd:/themes/awesome_theme/awesome.nxtheme`).
+    - Создайте папку `themes` в корне вашей microSD карты, если её не существует.
+3. Загрузитесь в sysCFW/emuMMC и запустите меню Homebrew, затем запустите `NXThemes Installer` *с подключением к интернету*.
+    - NXTheme Installer автоматически загрузит необходимые патчи тем, если у него есть доступ к интернету. Эти патчи необходимы для работы тем.
+    - Если вы не хотите или не можете подключиться к Wi-Fi, установку патчей тем можно выполнить вручную.
+    - Посмотрите инструкции [здесь](https://github.com/exelix11/theme-patches#if-you-dont-want-to-connect-your-console-to-the-internet), чтобы узнать, как установить их вручную.
+4. Если вам предложат извлечь данные главного меню, сделайте это.
+    - Вы всегда можете сделать это вручную через вкладку `Extract home menu` в `NXTheme Installer`.
+5. Теперь вы должны увидеть главное меню `NXTheme Installer`, вкладка `Themes` — это то место, где вы найдёте свои темы. Чтобы установить их, нажмите на имя папки вашей темы и пройдите через каждую секцию главного меню, чтобы установить желаемую тему для этой секции (например, перейдите в `/awesome_theme` и выберите свою тему для конкретного меню, которое вы хотите изменить, сделайте то же самое для других меню).
+6. Перезагрузитесь в CFW через вкладку `Reboot`, чтобы увидеть изменения.
 
-!!! tip "An example of a Home Menu theme being installed"
+!!! tip "Пример установки темы главного меню"
     ![ExampleSwitchTheme](../extras/img/switch_theming.jpg)
 
 -----
 
-### **Making a theme**
+### **Создание темы**
 
 === "**Windows**"
 
-    #### **What you need:**
+    #### **Что вам нужно:**
 
-    The latest release of <a href="https://github.com/exelix11/SwitchThemeInjector/releases" target="_blank">**Switch Theme Injector**</a>
+    Последняя версия <a href="https://github.com/exelix11/SwitchThemeInjector/releases" target="_blank">**Switch Theme Injector**</a>
 
-    - You need to download the `ReleaseVx.x.zip` on the download page
+    - Вам нужно скачать файл `ReleaseVx.x.zip` на странице загрузок.
 
-    #### **Making the theme**
+    #### **Создание темы**
 
-    1. Unzip `ReleaseVx.x.zip` to somewhere on your PC's drive.
-    2. Open up the `SwitchThemes.exe` app. Navigate to `NXTheme Builder`.
-    3. Select a Home menu part, A 720p image and a Layout patch. Click on `Build NXTheme` after selecting your home menu part, image and layout patch.
-    4. Fill out the details in the window that pops up. After filling out this window and clicking ok, you will get asked where to save the NXTheme file. Save this file to a temporary folder.
-    5. Repeat step 3 and 4 for every Home Menu part of the Switch you want to modify.
+    1. Разархивируйте `ReleaseVx.x.zip` в любое место на диске вашего ПК.
+    2. Откройте приложение `SwitchThemes.exe`. Перейдите в `NXTheme Builder`.
+    3. Выберите часть главного меню, изображение 720p и патч макета. Нажмите `Build NXTheme` после выбора части главного меню, изображения и патча макета.
+    4. Заполните данные в появившемся окне. После заполнения этого окна и нажатия ok, вам будет предложено выбрать место для сохранения файла NXTheme. Сохраните этот файл в временной папке.
+    5. Повторите шаги 3 и 4 для каждой части главного меню консоли, которую вы хотите изменить.
 
 === "**Mac / Linux / ChromeOS**"
 
-    #### **Making the theme**
+    #### **Создание темы**
 
-    Make sure that the images you want to use are 1280x720 and in JPG!
+    Убедитесь, что изображения, которые вы хотите использовать, имеют размер 1280x720 и формат JPG!
 
-    1. Navigate to <a href="https://exelix11.github.io/SwitchThemeInjector/v2/" target="_blank">**Exelix's Web Injector**</a>.
-    2. Select a Theme Target you want to edit. After this, click the Open an Image button and select your background image.
-    3. Choose a theme name and an author name and optionally a different layout, then click build NxTheme.
-    4. Your browser will prompt you to download a file. Save this file to a temporary folder.
-    5. Repeat step 2 to 4 for every Home Menu part of the Switch you want to modify.
-
------
-
-### **Installing a custom font**
-
-1. Put a font with the `.ttf` file type into the `themes` folder (It is recommended you put them into their own folders, e.g. `sd:/themes/cool_font/font.ttf`).
-2. Boot into sysCFW/emuMMC, launch the Homebrew Menu and launch `NXThemes Installer`.
-3. You should now see the main menu of `NXTheme Installer`, the `Themes` tab is where you will find your font(s).
-4. Install your desired font by selecting the `.ttf` file in the font folder you created.
-4. Reboot into CFW via the `Reboot` tab to see the changes.
-
+    1. Перейдите на <a href="https://exelix11.github.io/SwitchThemeInjector/v2/" target="_blank">**Exelix's Web Injector**</a>.
+    2. Выберите цель темы, которую вы хотите редактировать. Затем нажмите кнопку Open an Image и выберите ваше фоновое изображение.
+    3. Выберите имя темы и имя автора и, при желании, другой макет, затем нажмите Build NxTheme.
+    4. Ваш браузер предложит вам скачать файл. Сохраните этот файл в временной папке.
+    5. Повторите шаги 2–4 для каждой части главного меню Switch, которую вы хотите изменить.
 
 -----
 
-### **Troubleshooting**
-#### **My Switch crashes on boot after I installed a theme!:**
+### **Установка пользовательского шрифта**
 
-**Cause 1:** You didn't install the required theme patches for your firmware version. You can remove your installed custom theme data by navigating to `sd:/atmosphere/contents` and deleting the `01000000000001000` folder.
+1. Поместите шрифт с расширением `.ttf` в папку `themes` (рекомендуется помещать их в отдельные папки, например, `sd:/themes/cool_font/font.ttf`).
+2. Загрузитесь в sysCFW/emuMMC, запустите Homebrew меню и запустите `NXThemes Installer`.
+3. Теперь вы должны увидеть главное меню `NXTheme Installer`, вкладка `Themes` — это то место, где вы найдёте свой(и) шрифт(ы).
+4. Установите желаемый шрифт, выбрав файл `.ttf` в папке шрифтов, которую вы создали.
+5. Перезагрузитесь в CFW через вкладку `Reboot`, чтобы увидеть изменения.
 
-**Cause 2:** You didn't extract your home menu data when prompted. You can remove your installed custom theme data by navigating to `sd:/atmosphere/contents` and deleting the `01000000000001000` folder.
+-----
 
-**Cause 3:** You installed a bad theme. You can remove them by navigating to `sd:/atmosphere/contents` and deleting the `01000000000001000` folder.
+### **Устранение неполадок**
 
-- **Note:** `contents` is called `titles` on Atmosphère versions 0.9.4 and below.
+#### **Моя система выдаёт ошибку при загрузке после установки темы!**
+
+**Причина 1:** Вы не установили необходимые патчи тем для вашей версии прошивки. Вы можете удалить данные вашей установленной пользовательской темы, перейдя в `sd:/atmosphere/contents` и удалив папку `01000000000001000`.
+
+**Причина 2:** Вы не извлекли данные главного меню, когда вам это предложили. Вы можете удалить данные вашей установленной пользовательской темы, перейдя в `sd:/atmosphere/contents` и удалив папку `01000000000001000`.
+
+**Причина 3:** Вы установили плохую тему. Вы можете удалить их, перейдя в `sd:/atmosphere/contents` и удалив папку `01000000000001000`.
+
+- **Примечание:** `contents` называется `titles` в версиях Atmosphère 0.9.4 и ниже.
 
 &nbsp;
 
-#### **My Switch crashes on boot after I installed a font!:**
+#### **Моя система выдаёт ошибку при загрузке после установки шрифта!**
 
-**Cause 1:** You installed a font that was too large in file size (maximum file size being 1.9MB). You can remove your installed custom font data by navigating to `sd:/atmosphere/contents` and deleting the `0100000000000811` folder.
+**Причина 1:** Вы установили шрифт, который был слишком большим по размеру файла (максимальный размер файла — 1.9 МБ). Вы можете удалить данные вашей установленной пользовательской темы, перейдя в `sd:/atmosphere/contents` и удалив папку `0100000000000811`.
 
-**Cause 2:** You installed a font that wasn't the right file type (e.g. `.otf`). You can remove your installed custom font data by navigating to `sd:/atmosphere/contents` and deleting the `0100000000000811` folder.
+**Причина 2:** Вы установили шрифт, который не является правильным типом файла (например, `.otf`). Вы можете удалить данные вашей установленной пользовательской темы, перейдя в `sd:/atmosphere/contents` и удалив папку `0100000000000811`.
 
-- **Note:** `contents` is called `titles` on Atmosphère versions 0.9.4 and below.
+- **Примечание:** `contents` называется `titles` в версиях Atmosphère 0.9.4 и ниже.
 
 &nbsp;
 
-#### **The NXTheme installer crashes when I launch it:**
+#### **NXTheme installer вылетает при запуске:**
 
-This is probably due to the archive bit being set on either the app or the `.nxtheme` files. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.
+Это, вероятно, связано с тем, что архивный бит установлен на приложение или файлы `.nxtheme`. Это обычно происходит в результате копирования файлов на карту microSD с помощью Mac. Если вы сталкиваетесь с этой проблемой, попробуйте использовать утилиту для исправления архивного бита через Hekate для всех файлов.
 
-This can be done by booting into Hekate and going to `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+Это можно сделать, загрузившись в Hekate и выбрав `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.

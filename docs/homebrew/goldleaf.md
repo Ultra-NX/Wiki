@@ -1,23 +1,23 @@
 ### **Goldleaf**
 
-Goldleaf is primarily a very extensive file and console content manager.
+Goldleaf — это, в первую очередь, очень обширный файловый менеджер.
 
 -----
 
-#### Common use cases for Goldleaf are:
+#### Примеры использования Goldleaf:
 
-- Account management
-- Browsing your microSD card
-- Browsing the partitions of the internal storage
-- Enabling access to the built-in Switch web browser
-- Export Switch firmware
-- Restoring games to their base game versions
-- File management
+- Управление аккаунтами
+- Просмотр содержимого вашей microSD карты
+- Просмотр разделов внутреннего хранилища
+- Включение доступа к встроенному браузеру Nintendo Switch
+- Экспорт прошивки консоли
+- Восстановление игр до их базовых версий
+- Управление файлами
 
-And a *lot* more, which you can view on Goldleaf's Github repository [here](https://github.com/XorTroll/Goldleaf).
+И многое другое, что вы можете увидеть в репозитории Goldleaf на GitHub [здесь](https://github.com/XorTroll/Goldleaf).
 
 -----
 
-#### Goldleaf screenshots:
+#### Скриншоты Goldleaf:
 
-![main menu](img/goldleaf.jpg)
+![главное меню](img/goldleaf.jpg)

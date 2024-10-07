@@ -1,32 +1,34 @@
 ### **FTPD**
 
-FTPD is simply an FTP server for the Switch, it can be used to transfer files wirelessly to- and from- your microSD card.
+FTPD — это простой FTP-сервер для Switch, который можно использовать для беспроводной передачи файлов вашей microSD карты.
 
 -----
 
-#### Usage requirements:
+#### Требования для использования:
 
-- An FTP client such as [WinSCP](https://winscp.net/eng/download.php) (Windows)
-- Any device that can connect to an FTP server with an FTP client
+- FTP-клиент, такой как [WinSCP](https://winscp.net/eng/download.php) (Windows)
+- Любое устройство, которое может подключаться к FTP-серверу через FTP-клиент
 
-#### Usage instructions:
 
-!!! note "Note"
-    This section assumes that the device running the FTP client and your Switch are connected to the same network. If it's not, make sure they are connected to the same network before continuing.
+#### Инструкции по использованию:
 
-1. Launch the FTPD Homebrew app from the Homebrew menu.
-2. Open your FTP client of choice.
-3. Add a new connection and in the `Host` field of your FTP client, put in the IP address of your Switch mentioned in the top left of FTPD.
-    - If applicable in your FTP client, check the `Anonymous` box.
-4. Type in port `5000` for the port and attempt to connect to your Switch.
-5. You should now be able to access your microSD card wirelessly and transfer files to- and from- the microSD card.
+!!! note "Примечание"
+    Этот раздел предполагает, что устройство с запущенным FTP-клиентом и ваша консоль подключены к одной и той же сети. Если это не так, убедитесь, что оба устройства подключены к одной сети перед продолжением.
 
-#### FTPD's main menu:
+1. Запустите приложение FTPD через Homebrew меню.
+2. Откройте ваш FTP-клиент.
+3. Создайте новое подключение и в поле `Host` вашего FTP-клиента введите IP-адрес вашей консоли, указанный в верхнем левом углу FTPD.
+    - Если ваш FTP-клиент поддерживает это, отметьте поле `Anonymous`.
+4. Укажите порт `5000` и попытайтесь подключиться к вашей консоли.
+5. Теперь вы сможете получить доступ к вашей microSD карте по беспроводной сети и передавать файлы на карту и с неё.
+
+
+#### Главное меню FTPD:
 
 ![FTPD](img/ftpd.jpg)
 
 -----
 
-#### Additional information:
+#### Дополнительная информация:
 
-FTPD can also run in the form of a background process (sysmodule), called sys-ftpd. It can be found [here](https://github.com/cathery/sys-ftpd), usage and configuration options are mentioned there as well.
+FTPD также может работать в виде фонового процесса (системного модуля), называемого sys-ftpd. Его можно найти [здесь](https://github.com/cathery/sys-ftpd), там же упомянуты варианты использования и настройки.
