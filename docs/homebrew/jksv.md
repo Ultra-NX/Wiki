@@ -1,34 +1,35 @@
-# Save Management
+# Управление сохранениями
 
 ### **JKSV**
 
-For save management, [JKSV](https://github.com/J-D-K/JKSV) is recommended. It can be used to back up and restore game saves to your microSD card.
+Для управления сохранениями рекомендуется использовать [JKSV](https://github.com/J-D-K/JKSV). С его помощью можно создавать резервные копии и восстанавливать сохранения игр.
 
-### **Backing up save data using JKSV**
+### **Создание резервной копии данных с помощью JKSV**
 
-#### Instructions:
+#### Инструкция:
 
-1. Launch JKSV from the homebrew menu.
-2. Select your Switch user on the left side with the `A` button.
-3. Select your desired game and press `A` to select it.
-4. Press `A` again to create a new save backup
-5. Enter a name for the save data folder containing the save data and press `+` or `OK`.
-6. Wait for it to finish backing up your save data.
+1. Запустите JKSV из homebrew меню.
+2. Выберите пользователя Switch слева с помощью кнопки `A`.
+3. Выберите нужную игру и нажмите `A`, чтобы подтвердить выбор.
+4. Нажмите `A` снова, чтобы создать новую резервную копию сохранений.
+5. Введите имя папки для сохранения данных и нажмите `+` или `OK`.
+6. Дождитесь завершения процесса резервного копирования данных.
+
 
 -----
 
-### **Restoring save data using JKSV**
+### **Восстановление данных сохранения с помощью JKSV**
 
-#### Instructions:
+#### Инструкция:
 
-1. Launch JKSV from the homebrew menu.
-2. Select your Switch user on the left side with the `A` button.
-3. Select your desired game and press `A` to select it.
-4. Hover over the save data folder containing the save data you want and press `Y`.
-5. Hold the `A` button to restore the save data, keep holding it until it's finished.
+1. Запустите JKSV из homebrew меню.
+2. Выберите пользователя Switch слева с помощью кнопки `A`.
+3. Выберите нужную игру и нажмите `A`, чтобы подтвердить выбор.
+4. Наведите курсор на папку с сохранениями, которые вы хотите восстановить, и нажмите `Y`.
+5. Удерживайте кнопку `A`, чтобы восстановить данные сохранения, продолжайте удерживать её до завершения процесса.
 
-#### **JKSV Documentation**
-Please read JKSV's [homepage](https://github.com/J-D-K/JKSV) for information on how to use it.
+#### **Документация JKSV**
+Пожалуйста, ознакомьтесь с [домашней страницей](https://github.com/J-D-K/JKSV) JKSV для получения более подробной информации.
 
 ![ExampleSwitchTheme](../extras/img/save_jksv.jpg){ width="600" }
 
@@ -36,9 +37,10 @@ Please read JKSV's [homepage](https://github.com/J-D-K/JKSV) for information on 
 
 ### **Checkpoint**
 
-[Checkpoint](https://github.com/FlagBrew/Checkpoint) is also a save manager. It can be used to back up and restore game saves to your microSD card. It also has the ability to share save data over FTP and WiFi.
+[Checkpoint](https://github.com/FlagBrew/Checkpoint) — это ещё один менеджер сохранений. Он также позволяет создавать резервные копии и восстанавливать сохранения игр. Кроме того, Checkpoint поддерживает обмен сохранениями через FTP и Wi-Fi.
 
-#### Checkpoint Documentation
-Please read Checkpoint's [homepage](https://github.com/Flagbrew/Checkpoint) for information on how to use it.
+#### Документация Checkpoint
+Пожалуйста, ознакомьтесь с [домашней страницей](https://github.com/Flagbrew/Checkpoint) Checkpoint для получения более подробной информации.
 
 ![ExampleSwitchTheme](../extras/img/save_checkpoint.jpg){ width="600" }
+
