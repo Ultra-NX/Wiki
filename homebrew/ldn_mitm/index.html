@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#information" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -1226,27 +1226,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#information" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Information
+      Информация
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-usage-instructions" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Basic usage instructions
+      Основные инструкции по использованию
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      Troubleshooting
+      Устранение неполадок
     </span>
   </a>
   
@@ -1671,46 +1671,46 @@
 
   <h1>ldn_mitm</h1>
 
-<h3 id="information"><strong>Information</strong><a class="headerlink" href="#information" title="Permanent link">&para;</a></h3>
-<p>ldn_mitm is a <a href="../#terminologies">sysmodule</a> that allows you to route the local wireless ad-hoc network traffic of the Switch via the network your Switch is connected to, essentially allowing "LAN" functionality between consoles and emulators using ldn_mitm. The official Github repository for ldn_mitm can be found <a href="https://github.com/spacemeowx2/ldn_mitm">here</a>.</p>
-<h4 id="common-use-cases-for-ldn_mitm">Common use cases for ldn_mitm:<a class="headerlink" href="#common-use-cases-for-ldn_mitm" title="Permanent link">&para;</a></h4>
+<h3 id="_1"><strong>Информация</strong><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p>ldn_mitm — это <a href="../#terminologies">системный модуль</a>, который позволяет перенаправлять локальный беспроводной трафик ad-hoc сети консоли через сеть, к которой подключена ваша Switch. Это фактически обеспечивает функциональность "LAN" между консолями и эмуляторами, используя ldn_mitm. Официальный репозиторий ldn_mitm на Github можно найти <a href="https://github.com/spacemeowx2/ldn_mitm">здесь</a>.</p>
+<h4 id="ldn_mitm">Частые сценарии использования ldn_mitm:<a class="headerlink" href="#ldn_mitm" title="Permanent link">&para;</a></h4>
 <ul>
-<li>It can be used in combination with <a href="http://lan-play.com/install-switch">lan-play</a></li>
-<li>It can be used in combination with <a href="https://www.teamxlink.co.uk/wiki/Nintendo_Switch_XLink_Kai_Setup">XLink Kai</a></li>
-<li>It can be used in combination with real Switch consoles and emulators</li>
+<li>Может использоваться в сочетании с <a href="http://lan-play.com/install-switch">lan-play</a></li>
+<li>Может использоваться в сочетании с <a href="https://www.teamxlink.co.uk/wiki/Nintendo_Switch_XLink_Kai_Setup">XLink Kai</a></li>
+<li>Может использоваться в сочетании с реальными консолями Switch и эмуляторами</li>
 </ul>
 <hr />
-<h4 id="installation-requirements">Installation requirements:<a class="headerlink" href="#installation-requirements" title="Permanent link">&para;</a></h4>
+<h4 id="_2">Требования для установки:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ul>
-<li>An archive manager like <a href="https://www.7-zip.org/">7-Zip</a></li>
-<li>The latest release of <a href="https://github.com/DefenderOfHyrule/ldn_mitm/releases">ldn_mitm</a> (the <code>ldn_mitm.zip</code> file)</li>
+<li>Архиватор, например, <a href="https://www.7-zip.org/">7-Zip</a></li>
+<li>Последняя версия <a href="https://github.com/DefenderOfHyrule/ldn_mitm/releases">ldn_mitm</a> (файл <code>ldn_mitm.zip</code>)</li>
 </ul>
-<h4 id="installation-instructions">Installation instructions:<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h4>
+<h4 id="_3">Инструкция по установке:<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Boot into Hekate and go to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, then plug your Switch into your PC via USB.</li>
-<li>Your microSD card should now be accessible on your PC, open it.</li>
-<li>Extract the <code>.zip</code> file to a location on your computer.<ul>
-<li>If your archive manager allows for it, you can also simply open the <code>.zip</code> file directly.</li>
+<li>Загрузитесь в Hekate и перейдите в <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, затем подключите Switch к ПК через USB.</li>
+<li>Ваша карта microSD теперь должна быть доступна на ПК, откройте её.</li>
+<li>Извлеките файлы из архива <code>.zip</code> в удобное место на вашем компьютере.<ul>
+<li>Если ваш архиватор позволяет, вы можете открыть файл <code>.zip</code> напрямую.</li>
 </ul>
 </li>
-<li>Copy the <em>contents</em> of the (extracted) <code>.zip</code> file to the root of your microSD card.<ul>
-<li><strong>Optional:</strong> You can verify if you've installed ldn_mitm correctly, you should have a folder called <code>4200000000000010</code> (ldn_mitm) in <code>sd:/atmosphere/contents</code> and the <code>ldnmitm_config.nro</code> file in <code>sd:/switch/ldnmitm_config</code>.</li>
+<li>Скопируйте <em>содержимое</em> (извлечённого) архива <code>.zip</code> в корень вашей карты microSD.<ul>
+<li><strong>Дополнительно:</strong> Для проверки правильности установки ldn_mitm, на карте памяти должен появиться каталог <code>4200000000000010</code> (ldn_mitm) в <code>sd:/atmosphere/contents</code>, а файл <code>ldnmitm_config.nro</code> должен находиться в <code>sd:/switch/ldnmitm_config</code>.</li>
 </ul>
 </li>
-<li>Boot into CFW.</li>
+<li>Загрузитесь в CFW.</li>
 </ol>
 <hr />
-<h3 id="basic-usage-instructions"><strong>Basic usage instructions</strong><a class="headerlink" href="#basic-usage-instructions" title="Permanent link">&para;</a></h3>
-<p>You can enable/disable ldn_mitm by opening the Homebrew menu, opening ldn_mitm's config app and pressing <code>Y</code> to toggle ldn_mitm.</p>
+<h3 id="_4"><strong>Основные инструкции по использованию</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>Вы можете включить или отключить ldn_mitm, открыв Homebrew меню, запустив приложение для настройки ldn_mitm и нажав <code>Y</code>, чтобы переключить состояние ldn_mitm.</p>
 <p><img alt="ldn_mitm" src="../img/ldn_mitm.jpg" /></p>
 <hr />
-<h3 id="troubleshooting"><strong>Troubleshooting</strong><a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
-<h4 id="my-switch-crashes-on-boot-after-i-installed-ldn_mitm"><strong>My Switch crashes on boot after I installed ldn_mitm!:</strong><a class="headerlink" href="#my-switch-crashes-on-boot-after-i-installed-ldn_mitm" title="Permanent link">&para;</a></h4>
-<p><strong>Cause:</strong> If your Switch crashes with Error <code>std::abort (0xFFE)</code> and Title ID <code>4200000000000010</code>, you're using a version of ldn_mitm that's incompatible with your Atmosphere version. The expected Atmosphere version is mentioned on each release page of an ldn_mitm release.</p>
+<h3 id="_5"><strong>Устранение неполадок</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h4 id="ldn_mitm_1"><strong>Моя система вылетает при загрузке после установки ldn_mitm!</strong><a class="headerlink" href="#ldn_mitm_1" title="Permanent link">&para;</a></h4>
+<p><strong>Причина:</strong> Если ваша система вылетает с ошибкой <code>std::abort (0xFFE)</code> и идентификатором приложения <code>4200000000000010</code>, это означает, что вы используете версию ldn_mitm, несовместимую с вашей версией Atmosphere. Необходимая версия Atmosphere указана на странице релиза каждой версии ldn_mitm.</p>
 <p>&nbsp;</p>
-<h4 id="ldn_mitm-isnt-working"><strong>ldn_mitm isn't working!:</strong><a class="headerlink" href="#ldn_mitm-isnt-working" title="Permanent link">&para;</a></h4>
-<p>Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.</p>
-<p>This can be done by booting into Hekate and going to <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
+<h4 id="ldn_mitm_2"><strong>ldn_mitm не работает!</strong><a class="headerlink" href="#ldn_mitm_2" title="Permanent link">&para;</a></h4>
+<p>Если вы правильно следовали инструкциям по установке, проблема, скорее всего, связана с тем, что архивный бит установлен на одной или нескольких папках/файлах на вашей карте microSD. Это часто происходит, если файлы были скопированы на microSD с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте использовать утилиту для исправления архивного бита через Hekate для всех файлов.</p>
+<p>Это можно сделать, загрузившись в Hekate и выбрав <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
 
 
 

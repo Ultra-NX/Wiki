@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#information" class="md-skip">
+        <a href="#tesla-menu" class="md-skip">
           Skip to content
         </a>
       
@@ -1064,6 +1064,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1092,6 +1094,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1100,36 +1104,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#information" class="md-nav__link">
+  <a href="#tesla-menu_2" class="md-nav__link">
     <span class="md-ellipsis">
-      Information
+      Открытие Tesla-Menu
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#opening-tesla-menu" class="md-nav__link">
+  <a href="#tesla-menu_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Opening Tesla-Menu
+      Распространенные оверлеи Tesla-Menu
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#commonly-used-tesla-menu-overlays" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      Commonly used Tesla-Menu overlays
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
+      Устранение неполадок
     </span>
   </a>
   
@@ -1678,89 +1673,87 @@
   
 
 
-  <h1>Tesla-Menu</h1>
-
-<h3 id="information"><strong>Information</strong><a class="headerlink" href="#information" title="Permanent link">&para;</a></h3>
-<p>Tesla-Menu is an overlay menu developed by <a href="https://github.com/WerWolv">WerWolv</a>, Tesla-Menu is comparable to Rosalina menu on the 3DS and its purpose is to be able to load community made overlays for Homebrew apps and sysmodules that can be accessed at any time. Below you can find common use cases for Tesla-Menu. The official Github page for Tesla-Menu can be found <a href="https://github.com/WerWolv/Tesla-Menu">here</a>.</p>
+<h1 id="tesla-menu">Tesla-Menu<a class="headerlink" href="#tesla-menu" title="Permanent link">&para;</a></h1>
+<p>Tesla-Menu — это оверлейное меню, разработанное <a href="https://github.com/WerWolv">WerWolv</a>. Tesla-Menu можно сравнить с меню Rosalina на 3DS, и его цель — возможность загружать созданные сообществом оверлеи для Homebrew приложений и системных модулей, которые можно использовать в любое время. Ниже приведены распространенные случаи использования Tesla-Menu. Официальная страница GitHub для Tesla-Menu доступна <a href="https://github.com/WerWolv/Tesla-Menu">здесь</a>.</p>
 <div class="admonition note">
-<p class="admonition-title">Dependencies</p>
-<p>Tesla-Menu is dependent on a <a href="../#terminologies">sysmodule</a> called <code>nx-ovlloader</code>, this sysmodule is responsible for loading <code>ovlmenu.ovl</code> from <code>sd:/switch/.overlays</code>.</p>
+<p class="admonition-title">Зависимости</p>
+<p>Tesla-Menu зависит от <a href="../#terminologies">системного модуля</a> под названием <code>nx-ovlloader</code>, который отвечает за загрузку <code>ovlmenu.ovl</code> из <code>sd:/switch/.overlays</code>.</p>
 </div>
-<h4 id="common-use-cases-for-tesla-menu">Common use cases for Tesla-Menu:<a class="headerlink" href="#common-use-cases-for-tesla-menu" title="Permanent link">&para;</a></h4>
+<h4 id="tesla-menu_1">Распространенные случаи использования Tesla-Menu:<a class="headerlink" href="#tesla-menu_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Load community made Tesla-Menu overlays</li>
-<li>Viewing the temperatures/clock speeds of your hardware</li>
-<li>Editing sysmodule configs on the fly (if applicable)</li>
-<li>Editing Homebrew app configs on the fly (if applicable)</li>
-<li>Toggling cheats easily</li>
-<li>Toggling sysmodules</li>
+<li>Загрузка созданных сообществом оверлеев Tesla-Menu</li>
+<li>Просмотр температур/частот процессора вашего оборудования</li>
+<li>Редактирование конфигураций системных модулей на лету (если применимо)</li>
+<li>Редактирование конфигураций Homebrew приложений на лету (если применимо)</li>
+<li>Легкое включение и отключение читов</li>
+<li>Легкое включение и отключение системных модулей</li>
 </ul>
 <hr />
-<h4 id="installation-requirements">Installation requirements:<a class="headerlink" href="#installation-requirements" title="Permanent link">&para;</a></h4>
+<h4 id="_1">Требования к установке:<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>An archive manager like <a href="https://www.7-zip.org/">7-Zip</a></li>
-<li>The latest release of <a href="https://github.com/WerWolv/Tesla-Menu/releases/tag/v1.2.3">Tesla-Menu</a> (the <code>ovlmenu.zip</code> file)</li>
-<li>The latest release of <a href="https://github.com/WerWolv/nx-ovlloader/releases/tag/v1.0.7">nx-ovlloader</a> (the <code>nx-ovlloader.zip</code> file)</li>
+<li>Архиватор, например, <a href="https://www.7-zip.org/">7-Zip</a></li>
+<li>Последняя версия <a href="https://github.com/WerWolv/Tesla-Menu/releases/tag/v1.2.3">Tesla-Menu</a> (файл <code>ovlmenu.zip</code>)</li>
+<li>Последняя версия <a href="https://github.com/WerWolv/nx-ovlloader/releases/tag/v1.0.7">nx-ovlloader</a> (файл <code>nx-ovlloader.zip</code>)</li>
 </ul>
-<h4 id="installation-instructions">Installation instructions:<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h4>
+<h4 id="_2">Инструкции по установке:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Boot into Hekate and go to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, then plug your Switch into your PC via USB.</li>
-<li>Your microSD card should now be accessible on your PC, open it.</li>
-<li>Extract both <code>.zip</code> files to a location on your computer.<ul>
-<li>If your archive manager allows for it, you can also simply open the <code>.zip</code> files directly.</li>
+<li>Загрузитесь в Hekate и перейдите в <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, затем подключите свою консоль к ПК через USB.</li>
+<li>Ваша microSD-карта теперь должна быть доступна на вашем ПК, откройте ее.</li>
+<li>Извлеките оба <code>.zip</code> файла в папку на вашем компьютере.<ul>
+<li>Если ваш архиватор позволяет, вы можете открыть <code>.zip</code> файлы напрямую.</li>
 </ul>
 </li>
-<li>Copy the <em>contents</em> of each (extracted) <code>.zip</code> file to the root of your microSD card.<ul>
-<li><strong>Optional:</strong> You can verify if you've installed Tesla-Menu and nx-ovlloader correctly, you should have a folder called <code>420000000007E51A</code> (nx-ovlloader) in <code>sd:/atmosphere/contents</code> and the <code>ovlmenu.ovl</code> (Tesla-Menu) file in <code>sd:/switch/.overlays</code>.</li>
+<li>Скопируйте <em>содержимое</em> каждого (извлеченного) <code>.zip</code> файла в корень вашей microSD-карты.<ul>
+<li><strong>Необязательно:</strong> Вы можете проверить, правильно ли вы установили Tesla-Menu и nx-ovlloader. У вас должна быть папка с именем <code>420000000007E51A</code> (nx-ovlloader) в <code>sd:/atmosphere/contents</code> и файл <code>ovlmenu.ovl</code> (Tesla-Menu) в <code>sd:/switch/.overlays</code>.</li>
 </ul>
 </li>
-<li>Boot into CFW.</li>
+<li>Загрузитесь в CFW.</li>
 </ol>
 <hr />
-<h3 id="opening-tesla-menu"><strong>Opening Tesla-Menu</strong><a class="headerlink" href="#opening-tesla-menu" title="Permanent link">&para;</a></h3>
-<p>Tesla-Menu can be opened by pressing <code>L</code> + <code>R Stick press (R3)</code> + <code>DPAD down</code>, assuming you use the default configuration.</p>
+<h3 id="tesla-menu_2"><strong>Открытие Tesla-Menu</strong><a class="headerlink" href="#tesla-menu_2" title="Permanent link">&para;</a></h3>
+<p>Tesla-Menu можно открыть, нажав <code>L</code> + <code>R Stick press (R3)</code> + <code>DPAD down</code>, если вы используете конфигурацию по умолчанию.</p>
 <p><img alt="tesla" src="../img/tesla-menu.jpg" /></p>
-<h4 id="changing-the-button-combination">Changing the button combination<a class="headerlink" href="#changing-the-button-combination" title="Permanent link">&para;</a></h4>
-<p>If you wish to change the default button configuration, see the instructions below:</p>
+<h4 id="_3">Изменение комбинации кнопок<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p>Если вы хотите изменить конфигурацию кнопок по умолчанию, следуйте инструкциям ниже:</p>
 <ol>
-<li>Navigate to <code>sd:/config</code> on your microSD card.</li>
-<li>Create a folder named <code>tesla</code> if it doesn't exist already.</li>
-<li>Create a file named <code>config.ini</code> in <code>sd:/config/tesla</code>.</li>
-<li>Paste the following text inside of <code>config.ini</code>:
+<li>Перейдите в <code>sd:/config</code> на вашей microSD-карте.</li>
+<li>Создайте папку с именем <code>tesla</code>, если она еще не существует.</li>
+<li>Создайте файл с именем <code>config.ini</code> в <code>sd:/config/tesla</code>.</li>
+<li>Вставьте следующий текст в <code>config.ini</code>:
     <div class="highlight"><pre><span></span><code>[tesla]
 key_combo=L+R+RS
 # A, B, X, Y, LS, RS, L, R, ZL, ZR, PLUS, MINUS, DLEFT, DUP, DRIGHT, DDOWN, SL, SR
 </code></pre></div></li>
-<li>Change the <code>key_combo</code> value to anything you desire and save the file. The accepted inputs are mentioned on the third line.</li>
+<li>Измените значение <code>key_combo</code> на любое желаемое и сохраните файл. Допустимые значения указаны на третьей строке.</li>
 </ol>
 <hr />
-<h3 id="commonly-used-tesla-menu-overlays"><strong>Commonly used Tesla-Menu overlays</strong><a class="headerlink" href="#commonly-used-tesla-menu-overlays" title="Permanent link">&para;</a></h3>
+<h3 id="tesla-menu_3"><strong>Распространенные оверлеи Tesla-Menu</strong><a class="headerlink" href="#tesla-menu_3" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://github.com/masagrator/Status-Monitor-Overlay">Status-Monitor-Overlay</a></li>
 <li><a href="https://github.com/proferabg/EdiZon-Overlay">EdiZon overlay</a></li>
 <li><a href="https://github.com/nedex/QuickNTP">QuickNTP</a></li>
-<li><a href="https://github.com/XorTroll/emuiibo">Emuiibo</a> (this requires you to also install the Emuiibo sysmodule)</li>
-<li><a href="https://github.com/DefenderOfHyrule/TriPlayer">TriPlayer</a> (this requires you to also install the TriPlayer sysmodule)</li>
-<li><a href="https://github.com/DefenderOfHyrule/ldn_mitm">ldn_mitm</a> (this requires you to also install the ldn_mitm sysmodule)</li>
-<li><a href="https://github.com/averne/Fizeau">Fizeau</a> (this requires you to also install the Fizeau sysmodule)</li>
+<li><a href="https://github.com/XorTroll/emuiibo">Emuiibo</a> (это требует установки системного модуля Emuiibo)</li>
+<li><a href="https://github.com/DefenderOfHyrule/TriPlayer">TriPlayer</a> (это требует установки системного модуля TriPlayer)</li>
+<li><a href="https://github.com/DefenderOfHyrule/ldn_mitm">ldn_mitm</a> (это требует установки системного модуля ldn_mitm)</li>
+<li><a href="https://github.com/averne/Fizeau">Fizeau</a> (это требует установки системного модуля Fizeau)</li>
 </ul>
 <hr />
-<h3 id="troubleshooting"><strong>Troubleshooting</strong><a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
-<h4 id="my-switch-crashes-on-boot-after-i-installed-tesla-menunx-ovlloader"><strong>My Switch crashes on boot after I installed Tesla-Menu/nx-ovlloader!:</strong><a class="headerlink" href="#my-switch-crashes-on-boot-after-i-installed-tesla-menunx-ovlloader" title="Permanent link">&para;</a></h4>
-<p><strong>Cause:</strong> If your Switch crashes with Error code <code>2001-0123 (0xf601)</code> and Title ID <code>420000000007E51A</code>, you didn't successfully install Tesla-Menu or you aren't using the latest release of Tesla-Menu, re-follow the installation instructions above.</p>
+<h3 id="_4"><strong>Устранение неполадок</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h4 id="tesla-menunx-ovlloader"><strong>Моя система выдает ошибку при загрузке после установки Tesla-Menu/nx-ovlloader!:</strong><a class="headerlink" href="#tesla-menunx-ovlloader" title="Permanent link">&para;</a></h4>
+<p><strong>Причина:</strong> Если ваша консоль выдает ошибку с кодом <code>2001-0123 (0xf601)</code> и идентификатором заголовка <code>420000000007E51A</code>, это означает, что вы допустили ошибку во время установки Tesla-Menu или не использовали последнюю версию Tesla-Menu. Повторите инструкции по установке выше.</p>
 <p>&nbsp;</p>
-<h4 id="my-switch-crashes-when-i-open-an-overlay-via-tesla-menu"><strong>My Switch crashes when I open an overlay via Tesla-Menu!:</strong><a class="headerlink" href="#my-switch-crashes-when-i-open-an-overlay-via-tesla-menu" title="Permanent link">&para;</a></h4>
-<p><strong>Cause:</strong> If your Switch crashes with Error code <code>2001-0123 (0xf601)</code> and Title ID <code>420000000007E51A</code>, the overlay you're trying to open/use isn't up to date. Check its source repository for updates.</p>
+<h4 id="tesla-menu_4"><strong>Моя система выдает ошибку, когда я открываю оверлей через Tesla-Menu!:</strong><a class="headerlink" href="#tesla-menu_4" title="Permanent link">&para;</a></h4>
+<p><strong>Причина:</strong> Если ваша консоль выдает ошибку с кодом <code>2001-0123 (0xf601)</code> и идентификатором заголовка <code>420000000007E51A</code>, это означает, что оверлей, который вы пытаетесь открыть/использовать, не обновлен. Проверьте его репозиторий для получения обновлений.</p>
 <ul>
-<li>If this overlay doesn't have an updated release, you may have to look for a forked (updated) release or compile it yourself using the latest <code>libtesla</code> library. The latter is for developers (or advanced users).</li>
+<li>Если у этого оверлея нет обновленной версии, возможно, вам придется искать форк (обновленную версию) или собрать его самостоятельно с использованием последней библиотеки <code>libtesla</code>. Последний вариант предназначен для разработчиков (или продвинутых пользователей).</li>
 </ul>
 <p>&nbsp;</p>
-<h4 id="tesla-menu-is-only-showing-while-on-the-main-menu-and-not-in-game"><strong>Tesla-Menu is only showing while on the main menu and not in-game!:</strong><a class="headerlink" href="#tesla-menu-is-only-showing-while-on-the-main-menu-and-not-in-game" title="Permanent link">&para;</a></h4>
-<p><strong>Cause:</strong> This issue will only happen when the Switch is docked, ensure that you've set the "Screen size" in <code>System Settings</code> &gt; <code>TV Output</code> to 100%. Adjust your TV/monitor to fit the entirety of the screen of your Switch using its OSD (On Screen Display) or remote.</p>
+<h4 id="tesla-menu_5"><strong>Tesla-Menu отображается только на главном экране, а не в игре!:</strong><a class="headerlink" href="#tesla-menu_5" title="Permanent link">&para;</a></h4>
+<p><strong>Причина:</strong> Эта проблема возникает только когда Switch находится в док-станции. Убедитесь, что вы установили "Размер экрана" в <code>Настройки системы</code> &gt; <code>Выходной сигнал ТВ</code> на 100%. Настройте ваш телевизор/монитор, чтобы он соответствовал полному экрану вашей Switch, используя его OSD (On Screen Display) или пульт.</p>
 <p>&nbsp;</p>
-<h4 id="tesla-menu-isnt-opening-when-i-press-the-correct-button-combination"><strong>Tesla-Menu isn't opening when I press the correct button combination!:</strong><a class="headerlink" href="#tesla-menu-isnt-opening-when-i-press-the-correct-button-combination" title="Permanent link">&para;</a></h4>
-<p>Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.</p>
-<p>This can be done by booting into Hekate and going to <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
+<h4 id="tesla-menu_6"><strong>Tesla-Menu не открывается, когда я нажимаю правильную комбинацию кнопок!:</strong><a class="headerlink" href="#tesla-menu_6" title="Permanent link">&para;</a></h4>
+<p>Предполагая, что вы успешно выполнили инструкции по установке, это, вероятно, связано с тем, что архивный бит установлен на одну или несколько папок/файлов на вашей microSD-карте. Обычно это происходит при копировании файлов на microSD-карту с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте запустить утилиту исправления архивного бита через Hekate для всех файлов.</p>
+<p>Это можно сделать, загрузившись в Hekate и перейдя в <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
 
 
 

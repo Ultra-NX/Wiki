@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#information" class="md-skip">
+        <a href="#sys-botbase" class="md-skip">
           Skip to content
         </a>
       
@@ -1127,6 +1127,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1155,6 +1157,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1163,18 +1167,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#information" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
+      Устранение неполадок
     </span>
   </a>
   
@@ -1660,47 +1655,45 @@
   
 
 
-  <h1>sys-botbase</h1>
-
-<h3 id="information"><strong>Information</strong><a class="headerlink" href="#information" title="Permanent link">&para;</a></h3>
-<p>sys-botbase is an advanced <a href="../#terminologies">sysmodule</a> that allows users to interact with their Switch remotely, to "remote control" their Switch. This remote control allows users to create automated tasks, simulate button presses, simulate touchscreen input and read/write to the memory of the Switch while in-game.</p>
-<h4 id="common-use-cases-for-sys-botbase">Common use cases for sys-botbase:<a class="headerlink" href="#common-use-cases-for-sys-botbase" title="Permanent link">&para;</a></h4>
+<h1 id="sys-botbase">sys-botbase<a class="headerlink" href="#sys-botbase" title="Permanent link">&para;</a></h1>
+<p>sys-botbase — это продвинутый <a href="../#terminologies">системный модуль</a>, который позволяет пользователям взаимодействовать со своей консолью удаленно, чтобы "управлять" ею. Этот удаленный контроль позволяет пользователям создавать автоматизированные задачи, симулировать нажатия кнопок, симулировать ввод с сенсорного экрана и читать/записывать данные в память Switch во время игры.</p>
+<h4 id="sys-botbase_1">Общие случаи использования sys-botbase:<a class="headerlink" href="#sys-botbase_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Use ACNHPokerCore in combination with ACNH</li>
-<li>Controlling a game remotely</li>
-<li>Automation</li>
+<li>Использование ACNHPokerCore в сочетании с ACNH</li>
+<li>Удалённое управление игрой</li>
+<li>Автоматизация</li>
 </ul>
 <hr />
-<h4 id="installation-requirements">Installation requirements:<a class="headerlink" href="#installation-requirements" title="Permanent link">&para;</a></h4>
+<h4 id="_1">Требования к установке:<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>An archive manager like <a href="https://www.7-zip.org/">7-Zip</a></li>
-<li>The latest release of <a href="https://github.com/olliz0r/sys-botbase/releases">sys-botbase</a> (the <code>sys-botbase(version).zip</code> file)</li>
+<li>Архиватор, например, <a href="https://www.7-zip.org/">7-Zip</a></li>
+<li>Последняя версия <a href="https://github.com/olliz0r/sys-botbase/releases">sys-botbase</a> (файл <code>sys-botbase(version).zip</code>)</li>
 </ul>
-<h4 id="installation-instructions">Installation instructions:<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h4>
+<h4 id="_2">Инструкция по установке:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Boot into Hekate and go to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, then plug your Switch into your PC via USB.</li>
-<li>Your microSD card should now be accessible on your PC, open it.</li>
-<li>Extract the <code>.zip</code> file to a location on your computer.<ul>
-<li>If your archive manager allows for it, you can also simply open the <code>.zip</code> file directly.</li>
+<li>Загрузитесь в Hekate и перейдите в <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, затем подключите вашу консоль к ПК через USB.</li>
+<li>Ваша microSD карта теперь должна быть доступна на вашем ПК, откройте её.</li>
+<li>Извлеките <code>.zip</code> файл в папку на вашем компьютере.<ul>
+<li>Если ваш архиватор это позволяет, вы также можете просто открыть <code>.zip</code> файл напрямую.</li>
 </ul>
 </li>
-<li>Copy the <em>contents</em> of each (extracted) <code>.zip</code> file to the root of your microSD card.<ul>
-<li><strong>Optional:</strong> You can verify if you've installed sys-botbase correctly, you should have a folder called <code>430000000000000B</code> (sys-botbase) in <code>sd:/atmosphere/contents</code>.</li>
+<li>Скопируйте <em>содержимое</em> каждого (извлеченного) <code>.zip</code> файла в корень вашей microSD карты.<ul>
+<li><strong>Дополнительно:</strong> Вы можете проверить, правильно ли вы установили sys-botbase, у вас должна быть папка с именем <code>430000000000000B</code> (sys-botbase) в <code>sd:/atmosphere/contents</code>.</li>
 </ul>
 </li>
-<li>Boot into CFW.</li>
+<li>Загрузитесь в CFW.</li>
 </ol>
 <hr />
-<h3 id="troubleshooting"><strong>Troubleshooting</strong><a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
-<h4 id="my-switch-crashes-on-boot-after-i-installed-sys-botbase"><strong>My Switch crashes on boot after I installed sys-botbase!:</strong><a class="headerlink" href="#my-switch-crashes-on-boot-after-i-installed-sys-botbase" title="Permanent link">&para;</a></h4>
-<p><strong>Cause:</strong> While it's almost impossible for this to happen, if your Switch crashes with Error <code>2001-0123 (0xf601)</code> and Title ID <code>430000000000000B</code>, you're using a version of sys-botbase that's incompatible with your Atmosphere version.</p>
+<h3 id="_3"><strong>Устранение неполадок</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h4 id="sys-botbase_2"><strong>Моя система выдает ошибку при загрузке после установки sys-botbase!</strong><a class="headerlink" href="#sys-botbase_2" title="Permanent link">&para;</a></h4>
+<p><strong>Причина:</strong> Хотя это почти невозможно, если ваша система выдает ошибку <code>2001-0123 (0xf601)</code> и идентификатор заголовка <code>430000000000000B</code>, вы используете версию sys-botbase, несовместимую с вашей версией Atmosphere.</p>
 <ul>
-<li><strong>Note:</strong> sys-botbase will almost never crash unless something is fundamentally wrong with the contents of your microSD card. If it does crash and need an update, an updated release will be mentioned here.</li>
+<li><strong>Примечание:</strong> sys-botbase почти никогда не вызывает сбоев, если только что-то фундаментально неверно с содержимым вашей microSD карты. Если это происходит и требуется обновление, обновленная версия будет указана здесь.</li>
 </ul>
 <p>&nbsp;</p>
-<h4 id="sys-botbase-isnt-working"><strong>sys-botbase isn't working!:</strong><a class="headerlink" href="#sys-botbase-isnt-working" title="Permanent link">&para;</a></h4>
-<p>Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.</p>
-<p>This can be done by booting into Hekate and going to <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
+<h4 id="sys-botbase_3"><strong>sys-botbase не работает!</strong><a class="headerlink" href="#sys-botbase_3" title="Permanent link">&para;</a></h4>
+<p>Предполагая, что вы успешно следовали инструкциям по установке, это, вероятно, связано с тем, что бит архива установлен на одну или несколько папок/файлов на вашей microSD карте. Обычно это происходит при копировании файлов на microSD карту с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте запустить утилиту для исправления бита архива через Hekate для всех файлов.</p>
+<p>Это можно сделать, загрузившись в Hekate и перейдя в <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
 
 
 

@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#information" class="md-skip">
+        <a href="#sys-con" class="md-skip">
           Skip to content
         </a>
       
@@ -1106,6 +1106,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1134,6 +1136,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1142,18 +1146,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#information" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Information
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
+      Устранение неполадок
     </span>
   </a>
   
@@ -1660,41 +1655,39 @@
   
 
 
-  <h1>sys-con</h1>
-
-<h3 id="information"><strong>Information</strong><a class="headerlink" href="#information" title="Permanent link">&para;</a></h3>
-<p>sys-con is a <a href="../#terminologies">sysmodule</a> that allows you to use normally-unsupported controllers as if they were natively supported, like PS3, PS4, PS5 and Xbox One S/X controllers via USB. The full supported feature and controller list can be found on the official Github repository <a href="https://github.com/cathery/sys-con">here</a> including usage instructions and configuration options.</p>
+<h1 id="sys-con">sys-con<a class="headerlink" href="#sys-con" title="Permanent link">&para;</a></h1>
+<p>sys-con — это <a href="../#terminologies">системный модуль</a>, который позволяет вам использовать контроллеры, которые обычно не поддерживаются, так, как если бы они были нативно поддерживаемыми, такие как контроллеры PS3, PS4, PS5 и Xbox One S/X через USB. Полный список поддерживаемых функций и контроллеров можно найти в официальном репозитории на Github <a href="https://github.com/cathery/sys-con">здесь</a>, включая инструкции по использованию и параметры конфигурации.</p>
 <hr />
-<h4 id="installation-requirements">Installation requirements:<a class="headerlink" href="#installation-requirements" title="Permanent link">&para;</a></h4>
+<h4 id="_1">Требования к установке:<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>An archive manager like <a href="https://www.7-zip.org/">7-Zip</a></li>
-<li>The latest release of <a href="https://github.com/cathery/sys-con/releases">sys-con</a> (the <code>sys-con-(version).zip</code> file)</li>
+<li>Архиватор, например, <a href="https://www.7-zip.org/">7-Zip</a></li>
+<li>Последняя версия <a href="https://github.com/cathery/sys-con/releases">sys-con</a> (файл <code>sys-con-(version).zip</code>)</li>
 </ul>
-<h4 id="installation-instructions">Installation instructions:<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h4>
+<h4 id="_2">Инструкция по установке:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Boot into Hekate and go to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, then plug your Switch into your PC via USB.</li>
-<li>Your microSD card should now be accessible on your PC, open it.</li>
-<li>Extract the <code>.zip</code> file to a location on your computer.<ul>
-<li>If your archive manager allows for it, you can also simply open the <code>.zip</code> file directly.</li>
+<li>Загрузитесь в Hekate и перейдите в <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, затем подключите вашу Switch к ПК через USB.</li>
+<li>Ваша microSD карта теперь должна быть доступна на вашем ПК, откройте её.</li>
+<li>Извлеките <code>.zip</code> файл в папку на вашем компьютере.<ul>
+<li>Если ваш архиватор это позволяет, вы можете открыть <code>.zip</code> файл напрямую.</li>
 </ul>
 </li>
-<li>Copy the <em>contents</em> of the (extracted) <code>.zip</code> file to the root of your microSD card.<ul>
-<li><strong>Optional:</strong> You can verify if you've installed sys-con correctly, you should have a folder called <code>690000000000000D</code> (sys-con) in <code>sd:/atmosphere/contents</code>.</li>
+<li>Скопируйте <em>содержимое</em> извлеченного <code>.zip</code> файла в корень вашей microSD карты.<ul>
+<li><strong>Дополнительно:</strong> Вы можете проверить, правильно ли вы установили sys-con, у вас должна быть папка с именем <code>690000000000000D</code> (sys-con) в <code>sd:/atmosphere/contents</code>.</li>
 </ul>
 </li>
-<li>Boot into CFW.</li>
+<li>Загрузитесь в CFW.</li>
 </ol>
 <hr />
-<h3 id="troubleshooting"><strong>Troubleshooting</strong><a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
-<h4 id="my-switch-crashes-on-boot-after-i-installed-sys-con"><strong>My Switch crashes on boot after I installed sys-con!:</strong><a class="headerlink" href="#my-switch-crashes-on-boot-after-i-installed-sys-con" title="Permanent link">&para;</a></h4>
-<p><strong>Cause:</strong> While it's almost impossible for this to happen, if your Switch crashes with Error code <code>2162-0002 (0x4a2)</code> and Title ID <code>690000000000000D</code>, you're using a version of sys-con that's incompatible with your Switch firmware version. The expected firmware version is mentioned on each release page of a sys-con release.</p>
+<h3 id="_3"><strong>Устранение неполадок</strong><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h4 id="sys-con_1"><strong>Моя система выдает ошибку при загрузке после установки sys-con!</strong><a class="headerlink" href="#sys-con_1" title="Permanent link">&para;</a></h4>
+<p><strong>Причина:</strong> Хотя это почти невозможно, если ваша система выдает ошибку с кодом <code>2162-0002 (0x4a2)</code> и ID заголовка <code>690000000000000D</code>, это означает, что вы используете версию sys-con, несовместимую с версией прошивки вашей консоли. Необходимая версия прошивки указана на каждой странице выпуска sys-con.</p>
 <ul>
-<li><strong>Note:</strong> sys-con hasn't needed an update for years as of the moment of writing this. If it does need an update, an updated release will be mentioned here.</li>
+<li><strong>Примечание:</strong> sys-con не требовал обновления в течение многих лет на момент написания. Если он действительно нуждается в обновлении, информация об обновленном выпуске будет указана здесь.</li>
 </ul>
 <p>&nbsp;</p>
-<h4 id="sys-con-isnt-working"><strong>sys-con isn't working!:</strong><a class="headerlink" href="#sys-con-isnt-working" title="Permanent link">&para;</a></h4>
-<p>Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.</p>
-<p>This can be done by booting into Hekate and going to <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
+<h4 id="sys-con_2"><strong>sys-con не работает!</strong><a class="headerlink" href="#sys-con_2" title="Permanent link">&para;</a></h4>
+<p>Предполагая, что вы успешно следовали инструкциям по установке, это, вероятно, связано с тем, что бит архива установлен на одну или несколько папок/файлов на вашей microSD карте. Обычно это происходит при копировании файлов на microSD карту с помощью Mac. Если вы столкнулись с этой проблемой, попробуйте запустить утилиту для исправления бита архива через Hekate для всех файлов.</p>
+<p>Это можно сделать, загрузившись в Hekate и перейдя в <code>Tools</code> &gt; <code>Arch bit • RCM Touch • Pkg1/2</code> &gt; <code>Fix Archive Bit</code>.</p>
 
 
 

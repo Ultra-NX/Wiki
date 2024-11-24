@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#information" class="md-skip">
+        <a href="#simplemodmanager" class="md-skip">
           Skip to content
         </a>
       
@@ -1043,17 +1043,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    SimpleModManager
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1064,32 +1055,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Information
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1651,42 +1616,40 @@
   
 
 
-  <h1>SimpleModManager</h1>
-
-<h3 id="information">Information<a class="headerlink" href="#information" title="Permanent link">&para;</a></h3>
-<p>SimpleModManager is a <a href="../#terminologies">homebrew app</a> that allows easily adding and removing mods to the layeredFS directory from another directory on the SD card.</p>
-<h4 id="common-use-cases-for-simplemodmanager">Common use cases for SimpleModManager:<a class="headerlink" href="#common-use-cases-for-simplemodmanager" title="Permanent link">&para;</a></h4>
+<h1 id="simplemodmanager">SimpleModManager<a class="headerlink" href="#simplemodmanager" title="Permanent link">&para;</a></h1>
+<p>SimpleModManager — это <a href="../#terminologies">homebrew</a>, которое позволяет легко добавлять и удалять моды в директории layeredFS из другой директории на SD-карте.</p>
+<h4 id="simplemodmanager_1">Общие случаи использования SimpleModManager:<a class="headerlink" href="#simplemodmanager_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Switching between large modpacks</li>
-<li>Enabling and disabling individual mods</li>
+<li>Переключение между большими модпаками</li>
+<li>Включение и отключение отдельных модов</li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">What <strong>not</strong> to use SimpleModManager for.</p>
-<p>SimpleModManager should not be used for some specific games like Super Smash Bros. Ultimate and The Legend of Zelda: Breath of the Wild and Tears of the Kingdom. This is due to how these games handle mods differently from others.</p>
+<p class="admonition-title">Чего <strong>не</strong> следует делать с SimpleModManager.</p>
+<p>SimpleModManager не следует использовать для некоторых конкретных игр, таких как Super Smash Bros. Ultimate, The Legend of Zelda: Breath of the Wild и Tears of the Kingdom. Это связано с тем, как эти игры обрабатывают моды иначе, чем другие.</p>
 </div>
 <hr />
-<h4 id="installation-requirements">Installation requirements:<a class="headerlink" href="#installation-requirements" title="Permanent link">&para;</a></h4>
+<h4 id="_1">Требования к установке:<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
 <ul>
-<li>The latest release of <a href="https://github.com/nadrino/SimpleModManager/releases/latest">SimpleModManager</a> (the <code>SimpleModManager.nro</code> file)</li>
+<li>Последняя версия <a href="https://github.com/nadrino/SimpleModManager/releases/latest">SimpleModManager</a> (файл <code>SimpleModManager.nro</code>)</li>
 </ul>
-<h4 id="installation-instructions">Installation instructions:<a class="headerlink" href="#installation-instructions" title="Permanent link">&para;</a></h4>
+<h4 id="_2">Инструкция по установке:<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Boot into Hekate and go to <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, then plug your Switch into your PC via USB.</li>
-<li>Your microSD card should now be accessible on your PC, open it.</li>
-<li>Copy the <code>SimpleModManager.nro</code> file the <code>/switch/</code> folder on your microSD card.</li>
-<li>Boot into CFW.</li>
+<li>Загрузитесь в Hekate и перейдите в <code>Tools</code> &gt; <code>USB Tools</code> &gt; <code>SD Card</code>, затем подключите вашу консоль к ПК через USB.</li>
+<li>Ваша microSD карта теперь должна быть доступна на вашем ПК, откройте её.</li>
+<li>Скопируйте файл <code>SimpleModManager.nro</code> в папку <code>/switch/</code> на вашей microSD карте.</li>
+<li>Загрузитесь в CFW.</li>
 </ol>
-<h4 id="usage-instructions">Usage instructions:<a class="headerlink" href="#usage-instructions" title="Permanent link">&para;</a></h4>
+<h4 id="_3">Инструкция по использованию:<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
 <ol>
-<li>Create a directory named <code>mods/&lt;game name&gt;/&lt;mod name&gt;/</code> on the root of the SD card.<ul>
-<li>What you put for the mod name does not have to align with anything, put whatever you like!</li>
+<li>Создайте директорию с именем <code>mods/&lt;имя игры&gt;/&lt;имя мода&gt;/</code> в корне SD-карты.<ul>
+<li>Имя мода не обязательно должно соответствовать чему-либо, можете назвать его как угодно!</li>
 </ul>
 </li>
-<li>Create the layeredFS directory for your mod that can be found on the <a href="../../extras/game_modding/">Game Modding</a> page, skipping the <code>atmosphere</code> folder inside the <code>&lt;mod name&gt;</code> folder.</li>
-<li>Launch SimpleModManager via the Homebrew Menu and your games will show up, pressing A on them will show the mods available.</li>
+<li>Создайте директорию layeredFS для вашего мода, которую можно найти на странице <a href="../../extras/game_modding/">моддинг игр</a>, пропустив папку <code>atmosphere</code> внутри папки <code>&lt;имя мода&gt;</code>.</li>
+<li>Запустите SimpleModManager через Homebrew меню, и ваши игры появятся. Нажмите A на них, чтобы увидеть доступные моды.</li>
 </ol>
-<p><img alt="ExampleSwitchTheme" src="../img/simplemodmanager1.jpg" width="600" />
-<img alt="ExampleSwitchTheme" src="../img/simplemodmanager2.jpg" width="600" /></p>
+<p><img alt="Пример использования SimpleModManager" src="../img/simplemodmanager1.jpg" width="600" />
+<img alt="Пример использования SimpleModManager" src="../img/simplemodmanager2.jpg" width="600" /></p>
 
 
 
