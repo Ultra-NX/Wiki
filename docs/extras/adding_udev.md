@@ -1,55 +1,58 @@
-# Linux - Run payload injector without root
+# Linux - проброс payload'а без root прав
 
-This section details how to add an `udev` rule to let you send a payload to your Switch without needing to use `sudo`.
+В этом разделе описано, как добавить правило `udev`, чтобы отправлять payload на вашу консоль без необходимости использования `sudo`.
 
-The following instructions only work if you have a system that implements `udev`. Most modern distros come with `systemd` already installed, which includes a `udev` implementation.
+Следующие инструкции работают только на системах, которые поддерживают `udev`. Большинство современных дистрибутивов поставляются с уже установленным `systemd`, который включает в себя реализацию `udev`.
 
-Do the following instructions while your Switch is _not_ connected to your computer.
+Выполните эти инструкции, когда ваша консоль **не** подключена к вашему компьютеру.
 
-!!! note "For Arch Linux users:"
-    The package `android-udev` includes rules that will also allow for payload injection to work without root. Do note this also allows Android specific commands such as `adb` and `fastboot` to also work without root (as is the intention of it.)
+!!! note "Для пользователей Arch Linux:"
+    Пакет `android-udev` включает правила, которые также позволяют отправлять payload без root прав. Учтите, что это также позволяет использовать специфические Android команды, такие как `adb` и `fastboot`, без root (что и является его основной целью).
 
-&nbsp;
-
-### **Option 1: Manually adding rules and group**
-
-The following instructions are not for beginners. Only do this if you understand what you are doing.
-
-#### **Creating a new group**
-
-To start, we will create a new group and add ourselves to it. The group the Nintendo Switch device will be owned by on Linux will be set to this group.
-
-1. Open a terminal.
-2. Enter the following command: `sudo groupadd nintendo_switch`.
-3. Enter your password when prompted.
-4. Enter the following command: `sudo usermod -a -G nintendo_switch $USER`. Make sure that the `G` is capitalized!
-5. Close the terminal.
-
-#### **Adding a udev rule**
-
-Next we're gonna add a new `udev` rule. `udev` is a device manager for the linux kernel. The rule we're gonna specify is that if the Switch is connected in `RCM`, the group the Switch belongs to will be the group we made in the previous section.
-
-1. Open a terminal.
-2. Change to the root user with the following command: `sudo -i`. Enter your password when prompted.
-3. Enter the following command: `mkdir -p /etc/udev/rules.d`.
-4. Enter the following command: `echo 'SUBSYSTEMS=="usb", ATTRS{manufacturer}=="NVIDIA Corp.", ATTRS{product}=="APX", GROUP="nintendo_switch"' > /etc/udev/rules.d/10-switch.rules`.
-5. Enter the following command: `udevadm control --reload`.
-6. Enter the following command: `udevadm trigger`.
-7. Logout and log back in.
-
-You should now be able to run the payload sender without having to use `sudo`.
 
 &nbsp;
 
-### **Option 2: Installing a package with the rules**
+### **Вариант 1: Ручное добавление правил и группы**
 
-These rules will actually allow _ANY_ user to access your Switch via USB, not only _your_ user.
+Следующие инструкции не предназначены для новичков. Выполняйте их только если понимаете, что делаете.
 
-You may just follow the instructions at <a href="https://github.com/pheki/nx-udev" target="_blank">nx-udev</a>, or if you're on Ubuntu / Debian:
+#### **Создание новой группы**
 
-1. Download <a href="https://github.com/pheki/nx-udev/releases/latest/download/nx-udev_latest_all.deb
-" target="_blank">nx-udev_latest_all.deb</a>.
-2. Open a terminal in the same directory as your download.
-3. Run `sudo dpkg -i nx-udev_latest_all.deb` to install the package
+Для начала создадим новую группу и добавим себя в неё. Группа, которой будет принадлежать устройство Nintendo Switch в Linux, будет настроена на эту группу.
 
-You should now be able to run the payload injector and homebrew with USB communication without having to use `sudo`.
+1. Откройте терминал.
+2. Введите следующую команду: `sudo groupadd nintendo_switch`.
+3. Введите пароль, если потребуется.
+4. Введите следующую команду: `sudo usermod -a -G nintendo_switch $USER`. Убедитесь, что буква `G` заглавная!
+5. Закройте терминал.
+
+#### **Добавление правила udev**
+
+Далее добавим новое правило `udev`. `udev` — это менеджер устройств ядра Linux. Указанное нами правило задаёт, что если Switch подключён в режиме `RCM`, группа, к которой принадлежит Switch, будет той, которую мы создали в предыдущем разделе.
+
+1. Откройте терминал.
+2. Переключитесь на root-пользователя с помощью команды: `sudo -i`. Введите пароль, если будет предложено.
+3. Введите следующую команду: `mkdir -p /etc/udev/rules.d`.
+4. Введите следующую команду:  
+   `echo 'SUBSYSTEMS=="usb", ATTRS{manufacturer}=="NVIDIA Corp.", ATTRS{product}=="APX", GROUP="nintendo_switch"' > /etc/udev/rules.d/10-switch.rules`.
+5. Введите следующую команду: `udevadm control --reload`.
+6. Введите следующую команду: `udevadm trigger`.
+7. Выйдите из системы и войдите снова.
+
+Теперь вы должны иметь возможность использовать отправку payload без необходимости использования `sudo`.
+
+
+&nbsp;
+
+### **Вариант 2: Установка пакета с правилами**
+
+Эти правила позволят _любому_ пользователю получить доступ к вашей консоли через USB, а не только _вашему_ пользователю.
+
+Вы можете просто следовать инструкциям на странице <a href="https://github.com/pheki/nx-udev" target="_blank">nx-udev</a>, или, если вы используете Ubuntu / Debian:
+
+1. Скачайте <a href="https://github.com/pheki/nx-udev/releases/latest/download/nx-udev_latest_all.deb" target="_blank">nx-udev_latest_all.deb</a>.
+2. Откройте терминал в том же каталоге, куда вы загрузили файл.
+3. Выполните команду `sudo dpkg -i nx-udev_latest_all.deb` для установки пакета.
+
+Теперь вы должны иметь возможность использовать инжектор payload и homebrew с USB-соединением без необходимости использовать `sudo`.
+

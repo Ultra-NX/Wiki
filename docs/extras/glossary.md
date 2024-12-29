@@ -1,47 +1,48 @@
-# Glossary of common hacking terms
+# **Глоссарий**
 
-This section is dedicated to explaining a number of common terms that are used when hacking the Nintendo Switch as well as linking a number of resources that can help fledgling developers or curious users.
+Этот раздел посвящен объяснению ряда распространенных терминов, которые используются при взломе Nintendo Switch, а также предоставляет ссылки на ресурсы, которые могут помочь начинающим разработчикам или любопытным пользователям.
 
-## Hacking terms
+## Термины
 
-The following list is in alphabetical order.
+Ниже приведен список в алфавитном порядке.
 
-- **90DNS**: DNS that blocks system updates on the Nintendo Switch. This can be enabled by following the guide [here](blocking_nintendo.md).
-- **[Atmosphère](https://github.com/Atmosphere-NX/Atmosphere)**: The CFW developed by the Atmosphere-NX organization on GitHub and the one used in this guide.
-- **AutoRCM**: A method that corrupts parts of your boot0 and boot1, causing the Switch to boot into RCM automatically. Using this requires an additional peripheral (such as a computer, phone, dongle, or modchip) to be able to boot your Switch.
-- **boot0 and boot1**: Two partitions of the Switch NAND.
-- **bootROM**: An initial system loader whose primary purpose is to initialise a device's hardware and prepare it for use. It is also typically responsible for authenticating hardware and software necessary to start the device. A bootROM is a ROM, meaning that it is etched into the device and cannot be rewritten or upgraded without replacing the hardware entirely.
-- **CFW**: Short for custom firmware. CFW is a collection of patches which partially or largely modify the functionality of the underlying OS. It is not used to refer to the usage of brand new operating systems entirely.
-- **Deja Vu**: An unreleased exploit chain for the Nintendo Switch. The completely unpatched version of this chain will grant access to TrustZone, which effectively means being able to enter CFW. The TrustZone part of this exploit was patched in firmware version 5.0.0 and up, but normal homebrew access can still be gained up to firmware version 6.0.1.
-- **DNS**: [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System). Basically, the internet's addressbook. If you visit a website, the DNS lookup is what tells you what server the site is hosted on.
-- **Dongle**: Device you can plug in the USB-C of your Switch to automatically send a payload if your Switch is in RCM.
-- **Encryption keys**: Keys used to encrypt data from the Nintendo Switch.
-  - **BIS keys**: Built-in Storage keys. They are used to encrypt/decrypt the NAND's contents.
-- **[fusee-gelee](https://github.com/Qyriad/fusee-launcher/blob/master/report/fusee_gelee.md)/[ShofEL2](https://github.com/fail0verflow/shofel2)**: Two names for two different implementations of the [same exploit](https://nvd.nist.gov/vuln/detail/CVE-2018-6242). This is an exploit that grants full bootROM access to the Nintendo Switch from the Tegra X1's RCM, and permitting us to run CFW. This exploit requires an external device or a tiny hardware modification. fusee-gelee is developed by an ex-ReSwitched developer, while ShofEL2 is developed by the failoverfl0w team. This guide uses fusee-gelee.
-- **[hactool](https://github.com/SciresM/hactool)**: Software used to decrypt Nintendo Switch files like .XCI and .NSP files.
-- **[Hekate](https://github.com/CTCaer/hekate)**: A bootloader for the Nintendo Switch. The current guide uses this in combination with essential files from Atmosphère to boot CFW.
-- **Homebrew**: Unsigned code that can be ran on the Nintendo Switch. Examples of homebrew include save editors, emulators and ports of PC games, but can also include completely original games. To run this code, you need to have an exploit.
-- **Homebrew launcher**: Software developed by the Switchbrew team that lets you run other Homebrew.
-- **Jig**: Refers to a piece of hardware that you can put in the Joycon rail to enter RCM.
-- **KIP**: Short for Kernel Initial Process. These files can be loaded in when the Switch boots in CFW and provide additional functionality.
-- **NAND**: Referred to as "Internal Storage" within Nintendo's consoles, this is the storage chip that the console saves the system software and internal settings to. The name refers to the type of logic gate employed, known as "not-AND" in this case.
-- **nx-hbloader**: Intermediary program used to load the Homebrew Launcher from CFW developed by Switchbrew. Comes bundled with Atmosphere.
-- **PRODINFO**: A partition on the NAND of your Switch. This along with boot0 and boot1 is the only part of your Switch that can render it unbootable if improperly modified. Atmosphère backs up this partition on booting and it is included in your NAND backup.
-- **qLaunch**: This is similar to the HOME Menu on the Nintendo 3DS. It serves as a launcher for many applets such as System Settings, the main home menu (ResidentMenu), User/Friends Page (myPage), Lock Screen (Entrance), News menu (Notification), and so on.
-- **ReSwitched**: A hacking team that is one of the main developers for Atmosphère.
-- **RCM**: A shorthand for "Recovery Mode". When talking about hacking the Switch, this commonly refers to the Recovery Mode in the Tegra X1 chip that is included in the Nintendo Switch. Can be entered by holding down the Tegra X1 home button. This button is not the same as the home button on the joycons. Ways of pressing this button can be found [here](../user_guide/rcm/entering_rcm.md).
-- **ROM**: "Read-only memory"; a section of data that cannot be modified once it is written. <br> Some forms of ROM can be rewritten under very specific scenarios, such as [EEPROM](https://en.wikipedia.org/wiki/EEPROM) (electronically-erasable/programmable ROM).
-- **[TegraRCMGUI](https://github.com/eliboa/TegraRcmGUI/releases)/[fusee-interface-tk](https://github.com/nh-server/fusee-interfacee-tk/releases)**: Software used to run the fusee-gelee exploit on the Switch.
-- **Stock**: "Stock" generally refers to the original factory operation or state of something. <br> For example, stock firmware means the original operation of Horizon, not using CFW.
-- **Tegra X1**: [A chip made by Nvidia that is used in the Nintendo Switch.](https://en.wikipedia.org/wiki/Tegra#Tegra_X1)
-- **Trinket**: A category of modchip that is soldered on the Switch motherboard to automatically send a payload if it is in RCM. They are not necessarily always the Trinket brand, as this refers to the category of modchip.
-- **TrustZone**: The highest security level on the Switch.
-- **XCI/NSP**: Format used to dump games to. XCI is used for gamecard dumps, while NSP is for dumping digital titles.
+- **90DNS**: DNS, который блокирует системные обновления на Nintendo Switch. Это можно включить, следуя руководству [здесь](blocking_nintendo.md).
+- **[Atmosphère](https://github.com/Atmosphere-NX/Atmosphere)**: CFW, разработанный организацией Atmosphere-NX на GitHub и используемый в этом руководстве.
+- **AutoRCM**: Метод, который повреждает части boot0 и boot1, заставляя консоль автоматически загружаться в RCM. Для использования этого метода требуется дополнительное оборудование (например, компьютер, телефон, донгл или модчип).
+- **boot0 и boot1**: Два раздела NAND консоли.
+- **bootROM**: Начальный загрузчик системы, основная цель которого - инициализация аппаратного обеспечения устройства и подготовка его к использованию. Обычно он также отвечает за аутентификацию необходимого оборудования и программного обеспечения для запуска устройства. bootROM является ROM, что означает, что он запечен в устройстве и не может быть переписан или обновлен без полной замены оборудования.
+- **CFW**: Сокращение от "custom firmware" (кастомная прошивка). CFW - это набор патчей, которые частично или полностью изменяют функциональность операционной системы устройства. Это не относится к использованию совершенно новых операционных систем.
+- **Deja Vu**: Неопубликованная цепочка эксплойтов для Nintendo Switch. Полностью незапатченная версия этой цепочки предоставляет доступ к TrustZone, что фактически означает возможность загрузки CFW. Часть эксплойта для TrustZone была запатчена в версии прошивки 5.0.0 и выше, но обычный доступ к homebrew все еще возможен до версии прошивки 6.0.1.
+- **DNS**: [Система доменных имен](https://ru.wikipedia.org/wiki/Domain_Name_System). Это своего рода адресная книга интернета. Когда вы посещаете веб-сайт, DNS-запрос сообщает, на каком сервере размещен сайт.
+- **Dongle**: Устройство, которое можно подключить к USB-C порту вашего Switch, чтобы автоматически отправить payload, если ваш Switch находится в RCM.
+- **Ключи шифрования**: Ключи, используемые для шифрования данных Nintendo Switch.
+  - **BIS ключи**: Встроенные ключи хранения. Они используются для шифрования/дешифрования содержимого NAND.
+- **fusee-gelee/[ShofEL2](https://github.com/fail0verflow/shofel2)**: Два названия для разных реализаций [одного и того же эксплойта](https://nvd.nist.gov/vuln/detail/CVE-2018-6242). Этот эксплойт предоставляет полный доступ к bootROM Nintendo Switch через RCM чипа Tegra X1 и позволяет запускать CFW. Для этого эксплойта требуется внешнее устройство или небольшая аппаратная модификация. fusee-gelee был разработан бывшим разработчиком ReSwitched, а ShofEL2 - командой failoverfl0w. В этом руководстве используется fusee-gelee.
+- **[hactool](https://github.com/SciresM/hactool)**: Программное обеспечение для дешифровки файлов Nintendo Switch, таких как .XCI и .NSP файлы.
+- **[Hekate](https://github.com/CTCaer/hekate)**: Загрузчик для Nintendo Switch. В этом руководстве используется Hekate в сочетании с необходимыми файлами Atmosphère для загрузки CFW.
+- **Homebrew**: Несанкционированный код, который может быть выполнен на Nintendo Switch. Примеры homebrew включают редакторы сохранений, эмуляторы и порты ПК-игр, а также полностью оригинальные игры. Для запуска этого кода требуется эксплойт.
+- **Homebrew launcher**: Программное обеспечение, разработанное командой Switchbrew, которое позволяет запускать другие Homebrew.
+- **Jig**: Устройство, которое можно вставить в рельс Joycon'а для входа в RCM.
+- **KIP**: Сокращение от Kernel Initial Process. Эти файлы могут быть загружены, когда Switch загружается в CFW, и обеспечивают дополнительную функциональность.
+- **NAND**: Внутреннее хранилище в консолях Nintendo, это чип памяти, на который сохраняются системное ПО и настройки. Название связано с типом логических элементов, используемых в этом чипе, известным как "not-AND".
+- **nx-hbloader**: Промежуточная программа, используемая для загрузки Homebrew Launcher из CFW, разработанная командой Switchbrew. Поставляется вместе с Atmosphere.
+- **PRODINFO**: Раздел на NAND вашего Switch. Вместе с boot0 и boot1 это единственная часть Switch, которая может сделать устройство нерабочим при неправильном изменении. Atmosphère создает резервную копию этого раздела при загрузке и включает его в резервную копию NAND.
+- **qLaunch**: Это похоже на главное меню на Nintendo 3DS. Он служит для запуска многих апплетов, таких как системные настройки, главное меню (ResidentMenu), страницы пользователей/друзей (myPage), экран блокировки (Entrance), меню новостей (Notification) и так далее.
+- **ReSwitched**: Хакерская команда, являющаяся одним из основных разработчиков Atmosphère.
+- **RCM**: Сокращение от "Recovery Mode". Когда говорят о взломе Switch'а, обычно имеют в виду режим восстановления в чипе Tegra X1, который включен в Nintendo Switch. В него можно войти, удерживая кнопку дома Tegra X1. Эта кнопка не совпадает с кнопкой дома на джойконах. Способы нажатия на эту кнопку можно найти [здесь](../user_guide/rcm/entering_rcm.md).
+- **ROM**: "Read-only memory" (память только для чтения); раздел данных, который не может быть изменен после записи. <br> Некоторые формы ROM могут быть переписаны в очень специфичных случаях, таких как [EEPROM](https://ru.wikipedia.org/wiki/EEPROM) (электронно-стираемая/программируемая память).
+- **[TegraRCMGUI](https://github.com/eliboa/TegraRcmGUI/releases)/[fusee-interface-tk](https://github.com/nh-server/fusee-interfacee-tk/releases)**: Программное обеспечение для запуска эксплойта fusee-gelee на консоли.
+- **Stock**: "Stock" обычно относится к исходной заводской настройке чего-либо. <br> Например, stock-прошивка означает оригинальную работу Horizon OS, без использования CFW.
+- **Tegra X1**: [Чип, разработанный Nvidia, который используется в Nintendo Switch.](https://ru.wikipedia.org/wiki/Tegra_X1)
+- **Trinket**: Категория модчипов, которые паяются на материнской плате Switch для автоматической отправки payload'а, если он находится в RCM. Это не обязательно модчипы бренда Trinket, так как это относится к категории модчипов.
+- **TrustZone**: Самый высокий уровень безопасности на Switch.
+- **XCI/NSP**: Формат, используемый для дампов игр. XCI используется для дампов с картриджа, а NSP - для дампов цифровых тайтлов.
+- **XCZ/NSZ**: Сжатые форматы дампов игр. XCZ - сжатый формат дампа игры с картриджа, а NSZ - сжатый формат дампа игры из eshop.
 
-## Resources
+## Ресурсы
 
-The resources below are for users and developers interested in developing Homebrew or for those that want to get a more technical understanding of the various concepts.
+Ресурсы ниже предназначены для пользователей и разработчиков, заинтересованных в разработке Homebrew или желающих получить более техническое понимание различных концепций.
 
-- The [ReSwitched FAQ](https://reswitched.github.io/faq/) lists a general overview of how the Switch works.
-- [Switchbrew](https://switchbrew.org) is a wiki detailing the inner workings of the Nintendo Switch's firmware.
-- [libNX documentation](https://switchbrew.github.io/libnx/index.html). LibNX is the library used to develop Homebrew on the Nintendo Switch.
+- [ReSwitched FAQ](https://reswitched.github.io/faq/) содержит общий обзор того, как работает Switch.
+- [Switchbrew](https://switchbrew.org) - это вики, подробно описывающее внутреннее устройство прошивки Nintendo Switch.
+- [Документация libNX](https://switchbrew.github.io/libnx/index.html). LibNX - это библиотека, используемая для разработки Homebrew на Nintendo Switch.

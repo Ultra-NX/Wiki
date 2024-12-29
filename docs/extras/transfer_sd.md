@@ -1,54 +1,55 @@
-# Changing microSD cards
+# Смена SD карт
 
-The goal of this page is to transfer the contents from one microSD card to another one. The method to do this will differ, depending on whether you're using a partition based emuMMC on your microSD card or not.
+Цель этой страницы — перенести содержимое с одной microSD карты на другую. Метод будет зависеть от того, используете ли вы emuMMC, основанный на разделе, на вашей microSD карте или нет.
 
-We will be using [hekate](https://github.com/CTCaer/hekate/releases/) to both backup and restore the emuMMC, so make sure that you have its latest files on your microSD card already.
+Для создания резервной копии и восстановления emuMMC мы будем использовать [hekate](https://github.com/CTCaer/hekate/releases/), поэтому убедитесь, что у вас уже есть новейшие файлы Hekate на microSD карте.
 
-#### **Instructions:**
+#### **Инструкции:**
 
-You should first check whether you have a file or partition based emuMMC:
+Сначала проверьте, используете ли вы emuMMC, основанный на файле или разделе:
 
-1. Enter RCM and inject the Hekate payload.
-    - If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to `payload.bin` on the root of your microSD card.
-2.  Tap on the `emuMMC` button.
-3.  Under `emuMMC Info & Selection`, check the text next to `Type`.
-    - If you have one it should be either `SD Raw Partition` or `SD File`.
-
------
-### **If you are using a file based emuMMC or are using no emuMMC at all:**
-
-1. Enter RCM and inject the Hekate payload.
-    - If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to `payload.bin` on the root of your microSD card.
-2. Navigate to `Tools` > `USB Tools` > `SD Card` and plug your Switch into your PC via USB.
-2. Copy the contents of your microSD card somewhere to your PC.
-4. Access your new microSD card via a microSD card reader or similar.
-5. Format your new microSD card to FAT32 if it isn’t already.
-    - To do this, use [this guide](https://wiki.hacks.guide/wiki/Formatting_an_SD_card).
-6. Copy the files from your PC or directly from your old microSD card to your new microSD card.
-7. Eject the `UMS` device safely from within your computer's operating system.
+1. Войдите в RCM и отправьте payload Hekate.
+    - Если у вас модифицированная консоль, просто включите её с payload Hekate, переименованным в `payload.bin` в корне вашей microSD карты.
+2. Нажмите на кнопку `emuMMC`.
+3. В разделе `emuMMC Info & Selection` посмотрите текст рядом с `Type`.
+    - Если у вас есть emuMMC, то это будет либо `SD Raw Partition`, либо `SD File`.
 
 -----
-### **If you are using a partition based emuMMC:**
+### **Если вы используете emuMMC на основе файла или не используете его вообще:**
 
-!!! warning "Space for the backup"
-    You need at least 30GB (or 60GB if using an OLED Switch) of free space to be able to restore the emuMMC!
+1. Войдите в RCM и отправьте payload Hekate.
+    - Если у вас модифицированная консоль, просто включите её с payload Hekate, переименованным в `payload.bin` в корне вашей microSD карты.
+2. Перейдите в `Tools` > `USB Tools` > `SD Card` и подключите Switch к ПК через USB.
+3. Скопируйте содержимое вашей microSD карты на ПК.
+4. Подключите новую microSD карту через картридер или аналогичное устройство.
+5. Отформатируйте новую microSD карту в FAT32, если это ещё не сделано.
+    - Для этого используйте [это руководство](https://wiki.hacks.guide/wiki/Formatting_an_SD_card).
+6. Скопируйте файлы с вашего ПК или прямо с вашей старой microSD карты на новую microSD карту.
+7. Безопасно извлеките устройство `UMS` через операционную систему вашего компьютера.
 
-1. Enter RCM and inject the Hekate payload.
-    - If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to `payload.bin` on the root of your SD.
-2.  In the main menu, tap on `Tools`, then `Backup eMMC` and set `SD emuMMC Raw Partition` at the bottom of your screen to `ON`.
-3.  Backup both `SD emuMMC BOOT0 & BOOT1` and `SD emuMMC RAW GPP` (Note: `SD emuMMC RAW GPP` may take a while).
-4.  Once both are done, go back to the main menu, navigate to `Tools` > `USB Tools` > `SD Card` and plug your Switch into your PC via USB.
-5.  If Windows asks you to format a drive, discard it and open the accessible drive containing the contents of your microSD card.
-6.  Copy the contents of your old microSD card somewhere to your PC.
-7.  Follow the `Preparing Hekate` section at the bottom of [this page](../user_guide/rcm/sending_payload.md) (Unpatched Switch users only) to prepare your new SD card with Hekate's files.
-    - If you have a modchipped Switch, follow [this page](../user_guide/modchip/preparing_hekate.md) instead.
-8.  Follow only steps 1-3 on [this page](../user_guide/all/partitioning_sd.md) to partition the new microSD card for an emuMMC setup.
-8.  After it’s done, boot into Hekate and navigate to `Tools` > `USB Tools` > `SD Card`, then plug your Switch into your PC via USB.
-9.  Copy the backup you made of your old microSD card on your PC to your new microSD card.
-10. Navigate to `/backup/<some characters>/emummc` on your microSD card and move `BOOT0`, `BOOT1` and the `rawnand.bin.xx` files to `/backup/<some characters>/restore/emummc`.
-11. Eject the `UMS` device safely from within your computer's operating system.
-12. Tap on `Tools`, `Restore eMMC`, set `SD emuMMC Raw Partition` at the bottom of your screen to `ON`.
-13. Restore the backup by tapping on both `SD emuMMC BOOT0 & BOOT1` and `SD emuMMC RAW GPP` (Note: `SD emuMMC RAW GPP` may take a while).
-    - It is very important that for both of these the `SD emuMMC Raw Partition` option is enabled, otherwise you will be altering your sysMMC
-      which is not what you want.
-14. Your emuMMC is now restored on the new microSD card and you should be able to launch it from `Launch` -> `Atmosphere FSS0 emuMMC` in Hekate.
+
+-----
+### **Если вы используете emuMMC на основе раздела:**
+
+!!! warning "Место для резервной копии"
+    Вам нужно минимум 30 ГБ (или 60 ГБ, если у вас OLED Switch) свободного места, чтобы восстановить emuMMC!
+
+1. Войдите в RCM и отправьте payload Hekate.
+    - Если у вас модифицированная консоль, просто включите её с payload Hekate, переименованным в `payload.bin` в корне вашей SD карты.
+2. В главном меню нажмите на `Tools`, затем `Backup eMMC` и установите `SD emuMMC Raw Partition` в нижней части экрана в положение `ON`.
+3. Сделайте резервные копии как `SD emuMMC BOOT0 & BOOT1`, так и `SD emuMMC RAW GPP` (Примечание: создание резервной копии `SD emuMMC RAW GPP` может занять некоторое время).
+4. После завершения обеих операций вернитесь в главное меню, перейдите в `Tools` > `USB Tools` > `SD Card` и подключите Switch к ПК через USB.
+5. Если Windows попросит вас отформатировать диск, отклоните это и откройте доступный диск, содержащий содержимое вашей microSD карты.
+6. Скопируйте содержимое вашей старой microSD карты на ПК.
+7. Следуйте разделу `Подготовка Hekate` внизу [этой страницы](../user_guide/rcm/sending_payload.md) (только для пользователей с уязвимыми), чтобы подготовить вашу новую SD карту с файлами Hekate.
+    - Если у вас модифицированная консоль, следуйте [этой странице](../user_guide/modchip/preparing_hekate.md).
+8. Следуйте только шагам 1-3 на [этой странице](../user_guide/all/partitioning_sd.md), чтобы создать разделы для новой microSD карты для настройки emuMMC.
+9. После завершения загрузитесь в Hekate и перейдите в `Tools` > `USB Tools` > `SD Card`, затем подключите Switch к ПК через USB.
+10. Скопируйте резервную копию вашей старой microSD карты с ПК на вашу новую microSD карту.
+11. Перейдите в `/backup/<некоторые символы>/emummc` на вашей microSD карте и переместите файлы `BOOT0`, `BOOT1` и `rawnand.bin.xx` в `/backup/<некоторые символы>/restore/emummc`.
+12. Безопасно извлеките устройство `UMS` через операционную систему вашего компьютера.
+13. Нажмите на `Tools`, затем `Restore eMMC`, и установите `SD emuMMC Raw Partition` в нижней части экрана в положение `ON`.
+14. Восстановите резервную копию, нажав на оба варианта: `SD emuMMC BOOT0 & BOOT1` и `SD emuMMC RAW GPP` (Примечание: восстановление `SD emuMMC RAW GPP` может занять некоторое время).
+    - Очень важно, чтобы для обоих этих пунктов опция `SD emuMMC Raw Partition` была включена, иначе вы измените sysMMC, а этого делать не нужно.
+15. Ваш emuMMC теперь восстановлен на новой microSD карте, и вы сможете запустить его через `Launch` -> `Atmosphere` в Hekate.
+
