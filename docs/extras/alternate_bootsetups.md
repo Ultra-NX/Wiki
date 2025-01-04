@@ -1,43 +1,46 @@
-# Alternate boot setups
+# Альтернативные методы запуска
 
-If you need to troubleshoot something, or need to try a different boot setup, read on.
+Если вам нужно устранить неполадки или попробовать другую настройку загрузки, читайте дальше.
 
-!!! danger "Do I need any of these?"
-	Unless you are experiencing problems with booting or Atmosphère itself, it's strongly recommended to use the main guide instead of these. They are provided for the sake of completeness.
-
-&nbsp;
-
-### **Chainloading Fusee from Hekate**
-
-- The latest release of [Hekate](https://github.com/CTCaer/hekate/releases/)
-- The latest release of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/releases)
-    - You will need to download both the release zip and the `fusee.bin`
-
-#### **Instructions:**
-
-1. Insert your Switch's microSD card into your PC.
-2. Copy *the contents of* the Atmosphere `.zip` file to the root of your microSD card.
-3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your microSD card.
-4. Copy `fusee.bin` to the `sd:/bootloader/payloads` folder on your microSD card.
-5. The setup is complete, you can inject the Hekate payload (Unpatched Switch users) or place the Hekate payload on the root of your microSD card and rename it to `payload.bin` (Modchipped Switch users).
-6. Navigate to and select `Payloads` > `fusee.bin`.
-    - Note: `fusee` uses a set boot order that is not as easily configurable as Hekate. Its boot order is `emuMMC` > `sysCFW` > `stock`.
-    If an emuMMC isn't present, it will boot into sysCFW for example. Make sure you have a method of blocking Nintendo's servers set up (such as [DNS-MITM](../extras/blocking_nintendo.md/#instructions-ams-dns-redirection)) if you do use `fusee` and have an `emuMMC`.
-
+!!! danger "Нужны ли мне эти варианты?"
+    Если у вас нет проблем с загрузкой или с Атмосферой, настоятельно рекомендуется использовать основное руководство вместо этих вариантов. Они предоставлены только для полноты информации.
 
 &nbsp;
 
-### **Using Fusee without Hekate**
+### **Загрузка Fusee через Hekate**
 
-This method will *not* work for Modchipped Switch users.
+- Последняя версия [Hekate](https://github.com/CTCaer/hekate/releases/)
+- Последняя версия [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/releases)  
+    - Вам потребуется скачать как zip-архив релиза, так и файл `fusee.bin`.
 
-- The latest release of [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/releases)
-    - You will need to download both the release zip and the `fusee.bin`
 
-#### **Instructions:**
+#### **Инструкции:**
 
-1. Insert your Switch's microSD card into your PC.
-2. Copy *the contents of* the Atmosphere `.zip` file to the root of your microSD card.
-3. The setup is complete, you can inject the `fusee.bin` payload.
-    - Note: `fusee` uses a set boot order that is not as easily configurable as Hekate. Its boot order is `emuMMC` > `sysCFW` > `stock`.
-    If an emuMMC isn't present, it will boot into sysCFW for example. Make sure you have a method of blocking Nintendo's servers set up (such as [DNS-MITM](../extras/blocking_nintendo.md/#instructions-ams-dns-redirection)) if you do use `fusee` and have an `emuMMC`.
+1. Вставьте microSD-карту вашей консоли в ПК.
+2. Скопируйте *содержимое* файла Atmosphere `.zip` в корень вашей microSD-карты.
+3. Скопируйте папку `bootloader` из файла Hekate `.zip` в корень вашей microSD-карты.
+4. Скопируйте файл `fusee.bin` в папку `sd:/bootloader/payloads` на вашей microSD-карте.
+5. Настройка завершена: вы можете загрузить Hekate-payload (для пользователей с уязвимой консолью) или поместить payload Hekate в корень вашей microSD-карты и переименовать его в `payload.bin` (для пользователей с модчипом).
+6. Перейдите в меню и выберите `Payloads` > `fusee.bin`.  
+    - Примечание: `fusee` использует установленный порядок загрузки, который сложнее настроить, чем у Hekate. Порядок загрузки: `emuMMC` > `sysCFW` > `stock`.  
+      Если `emuMMC` отсутствует, например, загрузка выполнится в `sysCFW`. Убедитесь, что у вас есть способ блокировки серверов Nintendo (например, [DNS-MITM](../extras/blocking_nintendo.md/#instructions-ams-dns-redirection)), если вы используете `fusee` и у вас есть `emuMMC`.
+
+
+
+&nbsp;
+
+### **Использование Fusee без Hekate**
+
+Этот метод *не* подойдет для пользователей с установленным модчипом в консоль.
+
+- Последняя версия [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/releases)  
+    - Вам потребуется скачать как zip-архив релиза, так и файл `fusee.bin`.
+
+#### **Инструкции:**
+
+1. Вставьте microSD-карту вашей консоли в ПК.
+2. Скопируйте *содержимое* файла Atmosphere `.zip` в корень вашей microSD-карты.
+3. Настройка завершена: вы можете загрузить payload `fusee.bin`.  
+    - Примечание: `fusee` использует установленный порядок загрузки, который сложнее настроить, чем у Hekate. Порядок загрузки: `emuMMC` > `sysCFW` > `stock`.  
+      Если `emuMMC` отсутствует, например, загрузка выполнится в `sysCFW`. Убедитесь, что у вас есть способ блокировки серверов Nintendo (например, [DNS-MITM](../extras/blocking_nintendo.md/#instructions-ams-dns-redirection)), если вы используете `fusee` и у вас есть `emuMMC`.
+

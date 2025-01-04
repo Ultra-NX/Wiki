@@ -1,18 +1,18 @@
-# Showing File Name Extensions on Windows 10/11
+# Показ расширений файлов Windows
 
-By default, Microsoft Windows 10 and 11 do not show file extensions for known file types. This can result in problems when you need to rename files.
+По умолчанию в Microsoft Windows 10 и 11 не отображаются расширения файлов для известных типов файлов. Это может привести к проблемам, если вам нужно переименовать файлы.
 
-### **Instructions for Windows 10:**
+### **Инструкции для Windows 10:**
 
-1. Open a new File Explorer window.
-2. Switch to the View tab/ribbon.
-3. On this tab, if the `File name extensions` checkbox is not ticked, put a check/tick mark in it by clicking it.
+1. Откройте новое окно Проводника.
+2. Перейдите на вкладку `Вид`.
+3. На этой вкладке, если флажок `Расширения имен файлов` не установлен, установите его, щелкнув по нему.
 
-### **Instructions for Windows 11:**
+### **Инструкции для Windows 11:**
 
-1. Open a new File Explorer window.
-2. Click the `View` hamburger menu/dropdown menu.
-3. Go to `Show` at the bottom and ensure that `File name extensions` is ticked.
+1. Откройте новое окно Проводника.
+2. Щелкните по выпадающему меню `Просмотреть`.
+3. Перейдите в раздел `Показать` внизу и убедитесь, что установлен флажок `Расширения имен файлов`.
 
 !!! tip ""
-    ![Visual for the above instructions](img/file_extensions.png)
+    ![Визуальное руководство для вышеописанных инструкций](img/file_extensions.png)

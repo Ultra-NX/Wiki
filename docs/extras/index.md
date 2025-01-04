@@ -1,11 +1,11 @@
-# Extras
+# Дополнительно
 
-Several extra guides that are not required for basic usage can be found here.
+Здесь вы можете найти несколько дополнительных руководств, которые не требуются для обычного использования.
 
-They are listed in the sidebar as well.
+Они также перечислены в боковом меню.
 
-### **Commonly used guides**:
+### **Наиболее используемые руководства**:
 
-- [Updating CFW](updating.md)
-- [Blocking Nintendo servers](blocking_nintendo.md)
-- [Changing microSD cards](transfer_sd.md)
+- [Обновление CFW](updating.md)
+- [Блокировка серверов Nintendo](blocking_nintendo.md)
+- [Замена карты microSD](transfer_sd.md)

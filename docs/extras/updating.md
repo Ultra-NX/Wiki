@@ -1,123 +1,126 @@
-# Keeping your system up-to-date
+# Обновление системы
 
-This page documents how you can keep your system up-to-date.
+Эта страница описывает, как поддерживать вашу систему в актуальном состоянии.
 
-After following our guide, your system will consist of three core elements that can be updated. Atmosphere, Hekate and your system firmware.
+После того как вы выполните наш гайд, ваша система будет состоять из трёх основных элементов, которые можно обновлять: Atmosphère, Hekate и системная прошивка.
 
-### **Updating Atmosphere**
+### **Обновление Atmosphère**
 
-When updating Atmosphère, always make sure to _read the release notes_. They may list important changes and modifications to your system.
+При обновлении Atmosphère всегда обязательно _читайте примечания к релизу_. В них могут быть указаны важные изменения и модификации вашей системы.
 
-!!! warning "Updating from below Atmosphère 1.0.0"
-    If you update from below Atmosphère 1.0.0, there are additional steps to follow. You will have to delete the `sept` folder from your microSD, delete `fusee-secondary.bin` from your `atmosphere` folder and update your Hekate config file: <a href="../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a> in the `bootloader` folder.
+!!! warning "Обновление с версии ниже Atmosphère 1.0.0"
+    Если вы обновляете с версии ниже 1.0.0, вам нужно будет выполнить дополнительные шаги. Вам нужно удалить папку `sept` с вашей microSD, удалить файл `fusee-secondary.bin` из папки `atmosphere` и обновить конфигурационный файл Hekate: <a href="../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a> в папке `bootloader`.
 
-When a new version of Atmosphère releases, you can update Atmosphère by following these steps:
+Когда выходит новая версия Atmosphère, вы можете обновить её, следуя этим шагам:
+
+1. Войдите в RCM и отправьте payload Hekate.
+    - Если у вас модифицированная консоль, просто включите её с payload Hekate, переименованным в `payload.bin` в корне вашей microSD карты.
+2. Перейдите в `Tools` > `USB Tools` > `SD Card` и подключите Switch к ПК через USB.
+3. Скачайте последнюю версию <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphère</a> (Скачайте релиз `atmosphere-(версия)-master-(версия)+hbl-(версия)+hbmenu-(версия).zip`).
+4. Скопируйте *содержимое* архива Atmosphere `.zip` в корень вашей microSD карты.
+    - Если будет предложено перезаписать файлы, согласитесь.
+5. Безопасно извлеките устройство `UMS` через операционную систему вашего компьютера.
+6. (Если ваша версия Hekate устарела) обновите Hekate, следуя нижеописанным шагам.
 
 
-1. Enter RCM and inject the Hekate payload.
-    - If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to `payload.bin` on the root of your microSD card.
-2. Navigate to `Tools` > `USB Tools` > `SD Card` and plug your Switch into your PC via USB.
-3. Download the latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip` release of Atmosphere.)
-4. Copy *the contents of* the Atmosphere `.zip` file to the root of your microSD card.
-    - If you are prompted to overwrite files, do so.
-5. Eject the `UMS` device safely from within your computer's operating system.
-6. (If your Hekate is not on the latest version) update Hekate via the steps below.
+### **Обновление Hekate**
 
-### **Updating Hekate**
+При обновлении Hekate всегда обязательно _читайте примечания к релизу_. В них могут быть указаны важные изменения и модификации вашей системы.
 
-When updating Hekate always make sure to _read the release notes_. They may list important changes and modifications to your system.
+Когда выходит новая версия Hekate, вы можете обновить её, следуя этим шагам:
 
-When a new version of Hekate releases, you can update by following these steps:
+1. Войдите в RCM и отправьте payload Hekate.
+    - Если у вас модифицированная консоль, просто включите её с payload Hekate, переименованным в `payload.bin` в корне вашей microSD карты.
+2. Перейдите в `Tools` > `USB Tools` > `SD Card` и подключите Switch к ПК через USB.
+3. Скачайте последнюю версию <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Скачайте релиз `hekate_ctcaer_(версия).zip`).
+4. Скопируйте папку `bootloader` из архива Hekate `.zip` в корень вашей microSD карты. Если будет предложено перезаписать или объединить файлы, согласитесь с этим.
+5. Безопасно извлеките устройство `UMS` через операционную систему вашего компьютера.
+6. Вернитесь в главное меню Hekate и нажмите `Reload` > `Reload`, чтобы перезагрузить Hekate с вашей microSD карты.
+7. Теперь всё готово, и вы можете загрузиться в CFW.
 
-1. Enter RCM and inject the Hekate payload.
-    - If you use a modchipped Switch, you can simply just turn your Switch on with the Hekate payload renamed to `payload.bin` on the root of your microSD card.
-2. Navigate to `Tools` > `USB Tools` > `SD Card` and plug your Switch into your PC via USB.
-3. Download the latest version of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate).
-4. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your microSD card. If you are asked to overwrite or merge files while copying, say yes to merge/overwrite them.
-5. Eject the `UMS` device safely from within your computer's operating system.
-6. Go back to Hekate's main menu and press `Reload` > `Reload` to reload Hekate from your microSD card.
-7. From here, you're done and you can boot into CFW.
 
-### **Updating your firmware**
+### **Обновление вашей прошивки**
 
-Always check _before_ updating your system firmware if the latest version of Atmosphère _as well_ as the latest version of Hekate support the firmware version you are updating towards.
+Всегда проверяйте _перед_ обновлением прошивки системы, поддерживает ли последняя версия Atmosphère _и_ последняя версия Hekate версию прошивки, на которую вы обновляете.
 
-In addition, updating to or past some firmwares update the gamecard firmware. Reference the table below for information about these.
+Кроме того, обновление до некоторых версий прошивки или переход через них обновляет прошивку картриджа. Смотрите таблицу ниже для получения информации об этом.
 
-| Updating from                        | Updating towards                              | Updates gamecard firmware |
-| ------------------------------------ | --------------------------------------------- | ------------------------- |
-| Below 4.0.0                          | Below 4.0.0                                   | No                        |
-| Below 4.0.0                          | 4.0.0 or above                                | Yes                       |
-| On or above 4.0.0, but below 9.0.0   | At least 4.0.1 but below 9.0.0                | No                        |
-| On or above 4.0.0, but below 9.0.0   | 9.0.0 or above                                | Yes                       |
-| On or above 9.0.0, but below 11.0.0  | At least 9.0.1 but below 11.0.0               | No                        |
-| On or above 9.0.0, but below 11.0.0  | 11.0.0 or above                               | Yes                       |
-| On or above 11.0.0 but below 12.0.0  | At least 11.0.1 but below 12.0.0              | No                        |
-| On or above 11.0.0 but below 12.0.0  | 12.0.0 or above                               | Yes                       |
-| On or above 12.0.0 but below 14.0.0  | At least 12.0.1 but below 13.2.1              | No                        |
-| On or above 12.0.0 but below 14.0.0  | 14.0.0 or above                               | Yes                       |
-| On or above 14.0.0                   | Latest supported Atmosphère & Hekate revision | No                        |
 
-If at least one of the versions you are updating towards also updates the gamecard firmware, you will not be able to downgrade below that version without making the gamecard slot unusable until you update.
+| Обновление с                         | Обновление до                                | Обновляет прошивку картриджа |
+| ------------------------------------ | ------------------------------------------- | --------------------------- |
+| Ниже 4.0.0                           | Ниже 4.0.0                                  | Нет                         |
+| Ниже 4.0.0                           | 4.0.0 или выше                              | Да                          |
+| От 4.0.0 до 9.0.0, но ниже 9.0.0     | Как минимум 4.0.1, но ниже 9.0.0            | Нет                         |
+| От 4.0.0 до 9.0.0, но ниже 9.0.0     | 9.0.0 или выше                              | Да                          |
+| От 9.0.0 до 11.0.0, но ниже 11.0.0   | Как минимум 9.0.1, но ниже 11.0.0           | Нет                         |
+| От 9.0.0 до 11.0.0, но ниже 11.0.0   | 11.0.0 или выше                             | Да                          |
+| От 11.0.0 до 12.0.0, но ниже 12.0.0  | Как минимум 11.0.1, но ниже 12.0.0          | Нет                         |
+| От 11.0.0 до 12.0.0, но ниже 12.0.0  | 12.0.0 или выше                             | Да                          |
+| От 12.0.0 до 14.0.0, но ниже 14.0.0  | Как минимум 12.0.1, но ниже 13.2.1          | Нет                         |
+| От 12.0.0 до 14.0.0, но ниже 14.0.0  | 14.0.0 или выше                             | Да                          |
+| От 14.0.0                            | Последняя поддерживаемая версия Atmosphère и Hekate | Нет                      |
 
-Atmosphere (and Hekate) come bundled with patches that automatically disable the gamecard slot if it is detected that the system has an older gamecard firmware that would be updated. If you boot into RCM on each boot (for example by using AutoRCM), this means that the gamecard slot will not be updated and you can downgrade below that version. If this happens, you will not be able to use the gamecard slot as long as you are on the newer firmware.
 
-Otherwise, you can safely update your system firmware through the system settings.
+Если хотя бы одна из версий, к которой вы обновляетесь, также обновляет прошивку картриджа, вы не сможете откатиться ниже этой версии, не сделав слот для картриджа непригодным, пока не обновите его.
 
-!!!warning "Note about autoRCM"
-    If you have autoRCM enabled and you're updating your system while in stock firmware, **updating will disable autoRCM** and you will need to enter RCM manually to boot custom firmware again.
-    To prevent autoRCM from being disabled, boot CFW on sysMMC and update through settings from there, as booting without AutoRCM <ins>will burn any preserved fuses</ins>.
+Atmosphère (и Hekate) поставляются с патчами, которые автоматически отключают слот для картриджа, если обнаружено, что система имеет более старую прошивку картриджа, которая будет обновлена. Если вы запускаете RCM при каждом включении (например, с помощью AutoRCM), это означает, что слот для картриджа не будет обновляться, и вы сможете откатиться ниже этой версии. В этом случае слот для картриджа будет недоступен, пока вы не обновите прошивку.
 
-### **About emuMMC**
+В противном случае вы можете безопасно обновить прошивку системы через системные настройки.
 
-sysMMC and emuMMC have separate system firmwares and need to be updated separately.
+!!!warning "Заметка об autoRCM"
+    Если у вас включен autoRCM и вы обновляете систему на стоковой прошивке, **обновление отключит autoRCM**, и вам придется вручную войти в RCM, чтобы снова загрузить кастомную прошивку.
+    Чтобы предотвратить отключение autoRCM, загрузите CFW на sysMMC и обновитесь через настройки оттуда, так как загрузка без AutoRCM <ins>сожжет все сохраненные фьюзы</ins>.
 
-If you keep your emuMMC offline, you will have to use a gamecard to update your system firmware, synchronize it with another Nintendo Switch or dump an updated firmware from your sysMMC.
+### **О emuMMC**
 
-### **Updating emuMMC by dumping an updated firmware from your sysMMC**
+sysMMC и emuMMC имеют отдельные системные прошивки, и их нужно обновлять отдельно.
 
-!!! warning "Do you have an eMMC backup yet?"
-    Please do not start this guide without doing a RAW GPP and a BOOT 0/1 eMMC backup!
+Если вы держите ваш emuMMC в оффлайн-режиме, вам нужно будет использовать картридер для обновления прошивки системы, синхронизировать её с другой консолью Nintendo Switch или сбросить обновленную прошивку с вашего sysMMC.
 
-    You can learn how to make one [here](../user_guide/all/making_essential_backups.md).
+### **Обновление emuMMC путем сброса обновленной прошивки с вашего sysMMC**
 
-!!! danger "Downgrading"
-    This guide is made for updating your emuMMC. It is **not** for downgrading. Downgrading at all, sysMMC or emuMMC, is not recommended and not worth it. Downgrading is also very dangerous and can lead to serious complications even when performed correctly.
+!!! warning "У вас есть резервная копия eMMC?"
+    Пожалуйста, не начинайте это руководство без выполнения RAW GPP и резервной копии BOOT 0/1 eMMC!
 
-#### **What you need:**
-- The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a>
-- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
+    Вы можете узнать, как сделать это [здесь](../user_guide/all/making_essential_backups.md).
 
-#### **Preparing your microSD card**
+!!! danger "Даунгрейд"
+    Это руководство предназначено для обновления вашего emuMMC. Оно **не** для даунгрейда. Даунгрейд, будь то sysMMC или emuMMC, не рекомендуется и не стоит этого делать. Даунгрейд также очень опасен и может привести к серьезным осложнениям, даже если его выполнить правильно.
 
-1. Boot into Hekate.
-2. Go to `Tools` > `USB Tools` > `SD Card` and connect your Switch to your PC via USB.
-3. Download the latest release of `TegraExplorer.bin` and place it `sd:/bootloader/payloads`.
+#### **Что вам нужно:**
+- Последняя версия <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a>
+- Последняя версия <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
 
-Make sure your sysMMC is updated before moving onto the instructions below.
+#### **Подготовка вашей microSD карты**
 
-#### **Dumping your sysMMC firmware**
+1. Загрузитесь в Hekate.
+2. Перейдите в `Tools` > `USB Tools` > `SD Card` и подключите вашу консоль к ПК через USB.
+3. Скачайте последнюю версию `TegraExplorer.bin` и поместите её в `sd:/bootloader/payloads`.
 
-1. Make sure your sysMMC is up to date. If your sysMMC is not up-to-date, boot into Stock or sysCFW and update it through the System Settings.
-    - sysCFW is recommended since it preserves e-fuses and preserves AutoRCM (if applicable).
-2. Inject `TegraExplorer.bin` using your favourite payload injector (Like you would with Hekate).
-    - If you are using a modchipped Switch, you can simply put `TegraExplorer.bin` in `sd:/bootloader/payloads` on your microSD card, then turn on your console and load TegraExplorer via Hekate's payloads menu (`Payloads` > `TegraExplorer.bin`).
-3. Using the joystick and the A buttons, select `FirmwareDump.te`, then select `Dump sysmmc`.
-    - If navigation doesn't work with your Joycons, navigating using the volume buttons and selecting using the power button also works.
-      (This is also required for Switch Lite console users.)
-4. Wait about 1-2 minutes for the script to dump your firmware.
-5. When the script finishes, press any button.
-6. Select `Reboot to bootloader/update.bin`.
+Убедитесь, что ваш sysMMC обновлен перед тем, как перейти к следующему шагу.
 
-#### **Updating your emuMMC with Daybreak**
+#### **Сброс прошивки вашего sysMMC**
 
-1. In Hekate go to `Launch -> Atmosphere FSS0 emuMMC`.
-2. Once booted, hold `R` while launching a game to boot into the homebrew menu.
-3. Find Daybreak in the homebrew menu and launch it.
-4. Tap on `Install` and navigate to `sd:/tegraexplorer/Firmware/<latest firmware number>`.
-5. Tap on `Continue` and then `Preserve settings`.
-    - If you see the message `Warning: exFAT firmware is missing or corrupt`, you likely don't have the exFAT drivers installed on your sysMMC. Just press continue if this is the case.
-6. If it is available choose `Install (FAT32 + exFAT)`, otherwise `Install (FAT32)` and then `Continue`.
-7. Wait until Daybreak completes installing the dumped firmware.
-8. Once it completes, it will ask if you want to reboot. Tap `Reboot`.
-9. Once rebooted, launch into emuMMC and verify your system works. You can verify your system has been properly updated in `Settings -> System`.
+1. Убедитесь, что ваш sysMMC обновлен. Если sysMMC не обновлен, загрузитесь в Stock или sysCFW и обновитесь через системные настройки.
+    - Рекомендуется использовать sysCFW, так как он сохраняет e-fuses и сохраняет AutoRCM (если применимо).
+2. Вставьте `TegraExplorer.bin`, используя ваш любимый инжектор paylaod'ов (Как и с Hekate).
+    - Если у вас есть модчип, просто поместите `TegraExplorer.bin` в `sd:/bootloader/payloads` на вашей microSD карте, затем включите консоль и загрузите TegraExplorer через меню payload'ов Hekate (`Payloads` > `TegraExplorer.bin`).
+3. Используя джойстик и кнопки A, выберите `FirmwareDump.te`, затем выберите `Dump sysmmc`.
+    - Если навигация не работает с вашим Joycon, можно использовать кнопки громкости для навигации и кнопку питания для выбора. (Это также требуется для пользователей Switch Lite.)
+4. Подождите 1-2 минуты, пока скрипт сбросит прошивку.
+5. Когда скрипт завершит выполнение, нажмите любую кнопку.
+6. Выберите `Reboot to bootloader/update.bin`.
+
+#### **Обновление вашего emuMMC с Daybreak**
+
+1. В Hekate перейдите в `Launch -> Atmosphere`.
+2. После загрузки удерживайте `R`, запуская игру, чтобы попасть в меню homebrew.
+3. Найдите Daybreak в меню homebrew и запустите его.
+4. Нажмите `Install` и перейдите в `sd:/tegraexplorer/Firmware/<latest firmware number>`.
+5. Нажмите `Continue`, а затем `Preserve settings`.
+    - Если вы видите сообщение `Warning: exFAT firmware is missing or corrupt`, вероятно, у вас не установлены драйверы exFAT на вашем sysMMC. Просто нажмите продолжить, если это так.
+6. Если доступно, выберите `Install (FAT32 + exFAT)`, в противном случае выберите `Install (FAT32)` и затем `Continue`.
+7. Подождите, пока Daybreak завершит установку сброшенной прошивки.
+8. Когда установка завершится, вам предложат перезагрузить систему. Нажмите `Reboot`.
+9. После перезагрузки загрузитесь в emuMMC и убедитесь, что система работает. Вы можете проверить обновление системы в `Настройки -> Система`.
+

@@ -1,50 +1,57 @@
-# **Game modding with LayeredFS**
+# **Модификация игр(LFS)**
 
-LayeredFS, a tool built into Atmosphere, allows you to (temporarily) replace a game's assets with your own, modified assets as long as you're booted into CFW.
 
-### **Usage instructions**
+LayeredFS — это инструмент, встроенный в Atmosphere, который позволяет временно заменять файлы игры на ваши собственные, модифицированные файлы, если вы загружены в CFW.
 
-Check the section below to find your mod's folder/file structure, then install your mod accordingly.
+### **Инструкции по использованию**
 
-!!! note "**Checking folder/file structures**"
-    * If the mod solely includes a `romfs` (and/or `exefs` folder), you will need to place that folder inside of `sd:/atmosphere/contents/<title_id>/`.
-        - **Note:** The title ID folder has to be created manually in this case. This is game specific and the title ID of every game can be found on the following websites: [switchbrew](https://switchbrew.org/wiki/Title_list/Games) and [nswdb](https://nswdb.com/).
+Посмотрите в раздел ниже, чтобы найти структуру папок/файлов вашего мода, а затем установите мод соответственно.
 
-    * If the mod solely includes a `contents` folder, you can simply copy that folder to `sd:/atmosphere/` on your microSD card and merge folders if prompted.
+!!! note "**Проверка структуры папок/файлов**"
+    * Если мод включает только папку `romfs` (и/или `exefs`), вам нужно поместить эту папку в `sd:/atmosphere/contents/<title_id>/`.
+        - **Примечание:** Папку с title ID нужно создать вручную. Это зависит от игры, и title ID каждой игры можно найти на следующих сайтах: [switchbrew](https://switchbrew.org/wiki/Title_list/Games) и [nswdb](https://nswdb.com/).
 
-    * If the mod has the complete folder structure set up (i.e. `atmosphere/contents/<title_id>/romfs`), you can simply copy the `atmosphere` folder (likely inside of a mod's `.zip` file) to the root of your microSD card and merge folders if prompted.
+    * Если мод включает только папку `contents`, вы можете просто скопировать эту папку в `sd:/atmosphere/` на вашу microSD карту и объединить папки, если будет предложено.
 
-!!! warning "Atmosphere 0.9.4 and below"
-    **Note: On Atmosphère 0.9.4 and below, `contents` is called `titles`**
+    * Если мод уже включает всю структуру папок (например, `atmosphere/contents/<title_id>/romfs`), вы можете просто скопировать папку `atmosphere` (вероятно, внутри `.zip` файла мода) в корень вашей microSD карты и объединить папки, если будет предложено.
 
-In the image below, you can see a Batman skin mod being used in The Legend of Zelda: Breath of the Wild. In this example, the title ID and mod installation directory would be `sd:/atmosphere/contents/0100509005AF2000/`.
+    * Если мод включает только папку с titleID, вы можете просто скопировать эту папку в `sd:/atmosphere/contents` на вашу microSD карту.
+
+!!! warning "Atmosphere 0.9.4 и ниже"
+    **Примечание: в Atmosphère 0.9.4 и ниже папка `contents` называется `titles`**
+
+На изображении ниже показан мод скин для Бэтмена, используемый в игре The Legend of Zelda: Breath of the Wild. В этом примере папка установки мода будет иметь следующий путь: `sd:/atmosphere/contents/0100509005AF2000/`.
+
 
 ![ExampleGameMod](../extras/img/game_modding.jpg)
 
 
 -----
 
-### **Additional notes**
+### **Примечания**
 
-The `romfs` folder contains modified assets in the way the game would normally read them. `romfs` stands for "romFileSystem", which is quite literally what the filesystem (folder and file structure) of the game you're modding consists of internally.</br>
+Папка `romfs` содержит модифицированные активы, как игра бы их обычно читала. `romfs` означает "romFileSystem" — это, по сути, файловая система игры (структура папок и файлов), которая используется внутри игры.
 
-If you want to disable mods on launch of a game, hold the `L` button before launching the game and launch the game normally, `L` is the default button to do this. This will disable all modifications (like cheats and mods) that you have configured for your game.
+Если вы хотите отключить моды при запуске игры, удерживайте кнопку `L` перед запуском игры и запускайте её как обычно. Кнопка `L` — это стандартная кнопка для этого. Это отключит все модификации (например, читы и моды), которые вы настроили для игры.
 
-While most games only require Atmosphere's LayeredFS to enable game modding, there are some games that may require more specialized setup. For example:
+Хотя большинство игр требуют только использования LayeredFS от Atmosphere для моддинга, есть игры, которые могут требовать более специализированной настройки. Например:
 
-* Modding Super Smash Bros. requires [ARCropolis](https://github.com/Raytwo/ARCropolis/releases) and [skyline](https://github.com/skyline-dev/skyline/releases). Skyline's `exefs` folder goes into the `atmosphere/contents/01006A800016E000/` directory. ARCropolis looks for mods in the `sd:/ultimate/mods` directory on your microSD card.
+* Для моддинга Super Smash Bros. требуется [ARCropolis](https://github.com/Raytwo/ARCropolis/releases) и [skyline](https://github.com/skyline-dev/skyline/releases). Папка `exefs` Skyline помещается в каталог `atmosphere/contents/01006A800016E000/`. ARCropolis ищет моды в папке `sd:/ultimate/mods` на вашей microSD карте.
 
-* Modding Breath of the Wild and Tears of the Kingdom with multiple mods requires the use of [BCML](https://github.com/NiceneNerd/BCML) or [UKMM](https://github.com/NiceneNerd/UKMM/releases) (Recommended) and [TKMM](https://github.com/TKMM-Team/Tkmm/releases) respectively.
+* Для моддинга Breath of the Wild и Tears of the Kingdom с несколькими модами требуется использование [BCML](https://github.com/NiceneNerd/BCML) или [UKMM](https://github.com/NiceneNerd/UKMM/releases) (рекомендуется) и [TKMM](https://github.com/TKMM-Team/Tkmm/releases) соответственно.
 
-* Animal Crossing: New Horizons requires some extra setup for mods to work. The folder that would normally be called `romfs` has to be called `romFs` and you'll need to create an empty file inside of `atmosphere/contents/01006F8002326000/romFs/System/Resource/` called `ResourceSizeTable.srsizetable`. More information on this can be found on the [ac-modding website](https://ac-modding.com/ACNH/mods.html).
+* Для моддинга Animal Crossing: New Horizons требуется дополнительная настройка. Папка, которая обычно называется `romfs`, должна быть переименована в `romFs`, и вам нужно создать пустой файл в `atmosphere/contents/01006F8002326000/romFs/System/Resource/` с названием `ResourceSizeTable.srsizetable`. Дополнительную информацию можно найти на [сайте ac-modding](https://ac-modding.com/ACNH/mods.html).
+
 
 -----
 
-### **Troubleshooting**
-#### **My game crashes upon launch!**
-If your game crashes during launch, hold the `L` button to see if disabling all modifications for your game solves the issue. If so, delete the most recently added mod(s) for your game.
+### **Устранение неполадок**
 
-#### **My mods aren't showing up in-game!**
-Assuming you've followed the installation instructions successfully, this is probably due to the archive bit being set on one or more folders/files on your microSD card. This is usually the result of copying files to a microSD card via a Mac. If you are experiencing this issue, try running the archive bit fixer utility via Hekate for all files.
+#### **Моя игра вылетает при запуске!**
+Если игра вылетает при запуске, удерживайте кнопку `L`, чтобы проверить, решает ли отключение всех модификаций проблему. Если это так, удалите последние добавленные моды для игры.
 
-This can be done by booting into Hekate and going to `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+#### **Моих модов нет в игре!**
+Если вы правильно следовали инструкциям по установке, вероятно, это связано с установленным архивным атрибутом на одну или несколько папок/файлов на вашей microSD карте. Это обычно происходит при копировании файлов на microSD карту с помощью Mac. Если вы сталкиваетесь с этой проблемой, попробуйте использовать утилиту для исправления архивного бита через Hekate для всех файлов.
+
+Это можно сделать, загрузив Hekate и перейдя в `Tools` > `Arch bit • RCM Touch • Pkg1/2` > `Fix Archive Bit`.
+

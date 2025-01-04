@@ -1,60 +1,62 @@
-# Installing Android
+# Установка Android
 
-This page will detail the setup of Switchroot Android (Android 11) for the Nintendo Switch.
+# Настройка Switchroot Android (Android 11) для Nintendo Switch
 
-!!! warning "Have you partitioned your microSD card?"
-    This page assumes that you've followed our guide to set up Atmosphère. Before starting, your microSD card needs partitions for Android set up via Hekate.<br>
-    If you didn't do so, see [this page](../user_guide/all/partitioning_sd_syscfw.md) to install Android alongside Atmosphère. If you don't want to use Switch CFW and only Android, check the [Official Switchroot Documentation](https://wiki.switchroot.org/wiki/android/11-r-setup-guide) instead. <br>
-    If you already have Android fully installed, do not follow this guide, as your current installation would be erased.
+!!! warning "Вы разделили свою microSD карту?"
+    Эта страница предполагает, что вы уже следовали нашему руководству по установке Atmosphère. Перед началом на вашей microSD карте должны быть настроены разделы для Android через Hekate.<br>
+    Если вы этого не сделали, обратитесь к [этой странице](../user_guide/all/partitioning_sd_syscfw.md) для установки Android вместе с Atmosphère. Если вы не хотите использовать CFW Switch и хотите только Android, посмотрите [официальную документацию Switchroot](https://wiki.switchroot.org/wiki/android/11-r-setup-guide). <br>
+    Если Android уже установлен, не следуйте этому руководству, так как ваша текущая версия android будет удалена.
 
-!!! info "Looking for Android 10?"
-    An unfortunate bug with clocking on Android 11 results in degraded performance for Erista (v1) units on Android 11. Android 10 installation is not covered here, but there is a [guide](https://wiki.switchroot.org/wiki/android/10-q-setup-guide) on the Switchroot Wiki. However, Android 11 is the currently supported version and uses much more updated drivers.
+!!! info "Ищете Android 10?"
+    Неприятная ошибка с тактовой частотой на Android 11 вызывает снижение производительности для устройств Erista (v1) на Android 11. Установка Android 10 здесь не рассматривается, но существует [руководство](https://wiki.switchroot.org/wiki/android/10-q-setup-guide) на вики Switchroot. Тем не менее, Android 11 является поддерживаемой версией и использует более новые драйверы.
 
-!!! info "Looking for Android 14?"
-    Recently, Android 14 was released for the Switch. You can follow the official [LineageOS guide](https://wiki.lineageos.org/devices/nx_tab/) to install Android 14.
+!!! info "Ищете Android 14?"
+    Недавно был выпущен Android 14 для Switch. Вы можете следовать официальному [руководству LineageOS](https://wiki.lineageos.org/devices/nx_tab/) для установки Android 14.
 
-    - **Note:** You can skip the partitioning in the LineageOS guide. You already did this during the guide and do *not* have to do so again.
+    - **Примечание:** Разделение карты можно пропустить в руководстве LineageOS. Вы уже выполнили это в предыдущем руководстве и не нужно делать это снова.
 
- The Switch lacks a cell modem; simply installing Android does not grant your Switch access to cell towers. This means, unlike most Android devices, you will not be able to make emergency phone calls, and you will still need Wi-Fi to access the Internet. You can, however, natively run Android programs and games.
+Switch не имеет встроенного модуля связи, поэтому простая установка Android не предоставит доступ к мобильной сети. Это означает, что в отличие от большинства Android-устройств, вы не сможете совершать экстренные вызовы и вам всё равно нужно будет подключение к Wi-Fi для доступа в интернет. Тем не менее, вы сможете нативно запускать Android-программы и игры.
 
-This page will also *not* detail things such as rooting and overclocking; external links to these types of additions can be found in the [Power User Guides](#power-user-guides) section at the bottom of this page.
+Данная страница также *не* описывает такие вещи, как рутирование и разгон; внешние ссылки на эти дополнения можно найти в разделе [Руководства для опытных пользователей](#power-user-guides) внизу страницы.
 
-### **Requirements:**
-- A Nintendo Switch console that is capable of running Hekate. <br>
-- A microSD card *larger than* 8GB.
-    - Please consult the [Switchroot microSD Card Guide](https://wiki.switchroot.org/wiki/sd-card-guide) before buying!
-- A good quality, data-transfer capable USB-A to USB-C cable.
-    - C to C is unstable, but this will be fixed in the next release.
-- A computer.
+### **Требования:**
+- Консоль Nintendo Switch, которая может запускать Hekate. <br>
+- microSD карта *больше* 8 ГБ.
+    - Пожалуйста, ознакомьтесь с [руководством по microSD картам от Switchroot](https://wiki.switchroot.org/wiki/sd-card-guide) перед покупкой!
+- Качественный USB-A to USB-C кабель, способный передавать данные.
+    - Кабели с USB-C to USB-C нестабильны, но это будет исправлено в следующем релизе.
+- Компьютер.
 
-### **Instructions:**
 
-#### Step 0: Preparation
+### **Инструкции:**
 
-If you have official Joy-Con controllers, you can set up auto-pairing so undocking them seamlessly connects to the console regardless of what OS is running. To make this work, boot HOS, ensure both work undocked (pair them), then reboot to Hekate. Select `Nyx Options` followed by `Dump Joy-Con BT`. You should see "Found 2 out of 2 Joy-Con pairing data!"
+#### Шаг 0: Подготовка
 
-!!! tip "Have a Switch Lite?"
-    You should poke the dump button in Hekate anyway -- this will dump factory stick and IMU calibration for use in Android.
+Если у вас есть официальные контроллеры Joy-Con, вы можете настроить авто-подключение, чтобы при отсоединении они автоматически подключались к консоли независимо от операционной системы. Чтобы это сделать, загрузитесь в HOS, убедитесь, что оба контроллера работают без док-станции (сопрягите их), затем перезагрузитесь в Hekate. Выберите `Nyx Options`, затем `Dump Joy-Con BT`. Вы должны увидеть сообщение "Found 2 out of 2 Joy-Con pairing data!".
 
------
-
-#### Step 1: Downloading Files
-
-Download the latest `.7z` release archive from [the official Switchroot download site](https://download.switchroot.org/android-11/)--choose `nx-atv...` for Android TV (more console-like experience) or `nx-tab...` for standard Android (a more standard Android tablet experience). Both are usable with controllers and docking, but only tab supports proper touch input.
-
-!!! tip "If you prefer [TWRP recovery](https://twrp.me/)..."
-    ...you can download `twrp.img` from the [extras folder](https://download.switchroot.org/android-11/extras/).
+!!! tip "У вас Switch Lite?"
+    Вам всё равно нужно нажать кнопку дампа в Hekate — это сохранит данные калибровки джойстиков и IMU для использования в Android.
 
 -----
 
-#### Step 2: Arranging the microSD Card
+#### Шаг 1: Скачивание файлов
 
-!!! tip "Are you using a V1 or V2 Switch (standard models)?"
-    These models have a poorly designed microSD card reader and repeated removals/reinsertions can eventually cause the reader to fail. Please use Hekate SD UMS to transfer files instead of removing the microSD card from your Switch!
+Скачайте последнюю версию архива `.7z` с [официального сайта Switchroot](https://download.switchroot.org/android-11/) — выберите `nx-atv...` для Android TV (больше похож на консольный опыт) или `nx-tab...` для стандартного Android (опыт обычного планшета на Android). Оба варианта поддерживают работу с контроллерами и док-станцией, но только версия для таблета поддерживает полноценный сенсорный ввод.
 
-    - This can be done by booting into Hekate and going to `Tools` > `USB Tools` > `SD Card` and plugging your Switch into your PC via USB.
+!!! tip "Если вы предпочитаете [TWRP recovery](https://twrp.me/)..."
+    ...вы можете скачать `twrp.img` из [папки extras](https://download.switchroot.org/android-11/extras/).
 
-Extract the archive to the root of the microSD card (the FAT32 partition). The microSD card file structure should look more or less like this:
+-----
+
+#### Шаг 2: Подготовка microSD карты
+
+!!! tip "Вы используете Switch V1 или V2 (стандартные модели)?"
+    У этих моделей плохо спроектирован картридер microSD, и повторное извлечение/вставление карты может привести к её поломке. Пожалуйста, используйте Hekate SD UMS для переноса файлов вместо того, чтобы извлекать карту microSD из вашей консоли!
+
+    - Это можно сделать, загрузив Hekate и перейдя в `Tools` > `USB Tools` > `SD Card`, затем подключите вашу Switch к ПК через USB.
+
+Извлеките архив в корень microSD карты (раздел FAT32). Структура файлов на microSD карте должна выглядеть примерно так:
+
 
 ```
 root
@@ -77,62 +79,62 @@ root
 |- lineage-18.1-[date]-UNOFFICIAL-[device].zip
 ```
 
-!!! tip "If you downloaded TWRP..."
-    ...you have to replace `/switchroot/install/recovery.img` with `twrp.img`. No need to rename the file, just swap it out.
+!!! tip "Если вы скачали TWRP..."
+    ...вам нужно заменить файл `/switchroot/install/recovery.img` на `twrp.img`. Не нужно переименовывать файл, просто замените его.
 
 -----
 
-#### Step 3: Flashing Android
+#### Шаг 3: Установка Android
 
-Open the Hekate partition manager (located in `Tools` > `Partition SD Card`) and select Flash Android at the bottom of your screen. All three images should be found and successfully flashed. Select the option to reboot to recovery.
+Откройте менеджер разделов Hekate (находится в `Tools` > `Partition SD Card`) и выберите Flash Android в нижней части экрана. Все три образа должны быть найдены и успешно записаны. Выберите опцию перезагрузки в режим восстановления.
 
-Once in recovery, select `Factory Reset` followed by `Format Data`. This *does not delete anything here*, but rather is used to prepare your data partitions for flashing. Ignore any errors that may appear. Return to the main menu and select `Apply Update` followed by `Select from SWITCH SD`. Find and select the `lineage-18.1...` zip in the list, and wait for it to finish.
+После загрузки в режим восстановления выберите `Factory Reset`, затем `Format Data`. Это *не удаляет ничего на карте*, а лишь подготавливает разделы данных для записи. Игнорируйте любые ошибки, которые могут появиться. Вернитесь в главное меню и выберите `Apply Update`, затем `Select from SWITCH SD`. Найдите и выберите архив `lineage-18.1...`, подождите, пока установка завершится.
 
-!!! warning "Did the zip fail to flash?"
-    Your microSD card is probably bad... Take a look at Hekate's microSD card info, and consider buying a better card.
+!!! warning "Не удалось установить архив?"
+    Возможно, ваша microSD карта неисправна... Проверьте информацию о microSD в Hekate и подумайте о покупке карты лучшего качества.
 
-!!! tip "If you are using TWRP..."
-    Good luck... TWRP is for advanced users; no user support will be provided. TWRP is provided for power users who have a specific need for it.
+!!! tip "Если вы используете TWRP..."
+    Удачи... TWRP предназначен для опытных пользователей, поддержка пользователей не предоставляется. TWRP предоставляется для пользователей, которым он необходим для специфических целей.
 
-Once done, reboot the system when prompted -- Android is now installed!
+После завершения процесса перезагрузите систему, когда будет предложено — Android теперь установлен!
 
-### **Post-Install**
+### **После установки**
 
-#### Tips and Tricks
+#### Советы и рекомендации
 
-- If Joy-Con autopairing has not kicked in, try a reboot. Sometimes the first boot doesn't pick up the addition.
+- Если авто-сопряжение Joy-Con не сработало, попробуйте перезагрузить систему. Иногда при первом запуске это может не сработать.
 
-- To access recovery/TWRP: hold `VOL+` on boot or reboot.
+- Для доступа к режиму восстановления/TWRP: удерживайте `VOL+` при запуске или перезагрузке.
 
-- To access Hekate from Android: hold `VOL-` on reboot.
+- Для доступа к Hekate из Android: удерживайте `VOL-` при перезагрузке.
 
-- To reboot back to Android: hold `Power` for a few seconds and perform a standard reboot.
+- Для перезагрузки в Android: удерживайте кнопку `Power` несколько секунд и выполните стандартную перезагрузку.
 
-- To return to Horizon (`OFW/CFW`): power your Switch off fully, then boot into your desired mode.
+- Для возврата в Horizon OS (`OFW/CFW`): полностью выключите Switch, затем загрузитесь в желаемый режим.
 
-#### Power User Guides
+#### Руководства для опытных пользователей
 
-To learn more about using the Switch Configuration App and overclocking, see the [Switch Configuration App](https://wiki.switchroot.org/wiki/android/11-r-setup-guide#switch-configuration-app) section. Furthermore, you can check out the [INI guide](https://wiki.switchroot.org/wiki/android/11-r-ini-guide) as well.
+Чтобы узнать больше об использовании Switch Configuration App и разгоне, посмотрите раздел [Switch Configuration App](https://wiki.switchroot.org/wiki/android/11-r-setup-guide#switch-configuration-app). Также можно ознакомиться с [INI руководством](https://wiki.switchroot.org/wiki/android/11-r-ini-guide).
 
-### **Need Help?**
+### **Нужна помощь?**
 
-Join the [Switchroot Discord server](https://discord.gg/N9PPYXjWMY).
+Присоединяйтесь к [Switchroot Discord серверу](https://discord.gg/N9PPYXjWMY).
 
 -----
 
-This page was made in collaboration with `makinbacon21` on Discord. See the collapsible section below for the Switchroot guide maintainers.
+Эта страница была создана в сотрудничестве с `makinbacon21` на Discord. См. сворачиваемый раздел ниже для поддерживающих команду Switchroot.
 
-??? note "Switchroot Project Staff (Android / Linux)"
-    If you'd like, you can donate to the people who made this project possible using these links.
+??? note "Сотрудники проекта Switchroot (Android / Linux)"
+    Если хотите, вы можете поддержать людей, которые сделали этот проект возможным, используя следующие ссылки.
 
-    - makinbacon (Android developer)
+    - makinbacon (разработчик Android)
     [https://paypal.me/makinbacon21](https://paypal.me/makinbacon21)
 
-    - npjohnson (Android developer)
+    - npjohnson (разработчик Android)
     [https://paypal.me/nolenjohnson](https://paypal.me/nolenjohnson)
 
-    - CTCaer (Linux & Low level developer, Hekate maintainer)
+    - CTCaer (разработчик Linux и низкоуровневых систем, поддержка Hekate)
     [https://www.patreon.com/ctcaer](https://www.patreon.com/ctcaer)
 
-    - ave (Infrastructure & Hosting)
+    - ave (инфраструктура и хостинг)
     [https://patreon.com/aveao](https://patreon.com/aveao)
